@@ -1,0 +1,63 @@
+/*
+Title Dark Green: #193C00
+Background Dark Green: #79876F
+Background Light Green: #86937C
+Table Title Green: #425832
+Table Background Green: #B0BAA8
+
+*/
+
+/* START Green Specific */
+
+.TblTitle {
+	font-famiily: arial;
+	font-weight: bold;
+	font-size: 14px;
+	color: white;
+	}
+
+/* END Green Specific */
+
+P.startpage {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	}
+
+A.startpage {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #193C00;
+	}
+
+A:HOVER.startpage {
+	text-decoration: underline;
+	}
+
+A:ACTIVE.startpage {
+	}
+
+A:VISITED.startpage {
+	color: #425832;
+	}
+
+.TableBg {
+	color: white;
+	background-color: #7A3104;
+	}
+
+.WebCamBorder {
+	border-color: #79876F;
+	}
+	
+DIV.MainH4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #193C00;
+	border-style: solid;
+	border-width: 0px;
+	border-color:  #193C00;
+	border-bottom-width: 1px; 
+	}

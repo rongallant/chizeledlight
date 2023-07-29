@@ -1,0 +1,2 @@
+09/09/2001 Updated an bug in the admin/calendara/functions.php file
+10/03/2001 Fixed the text display in calendarb.php

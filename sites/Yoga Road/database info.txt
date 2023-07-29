@@ -1,0 +1,4 @@
+Database Hostname: mysql.server101.com
+Database Name: yogaroad
+UserName: yogaroad
+Password: The password is the same as your account login password.

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+	<HEAD>
+		<TITLE>Ron's Place! - St. John's, Newfoundland, Canada</TITLE>
+		<META NAME="author" CONTENT="Ron Gallant, Chizeled Light, Gallant Web Design">
+		<META NAME="description" CONTENT="Free Graphics, Animation, Links, and even a little something about Ron.">
+		<META NAME="keywords" CONTENT="Ron's Place!, Ron's Place, Ron, ron, Ronald, ronald, Gallant, gallant, galant, hache, french, France, geneology, Judo, judo, martial arts, Pink Floyd, Stephenville, stephenville, stevenville, s'ville, St. Georges, Newfoundland, newfoundland, Terra Nova, terra nova, nf, NFLD, Canada, canada, Corner Brook, corner brook, St. John's, st. john's, St. Johns, Saint John's, St. John, Kilbride, kilbride, home page, web, www, design, advertise, advertisment, advertising, graphic, graphics, Photoshop, photoshop, illustrator, free fonts, fonts, pictures, pics, photos, Anime, anime, japanamation, manga, draw, Free Graphics, themes, J.R.R. Tolkien, tolkien, Lord of the Rings, LOTR, The Hobbit, hobbit, knife, knives, pink floyd, Pink Floyd, floyd, Dragon, dragon, dragons">
+	</HEAD>
+
+	<FRAMESET ROWS="*,45" BORDER="0">
+		<FRAME SCROLLING="auto" NAME="main" SRC="main.php"/>
+		<FRAME SCROLLING="off" NAME="menu" SRC="menu.php" NORESIZE />
+	</FRAMESET>
+	
+	<NOFRAMES>
+		Sorry, you have a non-frames capable browser. 
+		Get the latest and greatest free browsers here:<P>
+		<A HREF="http://www.microsoft.com">Internet Explorer</A><P>
+		<A HREF="http://www.netscape.com">Netscape Communicator</A><P>
+		You will be rewarded with better support, stability and brows ability.
+	</NOFRAMES>
+</HTML>

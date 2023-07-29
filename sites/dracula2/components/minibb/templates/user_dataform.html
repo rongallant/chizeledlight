@@ -1,0 +1,224 @@
+<script language="JavaScript">
+<!--
+function insertCountry() {
+var ind;
+ind = document.regform.fromSelect.selectedIndex;
+ind = document.regform.fromSelect.options[ind].value;
+document.regform.from.value = ind;
+}
+//-->
+</script>
+
+<center>
+<table bgcolor="{$tableParam[1]}" width="{$tableParam[0]}" border={$tableParam[5]} cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<tr class=sectiontableentry2>
+<td>
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width="100%"><div class=header>&nbsp;<a href="{$indexphp}">{$sitename}</a> <b class=bulletHead>&#8212;&#8250;</b> <small>{$mini_userTitle}</small></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br>
+
+<table class=sectiontableentry2 width="{$tableParam[0]}" border={$tableParam[5]} cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<tr>
+<td class=cell2>
+<b>{$warning}</b>
+<form action="{$indexphp}" name=regform method=post class=formStyle>
+<input type=hidden name=action value="{$actionName}">
+<P>{$l_fillRegisterForm} <font color=red><b>* - {$l_necessaryFields}</b></font>
+
+<table width="100%" cellpadding=2 cellspacing=0 border=0>
+<!--<tr>
+<td width="20%" align=right valign=top><p>* <b>{$l_sub_name}</b></td>
+<td width="80%" class=cell1><input type=text name=login maxlength=40 size=20 value="{$login}" class=textForm {$editable}><br><small>({$l_max} 40 {$l_symbols})</small></td>
+</tr>-->
+<!--PASSWORD-->
+<!--<tr>
+<td align=right valign=top><p>* <b>{$l_sub_pass}</b></td>
+<td class=cell1><input type=password name=passwd maxlength=32 size=20 value="{$passwd}" class=textForm><br><small>({$l_max} 32 {$l_symbols})</small></td>
+</tr>
+<tr>
+<td align=right valign=top><p>* <b>{$l_passOnceAgain}</b></td>
+<td class=cell1><input type=password name=passwd2 maxlength=32 size=20 value="{$passwd2}" class=textForm></td>
+</tr>-->
+<!--/PASSWORD-->
+<tr>
+<td align=right valign=top><p>* <b>{$l_email}</b></td>
+<td class=cell1><input type=text name=email maxlength=50 size=20 value="{$email}" class=textForm><br><small>({$l_max} 50 {$l_symbols})</small></td>
+</tr>
+<tr>
+<td align=right valign=top><p>ICQ</td>
+<td class=cell1><input type=text name=icq maxlength=15 size=15 value="{$icq}" class=textForm></td>
+</tr>
+<tr>
+<td align=right valign=top><p>{$l_websiteUrl}</td>
+<td class=cell1><input type=text name=website maxlength=100 size=20 value="{$website}" class=textForm><br><small>({$l_max} 100 {$l_symbols})</small></td>
+</tr>
+<tr>
+<td align=right valign=top><p>{$l_userOcc}</td>
+<td class=cell1><input type=text name=occupation maxlength=100 size=20 value="{$occupation}" class=textForm><br><small>({$l_max} 100 {$l_symbols})</small></td>
+</tr>
+<tr>
+<td align=right valign=top><p>{$l_userFrom}</td>
+<td class=cell1><input type=text name=from maxlength=100 size=20 value="{$from}" class=textForm>
+<select name=fromSelect class=textForm onChange="JavaScript:insertCountry();">
+<OPTION VALUE=""></OPTION>
+<OPTION VALUE="Afghanistan">Afghanistan</OPTION>
+<OPTION VALUE="Albania">Albania</OPTION>
+<OPTION VALUE="Algeria">Algeria</OPTION>
+<OPTION VALUE="Angola">Angola</OPTION>
+<OPTION VALUE="Argentina">Argentina</OPTION>
+<OPTION VALUE="Armenia">Armenia</OPTION>
+<OPTION VALUE="Australia">Australia</OPTION>
+<OPTION VALUE="Austria">Austria</OPTION>
+<OPTION VALUE="Azerbaijan">Azerbaijan</OPTION>
+<OPTION VALUE="Bahamas">Bahamas</OPTION>
+<OPTION VALUE="Bangladesh">Bangladesh</OPTION>
+<OPTION VALUE="Barbados">Barbados</OPTION>
+<OPTION VALUE="Belgium">Belgium</OPTION>
+<OPTION VALUE="Belize">Belize</OPTION>
+<OPTION VALUE="Benin">Benin</OPTION>
+<OPTION VALUE="Bermuda">Bermuda</OPTION>
+<OPTION VALUE="Bolivia">Bolivia</OPTION>
+<OPTION VALUE="Botswana">Botswana</OPTION>
+<OPTION VALUE="Brazil">Brazil</OPTION>
+<OPTION VALUE="Bulgaria">Bulgaria</OPTION>
+<OPTION VALUE="Burma">Burma</OPTION>
+<OPTION VALUE="Belarus">Belarus</OPTION>
+<OPTION VALUE="Canada">Canada</OPTION>
+<OPTION VALUE="Chad">Chad</OPTION>
+<OPTION VALUE="Chile">Chile</OPTION>
+<OPTION VALUE="China">China</OPTION>
+<OPTION VALUE="Colombia">Colombia</OPTION>
+<OPTION VALUE="Costa Rica">Costa Rica</OPTION>
+<OPTION VALUE="Cuba">Cuba</OPTION>
+<OPTION VALUE="Cyprus">Cyprus</OPTION>
+<OPTION VALUE="Czech Republic">Czech Republic</OPTION>
+<OPTION VALUE="Denmark">Denmark</OPTION>
+<OPTION VALUE="Dominica">Dominica</OPTION>
+<OPTION VALUE="Dominican Republic">Dominican Republic</OPTION>
+<OPTION VALUE="Ecuador">Ecuador</OPTION>
+<OPTION VALUE="Egypt">Egypt</OPTION>
+<OPTION VALUE="El Salvador">El Salvador</OPTION>
+<OPTION VALUE="England">England</OPTION>
+<OPTION VALUE="Estonia">Estonia</OPTION>
+<OPTION VALUE="Ethiopia">Ethiopia</OPTION>
+<OPTION VALUE="Fiji">Fiji</OPTION>
+<OPTION VALUE="Finland">Finland</OPTION>
+<OPTION VALUE="France">France</OPTION>
+<OPTION VALUE="Gabon">Gabon</OPTION>
+<OPTION VALUE="Gambia">Gambia</OPTION>
+<OPTION VALUE="Georgia">Georgia</OPTION>
+<OPTION VALUE="Germany">Germany</OPTION>
+<OPTION VALUE="Ghana">Ghana</OPTION>
+<OPTION VALUE="Greece">Greece</OPTION>
+<OPTION VALUE="Greenland">Greenland</OPTION>
+<OPTION VALUE="Grenada">Grenada</OPTION>
+<OPTION VALUE="Guadeloupe">Guadeloupe</OPTION>
+<OPTION VALUE="Guatemala">Guatemala</OPTION>
+<OPTION VALUE="Guinea">Guinea</OPTION>
+<OPTION VALUE="Guyana">Guyana</OPTION>
+<OPTION VALUE="Haiti">Haiti</OPTION>
+<OPTION VALUE="Holland">Holland</OPTION>
+<OPTION VALUE="Honduras">Honduras</OPTION>
+<OPTION VALUE="Hong Kong">Hong Kong</OPTION>
+<OPTION VALUE="Hungary">Hungary</OPTION>
+<OPTION VALUE="Iceland">Iceland</OPTION>
+<OPTION VALUE="India">India</OPTION>
+<OPTION VALUE="Indonesia">Indonesia</OPTION>
+<OPTION VALUE="Iran">Iran</OPTION>
+<OPTION VALUE="Iraq">Iraq</OPTION>
+<OPTION VALUE="Ireland">Ireland</OPTION>
+<OPTION VALUE="Israel">Israel</OPTION>
+<OPTION VALUE="Italy">Italy</OPTION>
+<OPTION VALUE="Jamaica">Jamaica</OPTION>
+<OPTION VALUE="Japan">Japan</OPTION>
+<OPTION VALUE="Jordan">Jordan</OPTION>
+<OPTION VALUE="Kazakhstan">Kazakhstan</OPTION>
+<OPTION VALUE="Kenya">Kenya</OPTION>
+<OPTION VALUE="Korea">Korea</OPTION>
+<OPTION VALUE="Kuwait">Kuwait</OPTION>
+<OPTION VALUE="Kyrgyzstan">Kyrgyzstan</OPTION>
+<OPTION VALUE="Laos">Laos</OPTION>
+<OPTION VALUE="Latvia">Latvia</OPTION>
+<OPTION VALUE="Lebanon">Lebanon</OPTION>
+<OPTION VALUE="Lesotho">Lesotho</OPTION>
+<OPTION VALUE="Liberia">Liberia</OPTION>
+<OPTION VALUE="Libya">Libya</OPTION>
+<OPTION VALUE="Lithuania">Lithuania</OPTION>
+<OPTION VALUE="Madagascar">Madagascar</OPTION>
+<OPTION VALUE="Malaysia">Malaysia</OPTION>
+<OPTION VALUE="Mali">Mali</OPTION>
+<OPTION VALUE="Malta">Malta</OPTION>
+<OPTION VALUE="Mexico">Mexico</OPTION>
+<OPTION VALUE="Moldova">Moldova</OPTION>
+<OPTION VALUE="Morocco">Morocco</OPTION>
+<OPTION VALUE="Netherlands">Netherlands</OPTION>
+<OPTION VALUE="New Zealand">New Zealand</OPTION>
+<OPTION VALUE="Nicaragua">Nicaragua</OPTION>
+<OPTION VALUE="Nigeria">Nigeria</OPTION>
+<OPTION VALUE="Norway">Norway</OPTION>
+<OPTION VALUE="Pakistan">Pakistan</OPTION>
+<OPTION VALUE="Panama">Panama</OPTION>
+<OPTION VALUE="Papua New Guinea">Papua New Guinea</OPTION>
+<OPTION VALUE="Paraguay">Paraguay</OPTION>
+<OPTION VALUE="Peru">Peru</OPTION>
+<OPTION VALUE="Philippines">Philippines</OPTION>
+<OPTION VALUE="Poland">Poland</OPTION>
+<OPTION VALUE="Portugal">Portugal</OPTION>
+<OPTION VALUE="Romania">Romania</OPTION>
+<OPTION VALUE="Russia">Russia</OPTION>
+<OPTION VALUE="Scotland">Scotland</OPTION>
+<OPTION VALUE="Singapore">Singapore</OPTION>
+<OPTION VALUE="Slovenia">Slovenia</OPTION>
+<OPTION VALUE="Somalia">Somalia</OPTION>
+<OPTION VALUE="South Africa">South Africa</OPTION>
+<OPTION VALUE="Spain">Spain</OPTION>
+<OPTION VALUE="Swaziland">Swaziland</OPTION>
+<OPTION VALUE="Sweden">Sweden</OPTION>
+<OPTION VALUE="Switzerland">Switzerland</OPTION>
+<OPTION VALUE="Syria">Syria</OPTION>
+<OPTION VALUE="Taiwan">Taiwan</OPTION>
+<OPTION VALUE="Thailand">Thailand</OPTION>
+<OPTION VALUE="Turkey">Turkey</OPTION>
+<OPTION VALUE="Ukraine">Ukraine</OPTION>
+<OPTION VALUE="United Arab Emirates">United Arab Emirates</OPTION>
+<OPTION VALUE="United Kingdom">United Kingdom</OPTION>
+<OPTION VALUE="Uruguay">Uruguay</OPTION>
+<OPTION VALUE="USA">USA</OPTION>
+<OPTION VALUE="Uzbekistan">Uzbekistan</OPTION>
+<OPTION VALUE="Venezuela">Venezuela</OPTION>
+<OPTION VALUE="Vietnam">Vietnam</OPTION>
+<OPTION VALUE="Wales">Wales</OPTION>
+<OPTION VALUE="Yugoslavia">Yugoslavia</OPTION>
+<OPTION VALUE="Zaire">Zaire</OPTION>
+<OPTION VALUE="Zambia">Zambia</OPTION>
+<OPTION VALUE="Zimbabwe">Zimbabwe</OPTION>
+</select>
+<br><small>({$l_chooseCountry} {$l_max} 100 {$l_symbols})</small></td>
+</tr>
+<tr>
+<td align=right valign=top><p>{$l_userInterest}</td>
+<td class=cell1><input type=text name=interest maxlength=150 size=20 value="{$interest}" class=textForm><br><small>({$l_max} 150 {$l_symbols})</small></td>
+</tr>
+<tr>
+<td align=right valign=top><p><a href="{$indexphp}action=manual#viewemail">{$l_userViewEmail}</a></td>
+<td class=cell2>{$l_yes}<input type=radio name=showemail value=1 {$showEmailYes}>{$l_no}<input type=radio name=showemail value=0 {$showEmailNo}></td>
+</tr>
+<tr>
+<td align=right valign=top><p><a href="{$indexphp}action=manual#sorttopics">{$l_sortTopics}</a></td>
+<td class=cell2>{$l_newTopics}<input type=radio name=sorttopics value=1 {$sortTopics1}>{$l_newAnswers}<input type=radio name=sorttopics value=0 {$sortTopics0}></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><input type=submit value="{$mini_userTitle}" class=inputButton></td>
+</tr>
+</table>
+</form>
+</td></tr></table>
+<br>
+</center>

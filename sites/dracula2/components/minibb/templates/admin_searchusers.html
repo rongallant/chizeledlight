@@ -1,0 +1,30 @@
+<table align=center width="{$tableParam[0]}" border={$tableParam[5]} cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<tr>
+<td class=cell1>
+
+{$warning}
+<br>
+<small><b>{$pageNav}</b></small>
+<form action="index.php" method=get>
+<input type=hidden name=option value="com_minibb">
+<input type=hidden name=current value="bb_admin">
+<input type=hidden name=action value=searchusers2>
+<input type=text name=whatus size=25 maxlength=30 class=textForm value="{$whatus}">
+<br>
+<input type=radio name=searchus value=id {$ci}> ID<br>
+<input type=radio name=searchus value=email {$ce}> {$l_email} / {$l_sub_name}<br>
+<input type=radio name=searchus value=inactive {$ca}> {$l_inactiveUsers}<br>
+<input type=radio name=searchus value=registr {$cr}> {$l_haventReg}<br>
+
+<br>
+<input type=submit value="{$l_searchUsers}" class=inputButton>
+
+<ul>
+{$Results}
+</ul>
+
+<br>
+<small><b>{$pageNav}</b></small>
+</td></tr></table>
+
+</form>

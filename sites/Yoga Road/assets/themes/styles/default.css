@@ -1,0 +1,125 @@
+BODY {
+	background-color: white;
+}
+
+H1 {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 24px;
+	color: #660000;
+	text-align: center;
+	text-transform: uppercase;
+	border-top: solid 3px #006600;
+	border-bottom: solid 3px #006600;
+}
+
+H2 {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 20px;
+	color: #660000;
+	color: black;
+	border-bottom: solid 1px;
+}
+
+H3 {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 18px;
+	color: black;	
+}
+
+H4 {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;
+	color: black;	
+}
+
+H5 {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;
+	color: black;	
+}
+
+A {
+	text-decoration: underline;
+	color: #006600;
+}
+
+A:Hover {
+	text-decoration: none;
+}
+
+A:Active {
+	color: #00B000;
+}
+
+A:Visited {
+	color: #00B000;
+}
+
+P {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;
+	color: black;
+}
+
+LI {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;
+	color: black;
+}
+
+TD {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;
+}
+
+TD.calHead {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;	
+}
+
+P.fronttext {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;
+	text-align: justify;
+	color: #660000;
+}
+
+
+P.fronttextLg {
+	font-family: "Times New Roman";
+	font-size: 20px;
+	font-style: italic;
+	color: #660000;
+}
+
+DIV.copyright {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 11px;
+	color: #6C561F;
+}
+
+blockquote {
+	font-family: "Times New Roman";
+	font-size: 14px;
+	font-style: italic;
+	color: #660000;
+}
+
+
+TD.MerchHead {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: Bold;
+	background-color: #660000;
+	text-align: center;
+	color: white;
+}
+
+DIV.MerchName {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: Bold;
+	color: #660000;
+}

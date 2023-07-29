@@ -1,0 +1,22 @@
+P  {}
+
+H1  {}
+
+H2  {}
+
+H3  {}
+
+A  {}
+
+A:Visited  {}
+
+A:Active  {}
+
+A:Hover  {}
+
+BODY  {
+	font : Arial, helvetica;
+	font-family : sans-serif;
+	font-weight : bold;
+}
+

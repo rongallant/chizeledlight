@@ -1,0 +1,52 @@
+BODY {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	background-image: url("../images/layBg.gif");
+	background-color: #FFFFFF;
+}
+
+H1 {
+	color: #FA1E27;
+	border-top: 1px solid #9A9A9A;
+	border-bottom: 1px solid #9A9A9A;
+}
+
+#mainlogo {
+	margin: 0 0 0 5px;
+}
+
+/* Main Menu */
+.MainMenu UL {
+	padding: 0;
+	margin: 0 0 0 5px;
+	list-style-type: none;
+	list-style-image: none;
+	background-color: #FA1E27;
+	width: 170px;
+}
+
+.MainMenu LI {
+	padding: 0;
+	margin: 0;
+}
+
+.MainMenu A,
+.MainMenu A:visited {
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #9A9A9A;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: 2px 0 2px 0;
+	padding: 3px;
+	display: block;
+	width: 170px;
+}
+
+.MainMenu A:hover,
+.MainMenu A:active {
+	color: #000000;
+	background-color: #FFFFFF;
+}

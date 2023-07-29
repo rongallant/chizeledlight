@@ -1,0 +1,1 @@
+<HTML><HEAD><META HTTP-EQUIV="REFRESH" CONTENT="0; URL=photographs/index.php"></HEAD></HTML>

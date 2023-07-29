@@ -1,0 +1,53 @@
+BODY {
+	background: #947853 url("./graphics/chizeledbg.jpg");
+	color : black;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	margin : 0px;
+}
+
+H1{
+	font-size: 18pt;
+	color: black;
+}
+
+H2 {
+	font-size: 14pt;
+	color: black;
+}
+
+H3 {
+	font-size: 13pt;
+	color: black;
+}
+
+H4 {
+    font-size: 10pt;
+	font-weight: bold;
+	color : black;
+	}
+
+A {
+	color: brown ;
+	font-weight : bold;
+}
+
+P{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10pt;
+}
+
+UL{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10pt;
+}
+
+DL{ 
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10pt;
+ }
+
+HR {
+	color: brown;
+	height: 1pt;
+}

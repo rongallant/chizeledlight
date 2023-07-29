@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <TITLE>GWD-MENU</TITLE>
+   <BASE TARGET="main">
+<SCRIPT>
+
+
+if ((navigator.userAgent.substring(0,9) == "Mozilla/3") ||
+    (navigator.userAgent.substring(0,9) == "Mozilla/4"))
+        {
+        standard = new MakeArray(10)
+        over = new MakeArray(10)
+        blurb = new MakeArray(4)
+
+	standard[1].src = "logosmall.gif"
+        standard[2].src = "frames_off.gif"
+        standard[3].src = "multimedia_off.gif"
+        standard[4].src = "fees_off.gif"              
+
+        over[1].src = "logosmall.gif"
+        over[2].src = "frames_on.gif"
+        over[3].src = "multimedia_on.gif"
+        over[4].src = "fees_on.gif"       
+        
+        blurb[1] = "Gallant Web Design Introduction"
+        blurb[2] = "Example of frames"
+        blurb[3] = "Example of Multimedia"
+	blurb[4] = "Fees and services"  
+	}
+        
+function MakeArray(n)
+        {
+        this.length = n
+        for (var i = 1; i<=n; i++)
+                {
+                this[i] = new Image()
+                }
+        return this
+        }
+        
+function msover(num)
+        {
+        if ((navigator.userAgent.substring(0,9) == "Mozilla/3") ||
+            (navigator.userAgent.substring(0,9) == "Mozilla/4"))
+                {
+                if (over[num].src != "")
+                        {
+                        document.images[(num)-1].src = over[num].src
+                        window.status = blurb[num]
+                       }
+                }
+        }
+                
+function msout(num)
+        {
+        if ((navigator.userAgent.substring(0,9) == "Mozilla/3") ||
+            (navigator.userAgent.substring(0,9) == "Mozilla/4"))
+                {   
+                if (standard[num].src != "")
+                        {
+                        document.images[(num)-1].src = standard[num].src
+                        }
+                }
+        }
+
+
+
+</SCRIPT>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FF0000" LINK="#000000" VLINK="#000000" ALINK="#000000">
+
+<A HREF="gwd2.html"><IMG SRC="logosmall.gif" HEIGHT=80 WIDTH=80 BORDER=0></A>
+
+<P><A HREF="frames.html" onmouseover="msover(2) ; return true" onmouseout="msout(2)"><IMG SRC="frames_off.gif" HSPACE=8 VSPACE=4 BORDER=0 HEIGHT=20 WIDTH=70></A>
+
+<BR><A HREF="multimedia.html" onmouseover="msover(3) ; return true" onmouseout="msout(3)"><IMG SRC="multimedia_off.gif" HSPACE=8 VSPACE=4 BORDER=0 HEIGHT=20 WIDTH=70></A>
+
+<BR><A HREF="fees.html" onmouseover="msover(4) ; return true" onmouseout="msout(4)"><IMG SRC="fees_off.gif" HSPACE=8 VSPACE=4 BORDER=0 HEIGHT=20 WIDTH=70></A>
+</BODY>
+</HTML>

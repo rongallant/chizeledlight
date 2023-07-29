@@ -1,0 +1,25 @@
+
+BODY {
+	background-color: #FCF8DC;
+	background-image: URL(/assets/images/tolkien_bg.gif);
+	
+	}
+
+A {
+	font-family: 'Times New Roman';
+	color: #451F05;
+	text-decoration: none;
+	}
+	
+A:Hover {
+	color: #451F05;
+	text-decoration: underline;
+	}
+	
+A:Active {
+	color: #451F05;
+	}
+	
+A:Visited {
+	color: #734D35;
+	}

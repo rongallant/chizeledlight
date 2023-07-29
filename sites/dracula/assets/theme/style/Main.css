@@ -1,0 +1,62 @@
+
+P {
+	font-family: Arial;
+	font-size: 14px;
+	color: black;
+	}
+
+PRE {
+	font-family: Arial;
+	font-size: 14px;
+	color: black;
+	}
+
+H1  {
+	font-family: Arial;
+	font-size: 22px;
+	color: black;
+	}
+
+H2  {
+	font-family: Arial;
+	font-size: 20px;
+	color: black;
+	}
+
+H3  {
+	font-family: Arial;
+	font-size: 18px;
+	color: black;
+	}
+
+UL {
+	font-family: Arial;
+	font-size: 14px;
+	color: black;
+	}
+	
+A {
+	font-family: Arial;
+	font-size: 14px;
+	color: blue;
+	text-decoration: none;
+	}
+
+A:Hover  {
+	font-family: Arial;
+	font-size: 14px;
+	text-decoration: underline;
+	}
+
+A:Active {
+	font-family: Arial;
+	font-size: 14px;
+	color: red;
+	}
+
+A:Visited {
+	font-family: Arial;
+	font-size: 14px;
+	color: purple;
+	}
+

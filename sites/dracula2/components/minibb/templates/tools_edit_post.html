@@ -1,0 +1,26 @@
+<script language="JavaScript">
+function paste_strinL(strinL){ 
+var input=document.postMsg.elements["postText"];
+input.value=input.value+strinL;
+}
+</script>
+
+<center>
+<table width="{$tableParam[0]}" border={$tableParam[5]} cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<form name=postMsg action="{$indexphp}" method=post class=formStyle>
+<INPUT TYPE=HIDDEN NAME=action VALUE=editmsg2>
+<INPUT TYPE=HIDDEN NAME=forum VALUE="{$forum}">
+<INPUT TYPE=HIDDEN NAME=topic VALUE="{$topic}">
+<INPUT TYPE=HIDDEN NAME=post VALUE="{$post}">
+<INPUT TYPE=HIDDEN NAME=page VALUE="{$page}">
+<INPUT TYPE=HIDDEN NAME=anchor VALUE="{$anchor}">
+
+{$mainPostForm}
+
+<tr><td class=sectiontableentry2>
+<INPUT TYPE=SUBMIT VALUE="{$l_edit}" class=inputButton>
+</form>
+</td>
+</tr>
+</table>
+</center>

@@ -1,0 +1,15 @@
+<table align=center width="{$tableParam[0]}" border={$tableParam[5]} cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<tr><td class=cell1>
+
+<p><b>{$topicName}</b>
+<p>{$l_areYouSureDeleteTopic}
+<form action="{$indexphp}" method=post class=formStyle>
+<input type=hidden name=action value=deltopic>
+<input type=hidden name=topic value="{$topic}">
+<input type=hidden name=forum value="{$forum}">
+<input type=radio name=dy value=1 checked>{$l_yes} <input type=radio name=dy value=2>{$l_no}
+<br>
+<input type=submit value="{$l_submit}" class=inputButton>
+</form>
+
+</td></tr></table>

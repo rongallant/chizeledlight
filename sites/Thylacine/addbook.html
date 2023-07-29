@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE>ADD Entry Page</TITLE>
+</HEAD>
+<BODY BACKGROUND="/Area51/Orion/2902/graphics/bg.gif" BGCOLOR="#006830"
+TEXT="Silver" LINK="beige" VLINK="Peru" ALINK="#006830">
+<!--     ***************  addbook.html Guidelines ****************   -->
+<!--     As with the geobook.html file, you can customize the look   -->
+<!--     of this page as much as you wish, provided you follow       -->
+<!--     these rules:                                                -->
+<!--     1) Do not modify any fields in the FORM clause. All of the  -->
+<!--        field names and values are very specific. Any changes    -->
+<!--        could result in unknown results.                         -->
+<!--     2) Do not edit the *FINAL* tag line. The add entry program  -->
+<!--        will not work without this tag.                          -->
+<!--     You can always generate a new addbook.html file by going    -->
+<!--     to guest_book.html and configuring a new addbook.html file. -->
+<!--     *********************************************************   -->
+<CENTER><TABLE WIDTH="90%"><TR><TD><FONT FACE="helvetica, arial">
+
+<FONT SIZE="+1" COLOR="#999900">Thylacine - The Original Underdog</FONT><BR>
+<FONT SIZE="+3" COLOR="#999900"><B>Sign Our Guestbook</B></FONT><P>
+
+<FORM METHOD=POST ACTION=/cgi-bin/geoplus_apps/ans_entry>
+<INPUT type=hidden name="final" value="<!-- *FINAL* -->">
+<INPUT type=hidden name="state" value="1">
+<table>
+<tr><td>Name:</td><td><INPUT type=text name="field1">
+<input type=hidden name="field1_name" value="Name"></td></tr>
+
+<tr><td>Your URL:</td><td><INPUT type=text name="field2" value="http://">
+<input type=hidden name="field2_name" value="Your URL"></td></tr>
+
+<tr><td>Email:</td><td><INPUT type=text name="field3">
+<input type=hidden name="field3_name" value="Email"></td></tr>
+
+<tr><td>Rate this Page (1-10):</td><td><INPUT type=text name="field4">
+<input type=hidden name="field4_name" value="Rate this Page (1-10)"></td></tr>
+
+
+
+
+
+
+</table>
+<INPUT type=hidden name="style" value="1">
+<br>Your Comments:<br>
+<textarea name=comments wrap=physical cols=50 rows=6></textarea><p>
+<input type=submit value="I'm Done!">
+<input type=reset value="Start Over"></FONT></TD></TR></TABLE></CENTER>
+</body></html>

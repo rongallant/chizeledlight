@@ -1,0 +1,19 @@
+<center>
+<table bgcolor="{$tableParam[1]}" width="{$tableParam[0]}" border={$tableParam[5]} cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+
+
+<form name=postMsg action={$indexphp} method=post class=formStyle>
+
+<INPUT TYPE=HIDDEN NAME=action VALUE=pthread>
+<INPUT TYPE=HIDDEN NAME=forum VALUE="{$forum}">
+<INPUT TYPE=HIDDEN NAME=topic VALUE="{$topic}">
+
+{$mainPostForm}
+
+<tr><td class=sectiontableentry2>
+<INPUT TYPE=SUBMIT VALUE="{$l_sub_post_msg}" class=inputButton>
+</td>
+</tr>
+</form>
+</table>
+</center>

@@ -1,0 +1,126 @@
+TD{
+	FONT-FAMILY: Verdana,Geneva,Arial,Helvetica,sans-serif;
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+	FONT-SIZE: 12pt;
+}
+
+P{
+	FONT-FAMILY: Verdana,Geneva,Arial,Helvetica,sans-serif;
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+	FONT-SIZE: 10pt;
+}
+
+UL{
+	FONT-FAMILY: Verdana,Geneva,Arial,Helvetica,sans-serif;
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+	FONT-SIZE: 10pt;
+}
+
+LI{
+	FONT-FAMILY: Verdana,Geneva,Arial,Helvetica,sans-serif;
+	COLOR: #32323A;
+	TEXT-DECORATION: none;
+	FONT-SIZE: 10pt;
+}
+
+DIV{
+	FONT-FAMILY: Verdana,Geneva,Arial,Helvetica,sans-serif;
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+	FONT-SIZE: 10pt;
+}
+
+H1{
+	FONT-FAMILY: Verdana,Geneva,Arial,Helvetica,sans-serif;
+	COLOR: #32323A;
+	TEXT-DECORATION: none;
+	FONT-SIZE: 13pt;
+}
+
+H3{
+	FONT-FAMILY: Verdana,Geneva,Arial,Helvetica,sans-serif;
+	COLOR: RED;
+	TEXT-DECORATION: none;
+	FONT-SIZE: 12pt;
+}
+
+SMALL{
+	FONT-FAMILY: Verdana,Geneva,Arial,Helvetica,sans-serif;
+	COLOR: #000000;
+	TEXT-DECORATION: none;	
+	FONT-SIZE: 8pt;
+}
+
+A:link {
+	COLOR: #004576;
+	TEXT-DECORATION: none;
+}
+A:active {
+	COLOR: #004576;
+	TEXT-DECORATION: none;
+}
+A:visited {
+	COLOR: #004576;
+	TEXT-DECORATION: none;
+}
+A:hover {
+	COLOR: #004576;
+	TEXT-DECORATION: none;
+}
+
+.formStyle{
+	MARGIN-TOP: 0px;
+	MARGIN-BOTTOM: 0px;
+}
+
+.inputButton {
+	BACKGROUND:#FFFFFF;
+	BORDER-BOTTOM: #D1DCFD 1px solid;
+	BORDER-LEFT: #D1DCFD 1px solid;
+	BORDER-RIGHT: #D1DCFD 1px solid;
+	BORDER-TOP: #D1DCFD 1px solid;
+	FONT-FAMILY: Verdana,Geneva,Arial,Helvetica,sans-serif;
+	FONT-SIZE: 12px;
+}
+
+.textForm {
+	BACKGROUND-COLOR: #FFFFFF;
+	BORDER-BOTTOM: #004576 1px solid;
+	BORDER-LEFT: #004576 1px solid;
+	BORDER-RIGHT: #004576 1px solid;
+	BORDER-TOP: #004576 1px solid;
+}
+
+.header{
+	FONT-FAMILY: Verdana,Geneva,Arial,Helvetica,sans-serif;
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+	FONT-SIZE: 9pt;
+	FONT-WEIGHT: bold;
+}
+
+.bulletHead{
+	FONT-FAMILY: Verdana,Geneva,Arial,Helvetica,sans-serif;
+	COLOR: #B2BFF2;
+	FONT-WEIGHT: bold;
+}
+
+.cell1{
+	FONT-FAMILY: Verdana,Geneva,Arial,Helvetica,sans-serif;
+	COLOR: #000000;
+	FONT-SIZE: 12px;
+}
+
+.cell2{
+	FONT-FAMILY: Verdana,Geneva,Arial,Helvetica,sans-serif;
+	COLOR: #000000;
+	FONT-SIZE: 8pt;
+}
+
+.navCell{
+	FONT-FAMILY: Helvetica,Geneva,sans-serif,Arial,Verdana;
+	FONT-SIZE: 8pt;
+}

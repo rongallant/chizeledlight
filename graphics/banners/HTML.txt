@@ -1,0 +1,14 @@
+Past this code somewhere bettween the BOBY tags in your HTML. and place the graphic in the same folder as your HTML document.  If you have and questions just ask me threw ICQ (608167), or by email at rongallant@email.com.
+
+<!--- This is the code to Ron's Place! --->
+<A HREF="http://www.poweredbyart.com/" TARGET="_top"><IMG SRC="http://redrival.com/ron/graphics/banners/plate.jpg"  ALT="PickYourBrainetc" BORDER="0"></A>
+<!--- This is the code to Ron's Place! --->
+
+
+Thanks, 
+
+
+Ron Gallant
+rongallant@email.com
+http://www.rons.place.cc/
+http://www.link.sites.cc/

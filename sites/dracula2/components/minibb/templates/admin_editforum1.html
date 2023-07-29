@@ -1,0 +1,16 @@
+<table align=center width="{$tableParam[0]}" border={$tableParam[5]} cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<tr><td class=cell1>
+
+<form action="{$bb_admin}" method=post class=formStyle>
+<p><font color=red><b>{$warning}</b></font>
+<p>{$l_chooseeditforum}
+<br>
+<select name=forumID>
+{$forums_to_edit}
+</select>
+<input type=hidden name=action value=editforum2>
+<br>
+<input type=submit value="{$l_editforum}" class=inputButton>
+</form>
+
+</td></tr></table>

@@ -1,0 +1,128 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>WebMail Form for Stoneroids98</title>
+</head>
+
+<body background="stars.gif" text="#C0C0C0">
+
+<form action="/cgi-bin/email/zstoner/Stoneroids/98/feedback.S98.eml" method="POST" name="WebForm">
+	<input type="hidden" name="required"
+	value="name,email,rating,comments"><input type="hidden"
+	name="subject" value=""><div
+	align="center"><center><table border="3" cellpadding="3"
+	cellspacing="0" bgcolor="#008080">
+		<tr>
+			<td align="center" colspan="2"><h1><font
+			color="#FFFFFF" size="5">Stoneroids<em>98</em>
+			WebMail</font></h1>
+			</td>
+		</tr>
+		<tr>
+			<td align="right" valign="top"><font color="#FFFFFF"
+			size="2" face="Arial">* Name:</font></td>
+			<td><input type="text" size="50" name="name"></td>
+		</tr>
+		<tr>
+			<td align="right" valign="top"><font color="#FFFFFF"
+			size="2" face="Arial">* E-Mail:</font></td>
+			<td><input type="text" size="50" name="email"></td>
+		</tr>
+		<tr>
+			<td align="right" valign="top"><font color="#FFFFFF"
+			size="2" face="Arial">Web Page:</font></td>
+			<td><input type="text" size="50" name="page"></td>
+		</tr>
+		<tr>
+			<td align="right" valign="top"><font color="#FFFFFF"
+			size="2" face="Arial">* Rating for<br>
+			Stoneroids<em>98</em>:</font></td>
+			<td><table border="1" cellpadding="2" cellspacing="0"
+			width="100%" bgcolor="#2C5656">
+				<tr>
+					<td align="center"><font color="#FFFFFF"><input
+					type="radio" name="rating" value="5">5</font></td>
+					<td align="center"><font color="#FFFFFF"
+					size="2" face="Arial"><strong><u>Awesome!</u></strong></font></td>
+					<td><font color="#FFFFFF" size="2">I'm
+					definitely gonna be back and play it again!</font></td>
+				</tr>
+				<tr>
+					<td align="center"><font color="#FFFFFF"><input
+					type="radio" name="rating" value="4">4</font></td>
+					<td align="center"><font color="#FFFFFF"
+					size="2" face="Arial"><strong><u>Pretty nice</u></strong></font></td>
+					<td><font color="#FFFFFF" size="2">It was a
+					cool game, but only for a few times.</font></td>
+				</tr>
+				<tr>
+					<td align="center"><font color="#FFFFFF"><input
+					type="radio" name="rating" value="3">3</font></td>
+					<td align="center"><font color="#FFFFFF"
+					size="2" face="Arial"><strong><u>Average</u></strong></font></td>
+					<td><font color="#FFFFFF" size="2">Just
+					another run-of-the-mill typical Java applet.</font></td>
+				</tr>
+				<tr>
+					<td align="center"><font color="#FFFFFF"><input
+					type="radio" name="rating" value="2">2</font></td>
+					<td align="center"><font color="#FFFFFF"
+					size="2" face="Arial"><strong><u>Okay</u></strong></font></td>
+					<td><font color="#FFFFFF" size="2">Nice try,
+					but other people have done better.</font></td>
+				</tr>
+				<tr>
+					<td align="center"><font color="#FFFFFF"><input
+					type="radio" name="rating" value="1">1</font></td>
+					<td align="center"><font color="#FFFFFF"
+					size="2" face="Arial"><strong><u>Junk</u></strong></font></td>
+					<td><font color="#FFFFFF" size="2">What kinda
+					crappy applet is this?</font></td>
+				</tr>
+				<tr>
+					<td align="center"><font color="#FFFFFF"><input
+					type="radio" name="rating" value="0">0</font></td>
+					<td align="center"><font color="#FFFFFF"
+					size="2" face="Arial"><strong><u>Other</u></strong></font></td>
+					<td><font color="#FFFFFF" size="2">Technical problem?  Doesn't run?
+					</font></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td align="right" valign="top"><font color="#FFFFFF"
+			size="2" face="Arial">* Comments:</font></td>
+			<td><textarea name="comments" rows="7" cols="50" WRAP="virtual"></textarea></td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2"><font color="#FFFFFF"
+			size="2" face="Arial">* These are required fields. &nbsp;&nbsp;&nbsp;&nbsp;
+			Those that prefer real e-mail: <A HREF="mailto:zstoner@aol.com"><B>zstoner@aol.com</B></A>.</font></td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2"><font color="#FFFFFF"
+			size="2" face="Arial"><input type="button"
+			value="Send It !" onclick="doSubmit()">&nbsp;&nbsp;&nbsp;&nbsp;<input
+			type="button" name="B1" value="Cancel" onclick="doClose()">&nbsp;&nbsp;&nbsp;&nbsp;<input
+			type="reset" value="Start Over"></font></td>
+		</tr>
+	</table>
+	</center></div>
+</form>
+<script language="JavaScript"><!--
+function doClose()
+{
+	close();
+}
+function doSubmit()
+{
+	document.WebForm.subject.value = "Stoneroids98 WebMail from " + document.WebForm.name.value
+	document.WebForm.submit();
+}
+// --></script>
+</body>
+</html>

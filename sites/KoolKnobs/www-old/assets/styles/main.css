@@ -1,0 +1,37 @@
+BODY {
+	font-family: Arial, sans-serif;
+}
+
+H1 {
+	color: #FA1E27;
+	border-top: solid 1px #9A9A9A;
+	border-bottom: solid 1px #9A9A9A;
+	
+}
+
+.MenuBg {
+	background-color: #FA1E27;
+	padding: 3px;
+	width: 150px;
+	margin: 0px 0 6px 15px;
+}
+
+.MainMenu {
+	font-family: Arial,sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #9A9A9A;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	padding: 3px;
+}
+
+.MainMenu A:Link, .MainMenu A:Visited {
+	text-decoration: none;
+	color: White;
+}
+
+.MainMenu A:Hover {
+	text-decoration: underline;
+	color: White;
+}

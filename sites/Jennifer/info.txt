@@ -1,0 +1,6 @@
+Homepage = http://members.xoom.com/jen_sweet/
+User name = jen_sweet
+Password = password
+FTP = ftp.xoom.com
+
+Xoon email = jen_sweet@xoommail.com

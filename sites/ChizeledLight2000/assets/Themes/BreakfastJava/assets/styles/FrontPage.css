@@ -1,0 +1,49 @@
+
+/* light blue #006699 */
+/* dark blue #003466 */
+/* light brown #FFEFD5 */
+/* dark brown #996633 */
+
+P.startpage {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	}
+
+A.startpage {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	color: blue;
+	}
+
+A:HOVER.startpage {
+	text-decoration: underline overline;
+	color: red;
+	}
+
+A:ACTIVE.startpage {
+	}
+
+A:VISITED.startpage {
+	}
+
+.TableBg {
+	color: #996633;
+	background-color: #FFEFD5;
+	}
+
+.WebCamBorder {
+	border-color: #BD9706;
+	}
+	
+DIV.MainH4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #003466;
+	border-style: solid;
+	border-width: 0px;
+	border-color:  #003466;
+	border-bottom-width: 1px; 
+	}

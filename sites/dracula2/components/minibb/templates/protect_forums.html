@@ -1,0 +1,23 @@
+<html>
+<HEAD><title>{$title}</title>
+{$l_meta}
+<LINK href="bb_mambo_component.css" type="text/css" rel="STYLESHEET">
+</HEAD>
+<body bgcolor=white>
+
+<table height="100%" align=center width={$tableParam[0]} border={$tableParam[5]} cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<tr>
+<td class=cell1 width="100%" valign=middle align=center>
+
+<img src="{$live_site}/components/minibb/img/keypwd.gif" width=31 height=31>
+<P>{$l_forumProtected}:
+
+<form action="{$indexphp}" method=post>
+<input type=password maxlength=30 size=20 name="allForums" value="" class="textForm">
+<input type=submit value="{$l_enterforums}" class="inputButton">
+</form>
+
+</td></tr></table>
+
+</body>
+</html>

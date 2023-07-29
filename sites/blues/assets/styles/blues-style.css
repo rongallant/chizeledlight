@@ -1,0 +1,105 @@
+
+P  {
+	font-family: Arial;
+	font-size: 16px;
+	}
+
+LI {
+	font-family: Arial;
+	font-size: 16px;
+	}
+
+PRE { 
+	font-family: monospaced; 
+	font-size: 14px;
+	font-weight: bold;
+	border: solid #E6F8FD 2px;
+	background-color: white;
+	}
+	
+H1  {
+	font-family: Arial;
+	}
+
+H2  {
+	font-family: Arial;
+	}
+
+H3  {
+	font-family: Arial;
+	}
+
+H4  {
+	font-family: Arial;
+	}
+
+H5  {
+	font-family: Arial;
+	font-weight: bold;
+	}
+
+A  {
+	color: Blue;
+	}
+
+A:Hover  {
+	text-decoration: none;
+	}
+
+A:Active  {
+	color: Red;
+	}
+
+A:Visited  {
+	color: Purple;
+	}
+
+HR {
+	color: blue;
+	height: 1px;
+	}
+
+BLOCKQUOTE { 
+	font-family: Arial;
+	font-style: italic;
+	font-weight: bold;
+	 }
+	
+#bold { 
+	font-weight: bold;
+	 }
+
+#copyright { 
+	font-family: Arial;
+	font-size: 11px;
+	color: Gray;
+	width: 50%;
+	 }
+
+	
+/* START Menu */ 
+#topmenu	{ 
+	font-family: Arial;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bolder;
+	}
+	
+A.MenuLink {
+	text-decoration: none;
+	}
+	
+A:Hover.MenuLink {
+	text-decoration: underline;
+	}
+	
+A:Active.MenuLink {
+	
+	}
+	
+A.MenuLink {
+	
+	}
+
+/* START Menu */ 

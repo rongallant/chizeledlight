@@ -1,0 +1,88 @@
+<HTML><HEAD>
+<SCRIPT language="javascript1.2">
+<!-- 
+
+function getText() {
+	document.sform.input.focus();
+}
+
+function search(form) {
+
+if (form.engine[0].checked) {
+	url = "http://search.go2net.com/crawler?general=";
+	url += form.input.value; }
+if (form.engine[1].checked) {
+	url = "http://www.hotbot.com/?MT=";
+	url += form.input.value; }	
+if (form.engine[2].checked) {
+	url = "http://www.altavista.com/cgi-bin/query?pg=q&q=";
+	url += form.input.value; }
+if (form.engine[3].checked) {
+	url = "http://search.yahoo.com/bin/search?p=";
+	url += form.input.value; }
+if (form.engine[4].checked) {
+	url = "http://ftpsearch.lycos.com/cgi-bin/search?form=medium&query=";
+	url += form.input.value; }
+if (form.engine[5].checked) {
+	url = "http://www.deja.com/[ST_rn=qs]/qs.xp?OP=dnquery.xp&QRY=";
+	url += form.input.value; }
+
+var root;
+if (opener.closed) {
+root=window.open('','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,copyhistory=no');
+root.location.href = url;
+} else {
+opener.location.href = url;
+}
+}
+
+function open_link(url) {
+var root;
+if (opener.closed) {
+root=window.open('','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,copyhistory=no');
+root.location.href = url;
+} else {
+opener.location.href = url;
+}
+}
+ -->
+</SCRIPT><TITLE>Breakfast Java Search Remote</TITLE></HEAD>
+<BODY BGCOLOR="PapayaWhip" LEFTMARGIN="0" ONLOAD="getText();"><DIV ALIGN="center">
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="0"><TR><TD>
+
+
+
+<FORM NAME="sform" ACTION="javascript:search(document.sform);//" METHOD="get">
+
+<TABLE BGCOLOR="#608ac6" BORDER="0" CELLPADDING="5" CELLSPACING="0" WIDTH="100%">
+<TR><TD ALIGN="LEFT">
+<DIV ALIGN="center"><FONT FACE="Helvetica,arial" SIZE="4" COLOR="#fffbe1"><B>Breakfast Java Remote</B></FONT></DIV>
+</TD></TR></TABLE>
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+<TR><TD ALIGN="LEFT">
+<A HREF="javascript:open_link('http://redrival.com/ron/startpage/')">
+<FONT SIZE="1" FACE="arial,helvetica">Back To Breakfast Java</FONT></A>
+</TD><TD ALIGN="right">
+<A HREF="#" onClick="self.close();"><FONT FACE="arial,helvetica" SIZE="1">CLOSE REMOTE</FONT></A>
+</TD></TR></TABLE>
+
+	<INPUT TYPE="text" NAME="input" SIZE="30" MAXLENGTH="200">
+	<INPUT TYPE="submit" VALUE="Go"><BR>
+
+
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+<TR><TD ALIGN="LEFT">
+<FONT FACE="arial,helvetica" SIZE="1">
+<INPUT TYPE="radio" NAME="engine" CHECKED> <A HREF="javascript:open_link('http://www.go2net.com/')"><B>MetaCrawler</B></A><BR>
+<INPUT TYPE="radio" NAME="engine"> <A HREF="javascript:open_link('http://www.hotbot.com/')"><B>HotBot</B></A><BR>
+<INPUT TYPE="radio" NAME="engine"> <A HREF="javascript:open_link('http://www.altavista.com/')"><B>AltaVista</B></A>
+</B></FONT>
+</TD><TD ALIGN="right"><FONT FACE="arial,helvetica" SIZE="1">
+<A HREF="javascript:open_link('http://www.yahoo.com/')"><B>Yahoo</B></A> <INPUT TYPE="radio" NAME="engine"><BR>
+<A HREF="javascript:open_link('http://www.ftpsearch.lycos.com/')"><B>FTP Search</B></A> <INPUT TYPE="radio" NAME="engine"><BR>
+<A HREF="javascript:open_link('http://www.dejanews.com/')"><B>Deja News</B> <INPUT TYPE="radio" NAME="engine"></A>
+</B></FONT></TD></TR></TABLE>
+</TD></TR></TABLE></DIV>
+</FORM>
+</BODY></HTML>

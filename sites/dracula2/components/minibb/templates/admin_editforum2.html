@@ -1,0 +1,62 @@
+<table align=center width="{$tableParam[0]}" border={$tableParam[5]} cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<tr>
+<td class=cell1 width="50%" valign=top>
+<script language="JavaScript">
+var check;
+function alertForumDelete(){
+if (!check || check==0) check = 1;
+else if (check == 1) check = 0;
+if (check == 1) {
+alert('Forum will be deleted WITHOUT prompt!\nAlso ALL topics and ALL posts associated with this forum\nWILL BE DELETED!!!');
+}
+}
+
+function paste_strinL(strinL){ 
+var input=document.forms["forumform"].elements["forumicon"];
+input.value='';
+input.value=strinL;
+}
+
+</script>
+
+<form name=forumform action="{$bb_admin}" method=post class=formStyle>
+<p><font color=red><b>{$warning}</b></font>
+<p><b>{$l_editforum}</b>
+<br>
+{$l_forumname}:
+<br>
+<input type=text name=forumname value="{$forumname}" size=25 maxlength=255 class=textForm>
+<br>
+{$l_forumdesc}:
+<br>
+<textarea name=forumdesc cols=25 rows=15 wrap=virtual>{$forumdesc}</textarea>
+<br>
+{$l_forumIcon}:
+<br>
+<input type=text size=25 maxlength=255 name=forumicon value="{$forumicon}" class=textForm>
+<br>
+{$l_forumorder}:
+<select name=forum_order>
+{$forumorder}
+</select>
+<br>
+{$l_deleteforum} ({$l_noAsking}): <input type=checkbox name=deleteforum onClick="JavaScript:alertForumDelete();">
+<NOSCRIPT><font color=red><b>No asking twice - and your forum, all topics and posts in it WILL BE DELETED!!!</b></font></NOSCRIPT>
+
+<input type=hidden name=action value=editforum3>
+<input type=hidden name=forumID value="{$forumID}">
+<br>
+<input type=submit value="{$l_editforum}" class=inputButton>
+</form>
+
+<p>{$l_fastforumspreview}
+<br>
+{$forumsPreview}
+</td>
+<td class=cell1 width="50%" valign=top>
+<p><b>{$l_forumIcon}</b>
+<p>
+{$iconList}
+</td>
+</tr>
+</table>

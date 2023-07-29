@@ -1,0 +1,30 @@
+<center>
+<table bgcolor="{$tableParam[1]}" width="{$tableParam[0]}" border={$tableParam[5]} cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<tr class=sectiontableentry2><td>
+
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width="50%" valign=top><div class=header>&nbsp;{$l_lastDiscussions}</div></td>
+<td width="50%" align=right valign=top><div class=header><small>{$l_sortedBy}&nbsp;{$sortedByT}.<br><i><a href="{$indexphp}sortBy={$sortByNew}">{$l_sortBy}&nbsp;{$sortByT}</a></i></small></div></td>
+</tr></table>
+
+</td></tr>
+</table>
+<br>
+
+<table bgcolor="{$tableParam[1]}" width="{$tableParam[0]}" border={$tableParam[5]} cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<tr class=sectiontableheader>
+<td width="5%">&nbsp;</td>
+<td width="50%"><small><b>{$l_topic}</b></small></td>
+<td width="10%" align=center><small><b>{$l_replies}</b></small></td>
+<td width="10%" align=center><small><b>{$l_views}</b></small></td>
+<td width="15%" align=center><small><b>{$l_author}</b></small></td>
+<td width="10%" align=center><small><b>{$l_posted}</b></small></td>
+</tr>
+
+{$listTopics}
+
+</table>
+
+</center>
+<br>

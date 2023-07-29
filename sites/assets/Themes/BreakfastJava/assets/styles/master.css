@@ -1,0 +1,217 @@
+
+/* light blue #006699 */
+/* dark blue #003466 */
+/* light brown #FFEFD5 */
+/* dark brown #996633 */
+
+BODY	{
+    scrollbar-face-color: #FFEFD5;
+    scrollbar-highlight-color: #EFE3AC;
+    scrollbar-shadow-color: #463A1A;
+	scrollbar-3dlight-color: #CCCC99;
+    scrollbar-darkshadow-color: #896E2B;
+    scrollbar-track-color: #006699;
+    scrollbar-arrow-color: #003466;
+	}
+
+TD.BODY	{
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	}
+	
+H1	{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #003466;
+	background-color: #FFEFD5;
+	border-style: solid;
+	border-color: #FFEFD5;
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	}
+
+H2  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	color: #003466;
+	border-color: #003466;
+	border-style: solid;
+	border-top-width: 1px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	}
+
+H3  {
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	}
+
+H4  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-variant: small-caps;
+	color: black;
+	}
+
+A  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	color: blue;
+	}
+
+A:HOVER {
+	text-decoration: underline;
+	}
+
+A:ACTIVE {
+	color: red;
+	}
+
+A:VISITED {
+	color: purple;
+	}
+
+P	{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	}
+
+TD  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	}
+
+HR  {
+	color: #003466;
+	height: 1px;
+	}
+
+INPUT	{
+	font-family: null;
+	}
+
+DT  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #006699;
+	}
+
+DD  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin-bottom: 10px;
+	}
+
+/* Start Sub Menu */
+
+DIV.SubMenuBg {
+	border-style: solid;
+	border-width: 0px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-color: #003466;	
+	background-color: #006699;
+	}
+
+A.#submenu  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	}
+
+A:HOVER#submenu {
+	color: white;
+	text-decoration: underline;
+	}
+
+A:ACTIVE#submenu {
+	color: white;
+	}
+
+A:VISITED#submenu {
+	color: #white;
+	}
+
+A#submenuOver  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	background-color: #003466;
+	}
+
+A:HOVER#submenuOver {
+	color: white;
+	text-decoration: underline;
+	}
+
+A:VISITED#submenuOver  {
+	color: white;
+	}
+
+/* End Sub Menu */
+
+#emaillogin	{
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+#picgold	{
+	border-style: solid;
+	border-color: #BB950F;
+	border-width: 3px;
+	}
+
+#more	{
+	font-weight: bold;
+	text-align: right;
+	border-style: solid;
+	border-color: #006699;
+	border-top-width: 2px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	}
+#NTVimage {
+	border-style: solid;
+	border-color: #006699;
+	border-width: 3px;
+	}
+
+#mainInput {
+	font-size: 10px;
+	}
+
+
+/* START Top Frame Menu */
+A.TopFrame  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	}
+
+A:HOVER.TopFrame {
+	color: white;
+	text-decoration: underline;
+	}
+
+A:VISITED.TopFrame {
+	color: white;
+	}
+
+/* END Top Frame Menu */

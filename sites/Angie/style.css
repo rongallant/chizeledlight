@@ -1,0 +1,45 @@
+
+P  {
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	color: black;
+	}
+
+H1  {
+	font-family: arial, sans-serif;
+	font-size: 28px;
+	color: black;
+	}
+
+H2  {
+	font-family: arial, sans-serif;
+	font-size: 24px;
+	color: black;
+	}
+
+H3  {
+	font-family: arial, sans-serif;
+	font-size: 22px;
+	color: black;
+	}
+
+A  {
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: underline;
+	color: red;
+	}
+
+A:Hover  {
+	text-decoration: none;
+	color: White;
+	}
+
+A:Active  {
+	color: White;
+	}
+
+A:Visited  {
+	color: red;
+	}

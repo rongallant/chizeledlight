@@ -1,0 +1,15 @@
+A {	
+	color: blue;
+	text-decoration: none;
+	}
+
+A:Hover {
+	text-decoration: underline;
+	}
+
+A:Active {
+	}
+
+A:Visited {	
+	color: purple;
+	}

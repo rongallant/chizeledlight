@@ -1,0 +1,70 @@
+/* light purple #C1AEEF */
+/* dark purple #845EDA */
+/* light gold #DFCC7F */
+/* dark gold #BD9706 */
+
+/* START Green Specific */
+
+P.startpage {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	}
+
+A.startpage {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 12px;
+	color: #BD9706;
+	}
+
+A:HOVER.startpage {
+	text-decoration: underline;
+	}
+
+A:ACTIVE.startpage {
+	}
+
+A:VISITED.startpage {
+	color: #845EDA;
+	}
+
+.TableBg {
+	color: #845EDA;
+	background-color: #C1AEEF;
+	}
+
+.WebCamBorder {
+	border-color: #BD9706;
+	}
+	
+DIV.MainH4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #845EDA;
+	border-style: solid;
+	border-width: 0px;
+	border-color:  #BD9706;
+	border-bottom-width: 1px; 
+	}
+
+/* START Top Frame Menu */
+A.TopFrame  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #845EDA;
+	text-decoration: none;
+	}
+
+A:HOVER.TopFrame {
+	color: #845EDA;
+	text-decoration: underline;
+	}
+
+A:VISITED.TopFrame {
+	color: #845EDA;
+	}
+/* END Top Frame Menu */
+

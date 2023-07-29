@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+	
+<SCRIPT LANGUAGE="JavaScript1.2">
+var Counter = 1;
+var url;
+var w = 300;
+var h = 300;
+
+function initArray() {
+	this.length = initArray.arguments.length;
+	for(var i = 0; i < this.length; i++) 
+		this[i+1] = initArray.arguments[i]
+}
+
+<!-- Below is our list of slides -->
+var Slides = new initArray(
+"slides/thmart01.gif",
+"slides/thmart03.gif",
+"slides/thmart04.gif",
+"slides/thmart05.gif",
+"slides/thmart06.gif"
+);
+
+var bigSlides = new initArray(
+"../html/art01.html",
+"../html/art03.html",
+"../html/art04.html",
+"../html/art05.html",
+"../html/art06.html"
+);
+
+url = bigSlides[1];
+
+function Move(dir) { 
+	if(dir == 1) Counter++;
+	if(dir == -1) Counter--;
+	if(Counter > Slides.length) Counter = 1;
+	if(Counter == 0) Counter = Slides.length;
+	document.thumb.src = Slides[Counter];
+	url = bigSlides[Counter];
+}	
+
+
+function showBig() {
+	
+	if (Counter == 1) { w = 200; h = 200; }
+	if (Counter == 2) { w = 500; h = 500; }
+	if (Counter == 3) { w = 100; h = 100; }
+
+	var windowprops = "location=no,scrollbars=yes,menubars=no,toolbars=no,resizable=yes" +
+	",width=" + w + ",height=" + h;
+	
+	popup = window.open(url,"TheBigPicture",windowprops);
+}
+
+</SCRIPT>
+</head>
+
+<body>
+
+
+<IMG NAME="thumb" SRC="slides/thmart01.gif" WIDTH=100 HEIGHT=100 ALT="" BORDER="0"><br>
+<A HREF="#" ONCLICK="Move(-1);"><IMG SRC="images/rewind.gif" BORDER="0"></A>
+<A HREF="#" ONCLICK="showBig();"><IMG SRC="images/rewind.gif" BORDER="0"></A>
+<A HREF="#" ONCLICK="Move(1);"><IMG SRC="images/fastforward.gif" BORDER="0"></A>
+
+</body>
+</html>

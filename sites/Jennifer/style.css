@@ -1,0 +1,33 @@
+P  {}
+
+H1  {}
+
+H2  {}
+
+H3  {}
+
+A  {
+	font-weight : bold;
+	color : Aqua;
+}
+
+A:Visited  {
+	color : Blue;
+	font-weight : bold;
+}
+
+A:Active  {}
+
+A:Hover  {
+	font-weight : bold;
+	color : Yellow;
+	text-decoration : none;
+}
+
+BODY  {
+	font : helvetica,arial;
+	color : White;
+	font-family : Arial;
+	font-size : small;
+}
+

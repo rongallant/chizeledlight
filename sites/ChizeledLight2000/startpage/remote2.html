@@ -1,0 +1,70 @@
+<HTML><HEAD>
+<SCRIPT LANGUAGE="JavaScript1.2">
+<!--
+function goget(locale)
+{
+opener.location.href = locale;
+}
+-->
+</SCRIPT>
+<script language="javascript">
+
+<!--
+var remote = null; 
+function arfie_remote() { 
+remote = window.open('', 'Arfie_Remote', 'width=630,height=115,resizable=yes');
+if (remote != null) { 
+if (remote.opener == null) 
+remote.opener = self; 
+remote.location.href = 'http://www.dogpile.com/remote.html'; 
+}} 
+// -->
+
+</script>
+
+
+
+<TITLE>Breakfast Java Search Remote</TITLE>
+</HEAD><BODY BGCOLOR="PapayaWhip">
+
+<TABLE BGCOLOR="#608ac6" WIDTH="100%" BORDER="0" CELLPADDING="5" CELLSPACING="0"><TR><TD ALIGN="LEFT"><FONT FACE="Helvetica,arial" SIZE="4" COLOR="#fffbe1"><B>Breakfast Java Remote</B></FONT></TD></TR></TABLE>
+
+<A HREF="javascript:goget('http://redrival.com/ron/startpage/')"><FONT SIZE="1" FACE="arial,helvetica">Back To Breakfast Java</FONT></A>
+
+<a href="javascript:arfie_remote()"><font size = "+1">Dogpile Remote</font></a>
+
+
+<FORM NAME="mfrm" METHOD="GET" ACTION="JavaScript:goget('http://www.altavista.com/cgi-bin/query')">
+	<INPUT TYPE="hidden" NAME="pg" VALUE="q">
+	<INPUT NAME="q" SIZE="20" MAXLENGTH="200" VALUE="">
+	<INPUT TYPE="image" SRC="graphics/gobutton.gif" BORDER="0" NAME="search" VALUE="Search" width="34" height="18">
+	<A HREF="JavaScript:goget('http://www.altavista.com/')"><FONT FACE="arial,helvetica" SIZE="2"><B>AltaVista</B></FONT></A>
+</FORM>
+
+<FORM METHOD="get" ACTION="JavaScript:goget('http://www.hotbot.com/')">
+	<INPUT TYPE="hidden" NAME="_v" VALUE="2">
+	<INPUT NAME="MT" SIZE="20" MAXLENGTH="200">
+	<INPUT TYPE="image" SRC="graphics/gobutton.gif" BORDER="0" VALUE="Search" width="34" height="18"><A href="javascript:goget('http://www.hotbot.com/')"><FONT face="arial,helvetica" size="2"><B>HotBot</B></FONT></A>
+</FORM>
+
+<FORM METHOD="GET" ACTION="JavaScript:goget('http://search.yahoo.com/bin/search?')">
+	<INPUT SIZE="20" NAME="p">
+	<INPUT TYPE="image" SRC="graphics/gobutton.gif" BORDER="0" VALUE="Search" width="34" height="18">
+	<A HREF="javascript:goget('http://www.yahoo.com/')"><FONT face="arial,helvetica" size="2"><B>Yahoo</B></FONT></A>
+</FORM>
+
+<FORM METHOD="GET" ACTION="JavaScript:goget('http://ftpsearch.lycos.com/cgi-bin/search')">
+	<INPUT TYPE="hidden" NAME="form" VALUE="medium">
+	<INPUT NAME="query" SIZE="20" VALUE="">
+	<INPUT TYPE="image" SRC="graphics/gobutton.gif" BORDER="0" VALUE="Search" width="34" height="18">
+	<A HREF="javascript:goget('http://ftpsearch.lycos.com/')"><FONT FACE="arial,helvetica" SIZE="2"><B>FTP Search</B></FONT></A>
+</FORM>
+
+<FORM ACTION="JavaScript:goget('http://www.dejanews.com/[ST_rn=qs]/qs.xp')" METHOD="get">
+	<INPUT TYPE="hidden" NAME="OP" VALUE="dnquery.xp">
+	<INPUT TYPE="text" NAME="QRY" SIZE="20">
+	<INPUT TYPE="image" SRC="graphics/gobutton.gif" BORDER="0" VALUE="Search" width="34" height="18">
+	<A HREF="javascript:goget('http://www.dejanews.com/')"><FONT FACE="arial,helvetica" SIZE="2"><B>Deja News</B></FONT></A>
+</FORM>
+
+</BODY></HTML>

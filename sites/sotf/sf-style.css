@@ -1,0 +1,29 @@
+BODY  {
+	font-family: Arial;
+	background-color: #9e8665;
+	background-image: url("graphics/beigeback.jpg");
+}
+
+P  {}
+
+H1  {}
+
+H2  {}
+
+H3  {}
+
+A:link {
+	color : #990000;
+}
+
+A:hover  {
+	color: #006600;
+}
+
+A:active  {
+	color: #006600;
+}
+
+A:visited  {
+	color : #006600;
+}

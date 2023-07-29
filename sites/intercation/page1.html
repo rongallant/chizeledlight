@@ -1,0 +1,206 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<SCRIPT LANGUAGE="JavaScript1.1">
+<!--DocOzone's Javascript code, copyright 1997
+// http://www.ozones.com/
+
+window.onerror = null;
+var netscape = 0;
+var goodIE = 0;
+
+if (document.images) {
+        spheres = new Array(5);
+for (m=0; m<=4; m++) { 
+spheres[m] = new Image(); }
+        spheres[0].src = "sphere/sphere1.jpg";
+        spheres[1].src = "sphere/sphere2.jpg";
+        spheres[2].src = "sphere/sphere3.jpg";
+        spheres[3].src = "sphere/sphere4.jpg";
+		spheres[4].src = "sphere/sphere5.jpg"; }
+		
+function swapsphere1() {
+if (document.images) {
+setTimeout('document.sphere1.src = spheres[0].src',0);
+setTimeout('document.sphere1.src = spheres[1].src',75);
+setTimeout('document.sphere1.src = spheres[2].src',150);
+setTimeout('document.sphere1.src = spheres[3].src',225);
+
+setTimeout('document.sphere1.src = spheres[3].src',525);
+setTimeout('document.sphere1.src = spheres[2].src',600);
+setTimeout('document.sphere1.src = spheres[1].src',675);
+setTimeout('document.sphere1.src = spheres[0].src',750);  }}
+
+function swapsphere2() {
+if (document.images) {
+setTimeout('document.sphere2.src = spheres[0].src',0);
+setTimeout('document.sphere2.src = spheres[1].src',75);
+setTimeout('document.sphere2.src = spheres[2].src',150);
+setTimeout('document.sphere2.src = spheres[3].src',225);  
+
+setTimeout('document.sphere2.src = spheres[3].src',525);
+setTimeout('document.sphere2.src = spheres[2].src',600);
+setTimeout('document.sphere2.src = spheres[1].src',675);
+setTimeout('document.sphere2.src = spheres[0].src',750);  }}
+
+function swapsphere3() {
+if (document.images) {
+setTimeout('document.sphere3.src = spheres[0].src',0);
+setTimeout('document.sphere3.src = spheres[1].src',75);
+setTimeout('document.sphere3.src = spheres[2].src',150);
+setTimeout('document.sphere3.src = spheres[3].src',225);  
+
+setTimeout('document.sphere3.src = spheres[3].src',525);
+setTimeout('document.sphere3.src = spheres[2].src',600);
+setTimeout('document.sphere3.src = spheres[1].src',675);
+setTimeout('document.sphere3.src = spheres[0].src',750);  }}
+
+function swapsphere4() {
+if (document.images) {
+setTimeout('document.sphere4.src = spheres[0].src',0);
+setTimeout('document.sphere4.src = spheres[1].src',75);
+setTimeout('document.sphere4.src = spheres[2].src',150);
+setTimeout('document.sphere4.src = spheres[3].src',225);  
+
+setTimeout('document.sphere4.src = spheres[3].src',525);
+setTimeout('document.sphere4.src = spheres[2].src',600);
+setTimeout('document.sphere4.src = spheres[1].src',675);
+setTimeout('document.sphere4.src = spheres[0].src',750);  }}
+
+function swapsphere5() {
+if (document.images) {
+setTimeout('document.sphere5.src = spheres[0].src',0);
+setTimeout('document.sphere5.src = spheres[1].src',75);
+setTimeout('document.sphere5.src = spheres[2].src',150);
+setTimeout('document.sphere5.src = spheres[3].src',225);  
+
+setTimeout('document.sphere5.src = spheres[3].src',525);
+setTimeout('document.sphere5.src = spheres[2].src',600);
+setTimeout('document.sphere5.src = spheres[1].src',675);
+setTimeout('document.sphere5.src = spheres[0].src',750);  }}
+
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		tv_1_over = newImage("graphics/tv_1-over.jpg");
+		tv_2_over = newImage("graphics/tv_2-over.jpg");
+		tv_3_over = newImage("graphics/tv_3-over.jpg");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+
+
+	<TITLE>Intercation Solutions</TITLE>
+</HEAD>
+<BODY BGCOLOR="white" ONLOAD="preloadImages();">
+
+<TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="100%" HEIGHT="100%"><TR><TD>
+<DIV ALIGN="center">
+<TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="575">
+
+<TR><TD><IMG SRC="graphics/fracor-tl.gif" WIDTH=19 HEIGHT=19 ALT="" BORDER="0"></TD>
+
+<TD BACKGROUND="graphics/frame-t.gif"><IMG SRC="graphics/frame-t.gif" WIDTH=1 HEIGHT=19 ALT="" BORDER="0"></TD>
+
+<TD><IMG SRC="graphics/fracor-tr.gif" WIDTH=19 HEIGHT=19 ALT="" BORDER="0"></TD></TR>
+
+<TR><TD BACKGROUND="graphics/frame-l.gif">&nbsp;</TD>
+
+<TD><TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="100%"><TR>
+
+<TD VALIGN="top"><IMG SRC="graphics/title.gif" WIDTH=314 HEIGHT=111 ALT="" BORDER="0"></TD>
+
+<TD ALIGN="right" VALIGN="top"><A HREF="#" onMouseOver="swapsphere1(); swapsphere2(); swapsphere3(); swapsphere4(); swapsphere5(); return true"><IMG NAME="tv_1" SRC="graphics/tv_1.jpg" WIDTH=202 HEIGHT=111 BORDER="0"></A></TD></TR></TABLE></TD>
+
+<TD BACKGROUND="graphics/frame-r.gif">&nbsp;</TD></TR>
+
+<TR><TD BACKGROUND="graphics/frame-l.gif">&nbsp;</TD>
+
+<TD><TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="100%"><TR>
+
+<TD ROWSPAN="2" VALIGN="top"><IMG SRC="graphics/title2.gif" WIDTH=120 HEIGHT=72 ALT="" BORDER="0"></TD>
+
+<TD><IMG SRC="graphics/tail-wide.gif" WIDTH=158 HEIGHT=19 ALT="" BORDER="0"></TD>
+
+<TD BACKGROUND="graphics/frame-b.gif" WIDTH="100%"><IMG SRC="graphics/frame-b.gif" WIDTH=1 HEIGHT=19 ALT="" BORDER="0"></TD></TR>
+
+<TR><TD VALIGN="top"><IMG ALT="" BORDER=0 HEIGHT=53 SRC="graphics/tail-wide2.gif" WIDTH=158></TD>
+<TD>
+
+
+<A HREF="index.html"
+ONMOUSEOVER="swapsphere1(); changeImages('tv_1', 'graphics/tv_1-over.jpg'); return true"
+ONMOUSEOUT="changeImages('tv_1', 'graphics/tv_1.jpg'); return true;">
+<IMG SRC="sphere/sphere1.jpg"  BORDER=0 name="sphere1"></a>
+
+<A HREF="index.html"
+ONMOUSEOVER="swapsphere2(); changeImages('tv_1', 'graphics/tv_2-over.jpg'); return true"
+ONMOUSEOUT="changeImages('tv_1', 'graphics/tv_1.jpg'); return true;"><IMG SRC="sphere/sphere1.jpg"  BORDER=0 name="sphere2"></a>
+
+<A HREF="index.html"
+ONMOUSEOVER="swapsphere3(); changeImages('tv_1', 'graphics/tv_3-over.jpg'); return true"
+ONMOUSEOUT="changeImages('tv_1', 'graphics/tv_1.jpg'); return true;"><IMG SRC="sphere/sphere1.jpg"  BORDER=0 name="sphere3"></a>
+
+<A HREF="index.html" onMouseOver="swapsphere4(); return true"><IMG SRC="sphere/sphere1.jpg"  BORDER=0 name="sphere4"></a>
+
+<A HREF="index.html" onMouseOver="swapsphere5(); return true"><IMG SRC="sphere/sphere1.jpg"  BORDER=0 name="sphere5"></a>
+
+</TD></TR>
+</TABLE>
+
+</TD>
+<TD VALIGN="top"><IMG SRC="graphics/fracor-br.gif" WIDTH=19 HEIGHT=19 ALT="" BORDER="0"></TD>
+</TR>
+
+<TR>
+<TD BACKGROUND="graphics/frame-l.gif">&nbsp;</TD>
+<TD>
+<TABLE CELLPADDING="10" CELLSPACING="2" BORDER="0" WIDTH="547"><TR><TD>
+
+
+
+<BR><BR><BR>
+
+<DIV ALIGN="center"><FONT FACE="Arial,Helvetica" SIZE="3"><I>We will design a future for your company or learning institution.</I></FONT>
+<BR><BR><BR>
+Contact:<BR><BR>
+<B>Tom Gallant</B><BR>
+1-709-747-3009<BR>
+tgallant@email.com</DIV>
+<BR><BR>
+</TD></TR></TABLE>
+</TD>
+
+<TD BACKGROUND="graphics/frame-r.gif" VALIGN="top"><IMG SRC="graphics/tail-small.gif" WIDTH=19 HEIGHT=20 ALT="" BORDER="0"></TD>
+</TR>
+
+<TR>
+<TD><IMG SRC="graphics/fracor-bl.gif" WIDTH=19 HEIGHT=19 ALT="" BORDER="0"></TD>
+<TD BACKGROUND="graphics/frame-b.gif"><IMG SRC="graphics/frame-b.gif" WIDTH=1 HEIGHT=19 ALT="" BORDER="0"></TD>
+<TD><IMG SRC="graphics/fracor-br.gif" WIDTH=19 HEIGHT=19 ALT="" BORDER="0"></TD>
+</TR>
+
+
+
+</TABLE></DIV>
+</TD></TR></TABLE>
+</BODY></HTML>

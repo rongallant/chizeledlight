@@ -1,0 +1,29 @@
+P  {}
+
+H1  {}
+
+H2  {}
+
+H3  {}
+
+A  {
+	color : #0099FF;
+}
+
+A:Visited  {
+	color : #9966FF;
+}
+
+A:Active  {}
+
+A:Hover  {
+	color : Yellow;
+}
+
+BODY  {
+	font-family : Arial;
+	font-size : medium;
+	background-color : #020679;
+	color : White;
+}
+

@@ -1,0 +1,12 @@
+_038574_HouseFromVan.jpg,HouseFromVan.jpg,311,233
+_038574_me.jpg,me.jpg,126,158
+_038574_newyears982.jpg,newyears982.jpg,365,288
+_038574_pic_3ofus.jpg,pic_3ofus.jpg,311,236
+_038574_pic_ariana.jpg,pic_ariana.jpg,311,236
+_038574_pic_miata1.jpg,pic_miata1.jpg,311,236
+_038574_pic_miata2.jpg,pic_miata2.jpg,311,236
+_038574_pic_mickey2000.jpg,pic_mickey2000.jpg,311,236
+_038574_pic_mygirls.jpg,pic_mygirls.jpg,311,236
+_038574_pic_newyears98.jpg,pic_newyears98.jpg,311,236
+_038574_pic_office1.jpg,pic_office1.jpg,311,236
+_038574_pic_thanksgiving00.jpg,pic_thanksgiving00.jpg,311,236

@@ -1,0 +1,29 @@
+<table align=center width="{$tableParam[0]}" border={$tableParam[5]} cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<tr><td>
+
+<P><b><font color=red>{$warning}</font></b>
+
+<table width="100%" border=1 cellspacing=0 cellpadding=4>
+<tr><td width="10%" align=right valign=top><p><b>{$l_forums}</b></td>
+<td width="90%" valign=top>
+<li><p><a href="./{$bb_admin}&action=addforum1">{$l_addforum}</a>
+<li><p><a href="./{$bb_admin}&action=editforum1">{$l_editforum}</a>
+</td></tr>
+
+<tr><td align=right valign=top><p><b>{$l_users}</b></td>
+<td valign=top>
+<li><p><a href="{$bb_admin}&action=removeuser1">{$l_removeUser}</a>
+<li><p><a href="{$bb_admin}&action=banUsr1">{$l_ban}</a>
+<li><p><a href="{$bb_admin}&action=searchusers">{$l_searchUsers}</a>
+<li><p><a href="{$bb_admin}&action=deleteban1">{$l_unsetBan}</a>
+<li><p><a href="{$bb_admin}&action=delsendmails1">{$l_deleteSendmails}</a>
+<li><p><a href="{$bb_admin}&action=exportemails">{$l_exportEmails}</a>
+<li><p><a href="{$live_site}/components/minibb/templates/admin_manual.html" target=_blank>MiniBB {$l_manual}</a>
+</td>
+</tr>
+
+<tr><td align=left valign=top colspan=2><p><b><a href="{$bb_admin}&mode=logout">{$l_logout}</a></b></td></tr>
+</table>
+
+</td></tr></table>
+

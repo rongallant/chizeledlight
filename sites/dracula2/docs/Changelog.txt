@@ -1,0 +1,149 @@
+Changelog - Mambo Open Source 4.0.12
+------------------------------------
+
+01-02-2003
+
+- Language support added
+- Main Menu now positionable from administrator section
+- Fix to news, faqs, weblinks and articles when called from a sub-menu
+- Fix to mod_weather.php when msnbc.com is down
+- leftComponent.php & rightComponent.php now merged into component.php
+- configuration.php updated with help text and comments
+- New theme added - from Mambo 3.0.7
+- Manual_Installation.html in docs directory updated for 4.0.12
+
+02-02-2003
+
+- Fix to search when listing FAQs found items
+
+03-02-2003
+
+- Enhanced database indexes & variables types
+- Fix to news not displaying categories
+
+04-02-2003
+
+- Changed lang_pastarticles, html/pastarticles, to make desc more generic
+  for translation
+- Added support for wind in km/h in mod_weather (Thanks to Ralf Windhab)
+
+05-02-2003
+
+- Fixed bug in upgrade4011to4012.sql whereby main menu would not display
+- Made changes to classes/database.php and administrator/classes/database.php
+  in order to increase performance
+- Fixed administrator/classes/components.php so the page modules can be renamed
+- Fixed banner impressions double counting in banners.php
+- Removed references to $myIP and REMOTE_ADDR (not used) in banners.php
+
+07-02-2003
+
+- Support for register_globals OFF added
+- Search will now search weblink title fields
+
+13-02-2003
+
+- Removed the ability for a user to select a password during registration
+  password will be emailed to the user upon confirming registration
+- News admin section now lists image used when listing items 
+- Small fix to the sql upgrade file for 4.0.11 -> 4.0.12
+- Minor changes to gallery when displaying images
+- A description field is now available for when adding weblink items in admin
+  section
+
+** 4.0.12 RC1 RELEASED **
+
+14-02-2003
+
+- Language support fix for languages that use apostrophies
+- Added ability to add weblink description from userpage
+- Added language support to Theme files
+- Remove "Home" from being hardcoded into pathway.php
+
+** 4.0.12 RC2 RELEASED **
+
+15-02-2003
+
+- Added check to administrator/classes/components.php so that standard Mambo
+  components cannot be deleted
+
+17-02-2003
+
+- Changed graphpics to reflect name change from SiteServer to OpenSource
+- Added new graphics for legends 
+ 
+18-02-2003
+
+- Added more demo data to mambo4.sql and also updated dates for demo data
+- Changed font size for menu in default theme
+- Added new main menu component that is selectable as a page module.  This
+  provide the ablility to list categories in the menu component for news,
+  articles, faq and weblinks
+
+20-02-2003
+
+- The newsfeeds in Mambo have been removed due to a license restriction.
+  Newsfeeds were taken from moreover.com.  This has now been replaced
+  with a RDF/RSS parser from fase4.com and the database has been populated
+  with newsfeeds direct from sites that provide them.  The list is short
+  at the moment but with the help of the community this is expected to grow.
+
+24-02-2003
+
+- Major security exploit fixed.  It is recommend that ALL users upgrade
+  to 4.0.12 RC3 (this includes 3.0.7 and 4.0.11 users).
+
+** 4.0.12 RC3 RELEASED **
+
+- Minor cosmetic enhancements & HTML corrections
+- Improved security features for administration section
+- Upgrade scripts provided for BETA 3 and RC1 & RC2 users in sql directory
+- Removed pop-up when saving items in the inbuilt editor
+- Minor cosmetic changes to admin interface
+
+** 4.0.12 stable RELEASED **
+
+12-03-2003
+
+- Fixed banner image upload bug
+- Change the way sessions are handled in administrator/index.php
+- Added version.php to source for easier handling of version info
+- Added support for LoudMouth Open Source
+
+10-04-2003
+
+- Updated all files with language file links to remove the 
+  'absolute_path' variable from the include statement. This was
+  causing a security risk by others passing in this variable to
+  a url for their own php scripts.
+
+26-04-2003
+
+- Removed standard configuration.php and replaced with configuration-dist.php
+- Fixed permissions problem in gallery/uploadimage.php
+- Fixed permissions problem in user uploads in userpage.php
+- Added news syndication for news and articles (backend_news.php and backend_aritcles.php
+- Added fix for looping admin login problem to administrator/index.php 
+- Fixed minor bug in pathway.php add $path=''; at line 26
+- Fixed minor bug and e-mail bug in contact.php
+- Added support for e-mail and printing own content in displaypage.php & classes/html/displaypage.php.  New file in popups and emailfriend directories.
+- Fixed e-mail problems in e-mail friend
+- Removed mambo purple theme 
+- Fixed e-mail problems in registration.php
+- version.php updated to reflect new release
+- Change spelling of e-mail in language/eng/lang_email.php
+- Fixed bug in launching phpMyAdmin from within administrator/phpMyAdmin.php
+- Added language support for Telephone & Fax to contact us - language/eng/lang_contact.php and classes/html/contacthtml.php
+- Fixed error on line 59 of mainmenu2.php - replace $topid with ?topid
+- Updated docs/Manual_Installation.html
+- Added more RSS/RDF newsfeeds to mambov4.sql
+
+13-07-2003
+
+- 4.0.14 is a release that is basically 4.0.13 with patches 1 & 2.  This
+  release has been made to combat the hacked version of 4.0.13 that was
+  discovered on SourceForge.net.
+
+13-07-2003 
+
+- Patch 1 fixes a infinite loop problem in mainmenu and mainmenu2.php

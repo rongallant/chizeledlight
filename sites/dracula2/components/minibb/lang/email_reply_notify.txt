@@ -1,0 +1,18 @@
+SUBJECT>>Correo de aviso desde {$sitename}: Nueva Respuesta<<
+Hola,
+
+Ha recibido este mensaje porque se suscribió a este Tema "{$topicTitle}" en nuestros Foros y {$mini_user_usr} ha escrito o ha contestado dentro.
+
+Comienzo de su mensaje:
+--
+
+{$postTextSmall}
+
+--
+
+Vea todo el Tema en {$sitename}:
+
+{$main_url}/index.php?action=vthread&forum={$forum}&topic={$topic}&page=-1
+
+Paz,
+La máquina de miniBB

@@ -1,0 +1,73 @@
+body {
+	background-color: #487F7F;
+	font-family: Arial, san-serif;
+	font-size: 14px;
+}
+
+.app {
+	display: flex;
+	margin: 16px auto;
+	width: 950px;
+}
+
+.navigation {
+	max-height: 572px;
+	overflow: auto;
+	margin: 0 4px 0 0;
+}
+
+.navigation h5 {
+	color: white;
+	margin-bottom: 4px;
+}
+
+.navigation nav {
+	list-style: none;
+}
+
+.navigation nav a {
+	cursor: pointer;
+	padding: 2px 4px;
+	margin: 1px;
+	background-color: silver;
+	display: block;
+	text-decoration: none;
+}
+
+.navigation nav a:hover {
+	background-color: whitesmoke;
+}
+
+main .navigator {
+	background-image: url('./images/netscape-navigator-3-04-02.png');
+	height: 572px;
+	position: relative;
+	width: 800px;
+}
+
+main .navigator iframe {
+     position: absolute;
+    top: 147px;
+    left: 3px;
+    background-color: white;
+    width: 793px;
+    height: 405px;
+}
+
+main .navigator iframe * {
+	cursor: url('./images/default.cur'), default;
+}
+
+iframe::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+iframe::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+iframe::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+

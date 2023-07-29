@@ -1,0 +1,72 @@
+BODY {
+	background-color: #D9CCBD;
+	}
+
+A	{
+	color: navy;
+	text-decoration: underline;
+	}
+
+A:Hover	{
+	text-decoration: none;
+	}
+
+A:Active	{
+	color: #FF0000;
+	}
+
+A:Visited	{
+	color: #733939;
+	}
+
+H1	{
+	font-family: arial,san serif;
+	font-size: 28px;
+	text-align: center;
+	}
+
+H2	{
+	font-family: arial,san serif;
+	font-size: 20px;
+	}
+
+H3	{
+	font-family: arial,san serif;
+	font-size: 18px;
+	border-style: solid;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	}
+
+H4	{
+	font-family: arial,san serif;
+	font-size: 16px;
+	}
+
+p	{
+	font-family: arial,san serif;
+	font-size: 16px;
+	margin-left: 10px;
+	}
+
+TD	{
+	font-family: arial,san serif;
+	font-size: 16px;
+	}
+
+LI	{
+	font-family: arial,san serif;
+	font-size: 16px;
+	}
+
+HR	{
+	color: black;
+	height: 1px;
+	}
+
+#small	{
+	font-family: arial,san serif;
+	font-size: 12px;
+	}

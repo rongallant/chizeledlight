@@ -1,0 +1,454 @@
+
+				
+				Stoneroids 98	  Help 'N' Tips
+				
+
+Stoneroids98
+		v1.07 Overview
+		
+		
+			Stoneroids98 is a Java
+			applet that is loosely based on the classic arcade
+			game, Asteroids. The goal of course, is to destroy
+			the asteroids and enemy ships. Stoneroids98
+			adds to this new features like various types of
+			weapons, alien intelligence, and powerups. Also there
+			is an automatic high scoring system available, which
+			is rare in Java applets (due to the security
+			limitations in Java applets). Unlike Asteroids, you
+			don't die instantly once you hit something --
+			Stoneroids98 is based on a shield system,
+			and the game is over once your shield runs out.
+		
+
+
+<PRE>
+
+
+
+Scoring System
+		
+		
+			The scoring system quite complex,
+				which adds variety to the game. However, here are
+				some general patterns in scoring...
+			Asteroids: Point
+				value depends on size and speed, which measures
+				how difficult they are to shoot. Smaller, faster
+				asteroids yield the most points. Values usually
+				range from 10-200 points.
+			Comets: Appearing
+				occasionally, the score of these bonus items are
+				worth twice as much as their Asteroid brothers
+				when shot, plus they hold at least one powerup.
+				Values usually range between 50-200 points for
+				each hit.
+			Aliens: Since
+				aliens can do many things you can do, they are
+				worth more points if they do more stuff before
+				they are killed. Their point value depends on
+				game level and how much stuff they pick up or
+				shoot. When an alien dies, they also drop any and
+				all powerups they picked up along the way. Alien
+				values are 50xlevel, plus points for other
+				activities.
+			Level Bonus: There
+				is a standard end of level bonus which increases
+				in later levels, plus bonus points for the amount
+				of shields remaining and weapons owned.
+			You LOSE 5 points
+				every time you press the space bar to shoot. This
+				is an incentive for you to NOT
+				fire off as many rounds as possible. Five points
+				is not a big deal as you'll quickly be reaping
+				thousands of points.
+			You LOSE 25 x
+				Level points if you shoot a powerup.
+				Obviously this is something you should try to
+				avoid.
+			You'll discover several other ways
+				of scoring as well. Keep playing to find them
+				all.
+		
+		
+
+
+
+
+
+
+Various Targets
+				
+				
+				Your Ship: Your
+				mission? To stay alive against the countlessly
+				outnumbered forces!
+			
+		
+				 
+				Aliens: Alien
+				ships flying around just minding their own
+				business, unless provoked.
+				
+				    
+				
+			
+			Powerups: Various
+				colored egg-shaped powerups. Fly over them to
+				pick them up. Don't shoot these.
+				
+				  
+				Asteroids: Those
+				blue things floating around that you've gotta
+				shoot.
+				Comets: Just like asteroids, but
+				with a comet's tail trailing behind them. They
+				hold a powerup if you can hit the center.
+			
+				
+				
+
+
+				Powerup System
+				
+
+				
+				
+				Blue
+				Powerup
+				Shield Boost. Some extra
+				shield energy for your ship.
+			
+			
+				
+				Green
+				Powerup
+				Energy Coolant Boost. Cools
+				your laser temperature.
+			
+			
+				
+				Yellow
+				Powerup
+				Weapon Powerup. Various
+				effects on your weapons. See Weapon System below...
+			
+			
+				
+				Red
+				Powerup
+				Sub-Zero Powerup. For a
+				limited time, you can shoot as much as you want
+				without heating up your lasers.
+			
+			
+				
+				Purple
+				Powerup
+				Invincibility Powerup. For a
+				limited time, you are invincible and cannot be
+				damaged.
+			
+	
+
+
+
+
+	
+		Weapon System
+	
+	
+		
+			
+				
+			
+
+		
+			1 - Single Shot. Your
+				typical pea shooter weapon. You always have this
+				weapon and it cannot be damaged.
+			2 - Dual Shot. Two
+				angled shots come out.
+			3 - Tri Shot. Three
+				shots as a combination of Single and Dual Shot.
+				Available Level 2 or later.
+			4 - Quad Shot. Same
+				as the Tri Shot, but also one laser comes out
+				from behind. Available Level 3 or later.
+			5 - Square Shot. Four
+				lasers come out from front, back, left and right
+				sides. Available Level 4 or later.
+			6 - Mega Shot. Most
+				powerful weapon. Six lasers as a combination of
+				the Tri Shot and Square Shot. Available Level 5
+				or later.
+			Damaged
+				Weapons. Weapons
+				other than # 1 can be damaged if you are hit when
+				holding this weapon. A damaged weapon will glow RED
+				in the user display. The weapon may malfunction
+				when you try to shoot a damaged weapon. You can
+				repair a damaged weapon if you get a weapon powerup while holding the damaged weapon.
+			Heat
+				Seeking Weapons. Beginning
+				with Level 6, non-damaged weapons are upgraded to
+				Heat Seeking status via a weapon powerup. A damaged weapon will glow BLUE in the user display. But you lose the
+				Heat Seeking upgrade once you are hit. A Heat
+				Seeking Mega Shot is the most powerful weapon in
+				the game -- capable of wiping clean much of a
+				level in a few moments. Oh yeah!
+		
+		
+	
+
+	
+		Alien Ships
+	
+	
+		
+			In a way, alien ships are much
+				like you. They fly around, have shield and energy, can build
+				up their own scores as they shoot stuff, and can
+				pick up powerups to upgrade themselves. But they
+				are also after you.
+			Enemy ships can also get Invulnerability if they get a Purple powerup, and even 							upgrade their lasers
+				to Heat
+				Seeking status if they get
+				enough weapon
+				powerups. You're in trouble
+				if they upgrade to Heat Seeker lasers!
+			Enemy ships don't need coolant and thus cannot overheat their lasers.
+		
+
+				
+				The Rogue Ship
+			
+			
+				Part of the enemy defense
+				forces, these quick moving ships don't like you
+				at all and gladly will use its weapon arsenal to
+				erase you. They have single, twin or triple
+				lasers, and have tough armor against asteroid
+				impacts, but are weak against enemy lasers.
+			
+			
+				
+				
+			
+			
+				
+				The Miner Ship
+			
+			
+				Originally working in the
+				asteroid mines, they have been called into
+				service to destroy you. They are generally slower
+				and don't always chase after you. They have much
+				tougher armor than the Rogues and are invincible
+				to asteroid collisions. Their mild weaponry
+				consists of only a single laser. However their
+				real danger comes into play when they pick up
+				small asteroids with their large claws and hurl
+				them towards you at high speeds. They may seem
+				harmless at first, but they can quickly be a
+				force to be reckoned with!
+			
+
+	
+		Keyboard Navigation &amp; Other Actions
+	
+	
+		
+			
+				
+				Key
+				
+				Action
+				
+			
+			
+				
+				Left,
+				J
+				
+				Rotate counter
+				clockwise
+				
+			
+			
+				
+				Right,
+				L
+				
+				Rotate clockwise
+				
+			
+			
+				
+				Up,
+				I
+				
+				Forward thrust
+				
+			
+			
+				
+				Down,
+				K
+				
+				Reverse thrust
+				
+			
+			
+				
+				Space
+				
+				Fire lasers
+				
+			
+			
+				
+				1,
+				2, 3, 4, 5, 6
+				
+				Select this
+				specific weapon
+				
+			
+			
+				
+				Comma
+				or Period
+				
+				Select
+				previous/next weapon in list
+				
+			
+			
+				
+				F
+				
+				Toggle frame rate
+				
+			
+			
+				
+				H
+				
+				Displays the high
+				scores when not playing
+				
+			
+			
+				
+				Mouse
+				click outside applet
+				
+				Pauses the game
+				in progress
+				
+			
+			
+				
+				Click
+				back in applet
+				
+				Resumes the game
+				
+			
+			
+				
+				
+				
+				
+				
+			
+		
+		
+			Stoneroids98 always
+				attempts to stabilize your frame rates to about
+				20 fps regardless of how fast your system is.
+				Still expect about 20 fps. Slower systems should
+				see numbers less than 20fps. Example, a P-90 will
+				average around 12 fps. A P-166 and up should get
+				20 fps.
+			High scores are not always
+				available. If they are disabled then you won't be
+				able to see them.
+		
+		
+	
+
+
+
+
+
+	
+		Other Tips
+	
+	
+		
+			You get an &quot;extra life&quot;
+				at 5000, 10000, 15000, 20000 and every 10000
+				thereafter. It's not really an extra life, but
+				more like a refresh. Your shield and energy coolant are
+				completely restored, plus you recieve one random
+				powerup.
+			You cannot damage your # 1 Laser.
+				This includes if you upgrade the # 1 Laser to Heat
+				Seeking status. This means you can have a
+				permanent Heat Seeking weapon even after you get
+				hit. Quite powerful.
+			You get double points for
+				asteroids you destroy just after they are born.
+				For example, if you hit a large asteroid with a
+				Tri Shot, one laser will hit the large asteroid,
+				splitting it. The other two may hit the new
+				smaller rocks and will get double score for them!
+			Every time you or an alien gets damaged, the ship gets
+			a brief moment of invinciblity to recover -- at the expense
+			of heating
+				up the lasers. The ship is invulnerable to any
+				impacts during this brief moment, except for Heat Seeking weapons. Heat Seekers can cut through
+				enemy forces like butter, invulnerable or not.
+			Damage from colliding with an
+				asteroid is proportional to its size. Don't run
+				into the big ones or you'll be dead in no time.
+			Have trouble flying the ship?
+				Don't fly so fast. Use short controlled bursts
+				when moving around.
+			Have trouble overheating your
+				lasers too fast? Don't shoot so much. Collisions
+				quickly contribute to overheated lasers so also watch what you bump into.
+			Try to cool down your lasers just
+				before you destroy the last target in a level.
+				That way you'll enter the next level without
+				worrying about overheating right
+				away.
+			Have trouble scoring enough
+				points? Can't really help you there except
+				practice, practice, practice.
+		
+		Expert Player's Tips
+		
+			When swarmed by lots of aliens,
+				concentrate on the laser-shooting Rogue aliens,
+				not the rock-throwing Miners. The Rogues are more
+				dangerous to you in the short run, plus they are
+				easier to destroy especially with heat seeker weapons.
+			As you grab a weapon powerup, your selected weapon has first
+				priority in getting repaired or upgraded to seekers. Tip? First select a weapon that's damaged or want to upgrade to seekers, then get the powerup.
+			Start your levels using your most
+				powerful weapon. At first, blast as many of the
+				large asteroids as you can without getting hit.
+				If you think you'll get hit or start to overheat,
+				switch to a smaller weapon. Advantage? You get to
+				use that powerful weapon again in the next
+				level!!
+		
+		
+	
+
+
+
+</PRE>

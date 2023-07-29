@@ -1,0 +1,15 @@
+Past this code somewhere bettween the BOBY tags in your HTML and place the graphic in the same folder as your HTML document.  If you have and questions just ask me threw ICQ (608167), or by email at ron@chizeledlight.com.
+
+<!--- This is the code to Ron's Place! --->
+<DIV ALIGN="center"><TABLE CELLPADDING="0" CELLSPACING="2" BORDER="1"><TR><TD><A HREF="http://chizeledlight.com/"><IMG SRC="http://chizeledlight.com/graphics/banners/chizeled.jpg" ALT="Ron's Place" BORDER="0"></A></TD></TR></TABLE></DIV>
+
+<!--- This is the code to Ron's Place! --->
+
+
+Thanks, 
+
+
+Ron Gallant
+ron@chizeledlight.com
+http://chizeledlight.com/
+http://chizeledlight.com/startpage/

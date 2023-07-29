@@ -1,0 +1,18 @@
+<html>
+<head>
+<LINK HREF="{$absolute_path}/css/theme_mambodefault.css" type=text/css rel=stylesheet>
+</head>
+<table align=center width="{$tableParam[0]}" border={$tableParam[5]} cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<tr><td class=cell1>
+
+<h3>{$warning}</h3>
+<form action="{$bb_admin}&mode=login" method=post class=formStyle>
+<table width={$tableParam[0]} cellspacing=0 cellpadding=6 border=0>
+<tr><td width="10%" class=cell1><p>Admin login: </td><td width="50%" class=cell1><input type=text name=adminusr size=15 maxlength=25></td>
+<tr><td><p>Admin password: </td><td class=cell1><input type=password name=adminpwd size=15 maxlength=25></td>
+<tr><td colspan=2><input type=submit value="Login" class=inputButton></td></tr>
+</form>
+</table>
+
+</td></tr></table>
+</html>

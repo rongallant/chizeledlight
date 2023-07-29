@@ -1,0 +1,199 @@
+<HTML><HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		buttons1_01_over = newImage("graphics/buttons2_02-over.jpg");
+		buttons2_02_over = newImage("graphics/buttons2_02-over.jpg");
+		buttons3_03_over = newImage("graphics/buttons2_02-over.jpg");
+		buttons4_04_over = newImage("graphics/buttons2_02-over.jpg");
+		buttons5_05_over = newImage("graphics/buttons2_02-over.jpg");
+							
+		buttons_16_over = newImage("graphics/buttons_16-over.jpg");
+		buttons_18_over = newImage("graphics/buttons_18-over.jpg");
+		preloadFlag = true;
+	}
+}
+
+
+var Counter = 1;
+var url;
+var w = 300;
+var h = 300;
+
+function initArray() {
+	this.length = initArray.arguments.length;
+	for(var i = 0; i < this.length; i++) 
+		this[i+1] = initArray.arguments[i]
+}
+
+var Slides = new initArray(
+"../thumbs/thmart01.gif",
+"../thumbs/thmart03.gif",
+"../thumbs/thmart04.gif",
+"../thumbs/thmart05.gif",
+"../thumbs/thmart06.gif",
+"../thumbs/thmart07.gif",
+"../thumbs/thmart09.gif",
+"../thumbs/thmart10.gif",
+"../thumbs/thmart11.gif",
+"../thumbs/thmart12.gif",
+"../thumbs/thmart13.gif",
+"../thumbs/thmart14.gif"
+);
+
+var bigSlides = new initArray(
+"../html/art01.html",
+"../html/art03.html",
+"../html/art04.html",
+"../html/art05.html",
+"../html/art06.html",
+"../html/art07.html",
+"../html/art09.html",
+"../html/art10.html",
+"../html/art11.html",
+"../html/art12.html",
+"../html/art13.html",
+"../html/art14.html"
+);
+
+var detail = new initArray(
+"../text/text01.gif",
+"../text/text03.gif",
+"../text/text04.gif",
+"../text/text04.gif",
+"../text/text06.gif",
+"../text/text07.gif",
+"../text/text09.gif",
+"../text/text10.gif",
+"../text/text11.gif",
+"../text/text12.gif",
+"../text/text13.gif",
+"../text/text14.gif"
+);
+
+url = bigSlides[1];
+
+function Move(dir) { 
+	if(dir == 1) Counter++;
+	if(dir == -1) Counter--;
+	if(Counter > Slides.length) Counter = 1;
+	if(Counter == 0) Counter = Slides.length;
+	document.thumb.src = Slides[Counter];
+	document.details.src = detail[Counter];
+	url = bigSlides[Counter];
+}	
+
+
+function showBig() {
+	if (Counter == 1) { w = 440; h = 440; }
+	if (Counter == 2) { w = 450; h = 290; }
+	if (Counter == 3) { w = 490; h = 230; }
+	if (Counter == 4) { w = 540; h = 350; }
+	if (Counter == 5) { w = 440; h = 440; }
+	if (Counter == 6) { w = 600; h = 470; }
+	if (Counter == 7) { w = 440; h = 440; }
+	if (Counter == 8) { w = 440; h = 440; }
+	if (Counter == 9) { w = 530; h = 505; }
+	if (Counter == 10) { w = 520; h = 500; }
+	if (Counter == 11) { w = 290; h = 620; }
+	if (Counter == 12) { w = 490; h = 490; }
+	
+	var windowprops = "location=no,scrollbars=no,menubars=no,toolbars=no,resizable=yes,left=0,top=0" +
+	",width=" + w + ",height=" + h;
+	
+	popup = window.open(url,"TheBigPicture",windowprops);
+}
+
+function open_link(targetlink) {
+var root;
+if (opener.closed) {
+root=window.open('','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,copyhistory=no');
+root.location.href = targetlink;
+} else {
+opener.location.href = targetlink;
+}
+}
+// -->
+</SCRIPT>
+
+<TITLE>Chizeled Light - Artwork</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" BACKGROUND="graphics/bg.jpg" ONLOAD="preloadImages();" LEFTMARGIN="0" TOPMARGIN="0">
+
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD COLSPAN=3>
+		<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD>
+			<IMG SRC="graphics/artworkpage_01.jpg" WIDTH=246 HEIGHT=50  BORDER="0"></TD>
+			<TD><A HREF="../../chizeled/index.html"
+ONMOUSEOVER="changeImages('buttons1_01', 'graphics/buttons2_02-over.jpg'); return true;"
+ONMOUSEOUT="changeImages('buttons1_01', 'graphics/buttons2_02.jpg'); return true;"
+TARGET="_blank"><IMG NAME="buttons1_01" SRC="graphics/buttons2_02.jpg" WIDTH=50 HEIGHT=46 BORDER=0></A><A HREF="../../index.html"
+ONMOUSEOVER="changeImages('buttons2_02', 'graphics/buttons2_02-over.jpg'); return true;"
+ONMOUSEOUT="changeImages('buttons2_02', 'graphics/buttons2_02.jpg'); return true;"
+TARGET="_blank"><IMG NAME="buttons2_02" SRC="graphics/buttons2_02.jpg" WIDTH=50 HEIGHT=46 BORDER=0></A><A HREF="../../index2.html"
+ONMOUSEOVER="changeImages('buttons3_03', 'graphics/buttons2_02-over.jpg'); return true;"
+ONMOUSEOUT="changeImages('buttons3_03', 'graphics/buttons2_02.jpg'); return true;"
+TARGET="_blank"><IMG NAME="buttons3_03" SRC="graphics/buttons2_02.jpg" WIDTH=50 HEIGHT=46 BORDER=0></A><A HREF="../../startpage/index.html"
+ONMOUSEOVER="changeImages('buttons4_04', 'graphics/buttons2_02-over.jpg'); return true;"
+ONMOUSEOUT="changeImages('buttons4_04', 'graphics/buttons2_02.jpg'); return true;"
+TARGET="_blank"><IMG NAME="buttons4_04" SRC="graphics/buttons2_02.jpg" WIDTH=50 HEIGHT=46 BORDER=0></A><A HREF="#"
+ONMOUSEOVER="changeImages('buttons5_05', 'graphics/buttons2_02-over.jpg'); return true;"
+ONMOUSEOUT="changeImages('buttons5_05', 'graphics/buttons2_02.jpg'); return true;"
+ONCLICK="self.close();"><IMG NAME="buttons5_05" SRC="graphics/buttons2_02.jpg" WIDTH="50" HEIGHT="46" BORDER="0"></A><BR><IMG SRC="graphics/spacer.gif" WIDTH=250 HEIGHT=4 BORDER="0"></TD></TR></TABLE></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="graphics/artworkpage_04.jpg" WIDTH=52 HEIGHT=228  BORDER="0"></TD>
+		<TD WIDTH="514" HEIGHT="228" VALIGN="top">
+		
+	<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0 WIDTH="514" HEIGHT="228"><TR><TD>
+	
+<DIV ALIGN="center">
+<IMG
+SRC="graphics/thumb_top.gif" WIDTH=114 HEIGHT=7 ALT="" BORDER="0"><BR><IMG
+SRC="graphics/thumb_lef.gif" WIDTH=7 HEIGHT=100 ALT="" BORDER="0"><A HREF="#" ONCLICK="showBig();"><IMG
+SRC="../thumbs/thmart01.gif" WIDTH=100 HEIGHT=100 ALT="" BORDER="0" NAME="thumb"></A><IMG SRC="graphics/thumb_rig.gif" WIDTH=7 HEIGHT=100 ALT="" BORDER="0"><BR><IMG SRC="graphics/thumb_bot.gif" WIDTH=114 HEIGHT=7 ALT="" BORDER="0"><BR><P>
+
+<A HREF="#" ONCLICK="Move(-1);"
+ONMOUSEOVER="changeImages('buttons_16', 'graphics/buttons_16-over.jpg'); return true;"
+ONMOUSEOUT="changeImages('buttons_16', 'graphics/buttons_16.jpg'); return true;">
+<IMG NAME="buttons_16" SRC="graphics/buttons_16.jpg" WIDTH=70 HEIGHT=70 BORDER=0></A>
+<IMG SRC="graphics/spacer.gif" WIDTH=25 HEIGHT=70 BORDER=0>
+<A HREF="#" ONCLICK="Move(1);"
+ONMOUSEOVER="changeImages('buttons_18', 'graphics/buttons_18-over.jpg'); return true;"
+ONMOUSEOUT="changeImages('buttons_18', 'graphics/buttons_18.jpg'); return true;">
+<IMG NAME="buttons_18" SRC="graphics/buttons_18.jpg" WIDTH=70 HEIGHT=70 BORDER=0></A>
+</DIV>
+</TD><TD WIDTH=270 BACKGROUND="graphics/face1.jpg">
+
+<IMG SRC="../text/text01.gif" WIDTH=270 HEIGHT=218 NAME="details" BORDER="0">
+
+		</TD></TR></TABLE>	
+			</TD>
+		<TD><IMG SRC="graphics/artworkpage_07.jpg" WIDTH=19 HEIGHT=228  BORDER="0"></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3><IMG SRC="graphics/artworkpage_08.jpg" WIDTH=585 HEIGHT=22  BORDER="0"></TD>
+	</TR>
+</TABLE>
+</BODY></HTML>

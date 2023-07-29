@@ -1,0 +1,132 @@
+body{
+background:#A79B91;
+margin:0;
+font: 10pt/14pt 'Lucida Grande', Verdana, Helvetica, sans-serif; 
+}
+
+A:link{ color:#403139; text-decoration:underline; }
+A:hover{ color:#000000; text-decoration:none; }
+A:active{ color:#403139; text-decoration:none; }
+A:active:hover{ color:#000000; text-decoration:none; }
+A:visited{ color:#403139; text-decoration:underline; }
+A:visited:hover{ color:#000000; text-decoration:none; }
+
+HR {
+	border: 1px solid #a79b91;
+	height: 1px;
+	width: 80%;
+}
+
+#header{
+background:url(banner.jpg) no-repeat transparent top left;
+width:673px;
+height:212px;
+margin-left:8px;
+}
+
+#wrap{
+width:692px;
+margin-left:auto;
+margin-right:auto;
+background:url(bg.gif) #E5DFD6;
+border:0;
+}
+
+#navcontainer{
+background:#5D4229;
+width:673px;
+margin-top:-20px;
+margin-left:8px;
+text-align: center;
+}
+
+#sidebar{
+background:transparent;
+width:180px;
+float:left;
+margin-left:40px;
+padding:21px;
+font-family:'Lucida Grande', Helvetica, sans-serif;
+font-size:10px;
+color:#666666;
+text-align:justify;
+}
+
+
+#navlist li{
+ display: inline;
+list-style-type: none;
+padding-right: 10px;
+text-align: right;
+}
+
+#navlist li a{
+padding: 10px 5px 10px 5px;
+text-decoration: none;
+}
+
+#navlist li a:link { color: #FFFFFF; }
+#navlist li a:visited { color: #d66016; }
+#navlist li a:hover {color:#A79B91; }
+
+
+h3{
+font-size:18px;
+font-weight:bold;
+color:#6190CB;
+letter-spacing:.5px;
+font-style:normal;
+text-align: right;
+}
+
+#content1{
+width:270px;
+margin-left:30px;
+margin-right:auto;
+padding:9px;
+text-align:justify;
+font: 8pt/14pt 'Lucida Grande', Verdana, Helvetica, sans-serif;
+color:#333333;
+float:left;
+}
+
+#content2{
+width:270px;
+margin-left:auto;
+margin-right:30px;
+padding:9px;
+text-align:justify;
+font: 8pt/14pt 'Lucida Grande', Verdana, Helvetica, sans-serif;
+color:#333333;
+}
+
+#footer{
+clear:both;
+width:656px;
+margin-left:8px;
+margin-right:auto;
+background:#5D4229;
+padding:9px;
+text-align:right;
+text-transform:lowercase;
+font: 8pt/9pt 'Lucida Grande', Verdana, Helvetica, sans-serif;
+color:#000000;
+}
+
+#footer a:link{color:#FFFFFF; text-decoration:none; }
+#footer a:hover{color:#A79B91; }
+
+#title{
+height:30px;
+width:653px;
+margin-left:auto;
+margin-right:11px;
+background:#d66016;
+text-align:left;
+padding-top:6px;
+padding-left:20px;
+font-size:14px;
+letter-spacing:2px;
+color:#403139;
+text-transform:uppercase; 
+}

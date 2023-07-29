@@ -1,0 +1,284 @@
+@import "reset.css";
+@import "http://fonts.googleapis.com/css?family=Arvo";
+@import "http://fonts.googleapis.com/css?family=PT+Sans";
+
+body {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 25px;
+	color: #666;
+	background: #d8dbce url(../images/bg_top.jpg) no-repeat top center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+Read more: http://www.webdesign.org/html-and-css/tutorials/create-a-full-page-background-image-with-css3.21080.html#ixzz1xLbqoth6
+}
+h1 {
+	font-family: 'Arvo', Georgia, Times, serif;
+	font-size: 30px;
+	text-shadow: 1px 1px 1px #666;
+	line-height: 70px;
+	color: #dd7059;
+}
+h2 {
+	font-size: 24px;
+	line-height: 40px;
+	color: #666;
+}
+h3 {
+	font-size: 22px;
+	line-height: 40px;
+	color: #666;
+}
+h4 {
+	font-size: 20px;
+	line-height: 30px;
+	color: #666;
+}
+h5 {
+	font-size: 18px;
+	line-height: 30px;
+	color: #666;
+}
+h6 {
+	font-size: 16px;
+	line-height: 30px;
+	color: #666;
+}
+a:link {
+	color: #dd7059;
+	text-decoration: none;
+}
+a:hover {
+	color: #dd7059;
+	text-decoration: underline;
+}
+a:active {
+}
+a:visited {
+	color: #dd7059;
+}
+a:link img {
+	border: 0;
+}
+abbr, acronym {
+	border-bottom: .1em dotted;
+}
+p, li {
+	font-size: 16px;
+	line-height: 25px;
+	color: #666;
+}
+li {
+	margin-left: 20px;
+}
+dl dt {
+	font-style: italic;
+	margin-left: 20px;
+
+}
+dl dd {
+	margin-left: 40px;
+}
+small {
+	font-size: 70%;
+}
+sup,
+sub {
+	font-size: 70%;
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	_vertical-align: bottom;
+	position: relative;
+	
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+pre {
+	white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+	white-space: -pre-wrap; /* Opera 4 - 6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+	word-wrap: break-word; /* IE 5.5+ */
+}
+fieldset legend {
+	font-weight: 700;
+}
+blockquote {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-style: italic;
+	line-height: 1.45;
+	color: #383838;
+	width: 500px;
+	margin: 0.25em 0;
+	padding: 0.25em 30px;
+	position: relative;
+}
+blockquote:before {
+	font-size: 80px;
+	color: #7a7a7a;
+	display: block;
+	content: "\201C";
+	position: absolute;
+	left: -10px;
+	top: -20px;
+}
+blockquote cite {
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	color: #777;
+	font-size: 14px;
+	display: block;
+	margin-top: 5px;
+}
+ 
+blockquote cite:before {
+	content: "\2014 \2009";
+}
+hr {
+	background-color: #abcdc9;
+	height: 1px;
+	border: 0;
+}
+#body {
+	width: 969px;
+	margin: 0 auto 30px;
+}
+#header {
+	position: relative;
+	height: 129px;
+}
+#mainlogo {
+	position: absolute;
+	bottom: 8px;
+	left: 0;
+	width: 231px;
+	height: 104px;
+	background: transparent url(../images/logo.png) no-repeat 0 0;
+}
+#flair_1 { /*robin*/
+	width: 114px;
+	height: 73px;
+	position: fixed;
+	top: 0;
+	right: 30px;
+	background: transparent url(../images/robin.png) no-repeat 0 0;
+	z-index: 1000;
+}
+#socialicons {
+	display: inline;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+#stageHeader {
+	height: 5px;
+	width: 969px;
+	background: transparent url(../images/stage_topshadow.png) no-repeat 0 0;
+}
+
+#mainmenu {
+	background: transparent url(../images/stage_bg.png) repeat-y 0 0;
+}
+
+#mainmenu ul {
+	float: left;
+	width: 959px;
+	padding: 0;
+	margin: 0 20px 0 5px;
+	list-style-type: none;
+	background-color: #c0e0e0;
+	border-bottom: 1px solid #9db7b6;
+}
+#mainmenu a {
+	display: block;
+	font-family: arial;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	text-shadow: 1px 1px 1px #333;
+	text-decoration: none;
+	letter-spacing: 3px;
+	color: white;
+	float: left;
+	width: 12em;
+	background-color: #c0e0e0;
+	padding: 0.4em 0.6em;
+	border-left: 1px solid #dbeded;
+	border-right: 1px solid #a5d3d3;
+	
+}
+#mainmenu a:hover {
+	background-color: #a9c9c9;
+}
+#mainmenu li {
+	display:inline;
+}
+#mainmenu ul li:first-child a {
+	border-left: 0;
+}
+#stage {
+	position: relative;
+	background: transparent url(../images/stage_bg.png) repeat-y 0 0;
+}
+
+#stageFooter {
+	width: 969px;
+	height: 301px;
+	background: transparent url(../images/stage_footer.png) no-repeat 0 0;
+}
+#stage_left {
+	width: 706px;
+	padding: 30px 0 0 25px;
+}
+#stage_right {
+	position: absolute;
+	padding: 0;
+	top: 110px;
+	right: 5px;
+	width: 200px;
+}
+.submenu {
+	width: 160px;
+}
+.submenu ul {
+	padding: 1px 0;
+	background: #a5d3d3;
+}
+.submenu li {
+	margin: 0;
+}
+.submenu li a:link {
+	display: block;
+	letter-spacing: 3px;
+	color: #666;
+	padding: 10px 10px;
+	margin-bottom: 1px;
+	background-color: #fbfdfd;
+}
+.submenu li a:hover {
+	color: #666;
+	text-decoration: none;
+	background-color: #e3f0ef;
+}
+.submenu li a:active {
+	color: #666;
+	background-color: #e3f0ef;
+}
+.submenu li a:visited {
+	color: #666;
+}
+.submenu li:last-child a:link {
+	margin-bottom: 0;
+}
+.screenreader {
+	position: absolute;
+	left: -1600px;
+}

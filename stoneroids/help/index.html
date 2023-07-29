@@ -1,0 +1,582 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Stoneroids 98 Help And Tips</title>
+</head>
+
+<body BACKGROUND="../stonebg.gif" bgcolor="" text="#FFFFFF" link="#FFAA00" vlink="#F97B9B" alink="#00BBFF">
+
+<DIV ALIGN="center">
+<IMG SRC="stonehelp.jpg" WIDTH=519 HEIGHT=79 ALT="Stoneroids 98 Help 'N' Tips" BORDER="0">
+
+<BR><BR>
+<A HREF="../index.html"><IMG SRC="home.gif" WIDTH=87 HEIGHT=39 ALT="Back to Stoneroids" BORDER="0"></A>
+<BR><BR>
+
+<table border="2" cellpadding="7" cellspacing="0" width="97%"
+bgcolor="black">
+	<tr>
+		<td><B>Stoneroids</B><I><B>98</B></I><B>
+		v1.07 Overview</B></td>
+	</tr>
+	<tr>
+		<td><blockquote>
+			<p><font size="2">Stoneroids<I>98</I> is a Java
+			applet that is loosely based on the classic arcade
+			game, Asteroids. The goal of course, is to destroy
+			the asteroids and enemy ships. Stoneroids<I>98</I>
+			adds to this new features like various types of
+			weapons, alien intelligence, and powerups. Also there
+			is an automatic high scoring system available, which
+			is rare in Java applets (due to the security
+			limitations in Java applets). Unlike Asteroids, you
+			don't die instantly once you hit something --
+			Stoneroids<I>98</I> is based on a shield system,
+			and the game is over once your shield runs out.</font></p>
+		</blockquote>
+		</td>
+	</tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table border="2" cellpadding="7" cellspacing="0" width="97%"
+bgcolor="black">
+	<tr>
+		<td><B>Scoring System</B></td>
+	</tr>
+	<tr>
+		<td><ul>
+			<li><font size="2">The scoring system quite complex,
+				which adds variety to the game. However, here are
+				some general patterns in scoring...</font></li>
+			<li><font size="2"><B>Asteroids: </B>Point
+				value depends on size and speed, which measures
+				how difficult they are to shoot. Smaller, faster
+				asteroids yield the most points. Values usually
+				range from 10-200 points.</font></li>
+			<li><font size="2"><B>Comets: </B>Appearing
+				occasionally, the score of these bonus items are
+				worth twice as much as their Asteroid brothers
+				when shot, plus they hold at least one powerup.
+				Values usually range between 50-200 points for
+				each hit.</font></li>
+			<li><font size="2"><B>Aliens: </B>Since
+				aliens can do many things you can do, they are
+				worth more points if they do more stuff before
+				they are killed. Their point value depends on
+				game level and how much stuff they pick up or
+				shoot. When an alien dies, they also drop any and
+				all powerups they picked up along the way. Alien
+				values are 50xlevel, plus points for other
+				activities.</font></li>
+			<li><font size="2"><B>Level Bonus: </B>There
+				is a standard end of level bonus which increases
+				in later levels, plus bonus points for the amount
+				of shields remaining and weapons owned.</font></li>
+			<li><font size="2">You <B>LOSE</B> 5 points
+				every time you press the space bar to shoot. This
+				is an incentive for you to <B>NOT</B>
+				fire off as many rounds as possible. Five points
+				is not a big deal as you'll quickly be reaping
+				thousands of points.</font></li>
+			<li><font size="2">You <B>LOSE</B> <u>25 x
+				Level</u> points if you shoot a powerup.
+				Obviously this is something you should try to
+				avoid.</font></li>
+			<li><font size="2">You'll discover several other ways
+				of scoring as well. Keep playing to find them
+				all.</font></li>
+		</ul>
+		</td>
+	</tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table border="2" cellpadding="7" cellspacing="0" width="97%"
+bgcolor="black">
+	<tr>
+		<td><B>Various Targets</B></td>
+	</tr>
+	<tr>
+		<td><table border="0" cellpadding="3" cellspacing="0"
+		width="100%">
+			<tr>
+				<td align="center"><img src="Ship1.gif"
+				alt="This is You!" align="absmiddle" width="18"
+				height="24"></td>
+				<td><font size="2"><B>Your Ship: </B>Your
+				mission? To stay alive against the countlessly
+				outnumbered forces!</font></td>
+			</tr>
+			<tr>
+				<td align="center"><img src="Rogue1.gif"
+				alt="Rogue" align="absmiddle" width="21"
+				height="22"> <img src="Miner1.gif" alt="Miner"
+				align="absmiddle" width="24" height="22"></td>
+				<td><font size="2"><B>Aliens: </B>Alien
+				ships flying around just minding their own
+				business, unless provoked.</font></td>
+			</tr>
+			<tr>
+				<td align="center"><img src="BlueP.gif"
+				alt="Shield Boost" align="absmiddle" width="18"
+				height="14"> <img src="GreenP.gif"
+				alt="Coolant Boost" align="absmiddle" width="14"
+				height="18"> <img src="YellowP.gif"
+				alt="Weapon Powerup" align="absmiddle" width="14"
+				height="18"> <img src="RedP.gif" alt="Sub-Zero"
+				align="absmiddle" width="15" height="17"> <img
+				src="PurpleP.gif" alt="Invulerability"
+				align="absmiddle" width="13" height="17"></td>
+				<td><font size="2"><B>Powerups: </B>Various
+				colored egg-shaped powerups. Fly over them to
+				pick them up. Don't shoot these.</font></td>
+			</tr>
+			<tr>
+				<td align="center"><img src="Ast1.gif"
+				alt="Small Asteroid" align="absmiddle" width="19"
+				height="15"> <img src="Ast2.gif"
+				alt="Medium Asteroid" align="absmiddle"
+				width="28" height="28"> <img src="Ast3.gif"
+				alt="Large Asteroid" align="absmiddle" width="46"
+				height="47"></td>
+				<td><font size="2"><B>Asteroids: </B>Those
+				blue things floating around that you've gotta
+				shoot.<br>
+				<B>Comets: </B>Just like asteroids, but
+				with a comet's tail trailing behind them. They
+				hold a powerup if you can hit the center.</font></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table border="2" cellpadding="7" cellspacing="0" width="97%"
+bgcolor="black">
+	<tr>
+		<td><B>Powerup System</B></td>
+	</tr>
+	<tr>
+		<td><table border="0" cellpadding="3" cellspacing="0"
+		width="100%">
+			<tr>
+				<td align="center"><img src="BlueP.gif"
+				alt="Shield Boost" align="absmiddle" width="18"
+				height="14"></td>
+				<td align="center"><font color="#0080FF" size="2"><B>Blue
+				Powerup</B></font></td>
+				<td><font size="2">Shield Boost. Some extra
+				shield energy for your ship.</font></td>
+			</tr>
+			<tr>
+				<td align="center"><img src="GreenP.gif"
+				alt="Coolant Boost" align="absmiddle" width="14"
+				height="18"></td>
+				<td align="center"><font color="#008000" size="2"><B>Green
+				Powerup</B></font></td>
+				<td><font size="2">Energy Coolant Boost. Cools
+				your laser temperature.</font></td>
+			</tr>
+			<tr>
+				<td align="center"><img src="YellowP.gif"
+				alt="Weapon Powerup" align="absmiddle" width="14"
+				height="18"></td>
+				<td align="center"><font color="#FFFF80" size="2"><B>Yellow
+				Powerup</B></font></td>
+				<td><font size="2">Weapon Powerup. Various
+				effects on your weapons. See <I>Weapon System </I>below...</font></td>
+			</tr>
+			<tr>
+				<td align="center"><img src="RedP.gif"
+				alt="Sub-Zero" align="absmiddle" width="15"
+				height="17"></td>
+				<td align="center"><font color="#FF3737" size="2"><B>Red
+				Powerup</B></font></td>
+				<td><font size="2">Sub-Zero Powerup. For a
+				limited time, you can shoot as much as you want
+				without heating up your lasers.</font></td>
+			</tr>
+			<tr>
+				<td align="center"><img src="PurpleP.gif"
+				alt="Invulerability" align="absmiddle" width="13"
+				height="17"></td>
+				<td align="center"><font color="#FF80FF" size="2"><B>Purple
+				Powerup</B></font></td>
+				<td><font size="2">Invincibility Powerup. For a
+				limited time, you are invincible and cannot be
+				damaged.</font></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table border="2" cellpadding="7" cellspacing="0" width="97%"
+bgcolor="black">
+	<tr>
+		<td><B>Weapon System</B></td>
+	</tr>
+	<tr>
+		<td><table border="0" cellpadding="5" cellspacing="0"
+		width="100%">
+			<tr>
+				<td align="center"><font size="2"><B><img
+				src="Weapons1.gif"
+				alt="Score and Weapon Indicators" width="109"
+				height="38"></B></font></td>
+			</tr>
+		</table>
+		<ul>
+			<li><font size="2"><B>1 - Single Shot. </B>Your
+				typical pea shooter weapon. You always have this
+				weapon and it cannot be damaged.</font></li>
+			<li><font size="2"><B>2 - Dual Shot. </B>Two
+				angled shots come out.</font></li>
+			<li><font size="2"><B>3 - Tri Shot. </B>Three
+				shots as a combination of Single and Dual Shot.
+				Available Level 2 or later.</font></li>
+			<li><font size="2"><B>4 - Quad Shot. </B>Same
+				as the Tri Shot, but also one laser comes out
+				from behind. Available Level 3 or later.</font></li>
+			<li><font size="2"><B>5 - Square Shot. </B>Four
+				lasers come out from front, back, left and right
+				sides. Available Level 4 or later.</font></li>
+			<li><font size="2"><B>6 - Mega Shot. </B>Most
+				powerful weapon. Six lasers as a combination of
+				the Tri Shot and Square Shot. Available Level 5
+				or later.</font></li>
+			<li><font color="#FF8080" size="2"><B>Damaged
+				Weapons. </B></font><font size="2">Weapons
+				other than # 1 can be damaged if you are hit when
+				holding this weapon. A damaged weapon will glow </font><font
+				color="#FF8080" size="2">RED</font><font size="2">
+				in the user display. The weapon may malfunction
+				when you try to shoot a damaged weapon. You can
+				repair a damaged weapon if you get a </font><font
+				color="#FFFF80" size="2">weapon powerup</font><font
+				size="2"> while holding the damaged weapon.</font></li>
+			<li><font color="#00FFFF" size="2"><B>Heat
+				Seeking Weapons. </B></font><font size="2">Beginning
+				with Level 6, non-damaged weapons are upgraded to
+				Heat Seeking status via a </font><font
+				color="#FFFF80" size="2">weapon powerup</font><font
+				size="2">. A damaged weapon will glow </font><font
+				color="#00FFFF" size="2">BLUE </font><font
+				size="2">in the user display. But you lose the
+				Heat Seeking upgrade once you are hit. A Heat
+				Seeking Mega Shot is the most powerful weapon in
+				the game -- capable of wiping clean much of a
+				level in a few moments. Oh yeah!</font></li>
+		</ul>
+		</td>
+	</tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table border="2" cellpadding="7" cellspacing="0" width="97%"
+bgcolor="black">
+	<tr>
+		<td><B>Alien Ships</B></td>
+	</tr>
+	<tr>
+		<td><ul>
+			<li><font size="2">In a way, alien ships are much
+				like you. They fly around, have </font><font
+				color="#0080FF" size="2">shield</font><font
+				size="2"> and </font><font color="#008000"
+				size="2">energy</font><font size="2">, can build
+				up their own scores as they shoot stuff, and can
+				pick up powerups to upgrade themselves. But they
+				are also after you.</font></li>
+			<li><font size="2">Enemy ships can also get </font><font
+				color="#FF80FF" size="2">Invulnerability</font><font
+				size="2"> if they get a </font><font
+				color="#FF80FF" size="2">Purple</font><font
+				size="2"> powerup, and even upgrade their lasers
+				to </font><font color="#80FFFF" size="2">Heat
+				Seeking</font><font size="2"> status if they get
+				enough </font><font color="#FFFF80" size="2">weapon
+				powerups</font><font size="2">. You're in trouble
+				if they upgrade to </font><font color="#80FFFF"
+				size="2">Heat Seeker </font><font size="2">lasers!</font></li>
+			<li><font size="2">Enemy ships don't need </font><font
+				color="#008000" size="2">coolant</font><font
+				size="2"> and thus cannot overheat their lasers.</font></li>
+		</ul>
+		<table border="0" cellpadding="5" cellspacing="0">
+			<tr>
+				<td align="center" rowspan="2"><img
+				src="Rogue1.gif" alt="Rogue" align="absmiddle"
+				width="21" height="22"></td>
+				<td><font size="3"><I>The Rogue Ship</I></font></td>
+			</tr>
+			<tr>
+				<td><font size="2">Part of the enemy defense
+				forces, these quick moving ships don't like you
+				at all and gladly will use its weapon arsenal to
+				erase you. They have single, twin or triple
+				lasers, and have tough armor against asteroid
+				impacts, but are weak against enemy lasers.</font></td>
+			</tr>
+			<tr>
+				<td align="center">&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td align="center" rowspan="2"><img
+				src="Miner1.gif" alt="Miner" align="absmiddle"
+				width="24" height="22"></td>
+				<td><font size="3"><I>The Miner Ship</I></font></td>
+			</tr>
+			<tr>
+				<td><font size="2">Originally working in the
+				asteroid mines, they have been called into
+				service to destroy you. They are generally slower
+				and don't always chase after you. They have much
+				tougher armor than the Rogues and are invincible
+				to asteroid collisions. Their mild weaponry
+				consists of only a single laser. However their
+				real danger comes into play when they pick up
+				small asteroids with their large claws and hurl
+				them towards you at high speeds. They may seem
+				harmless at first, but they can quickly be a
+				force to be reckoned with!</font></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table border="2" cellpadding="7" cellspacing="0" width="97%"
+bgcolor="black">
+	<tr>
+		<td><B>Keyboard Navigation &amp; Other Actions</B></td>
+	</tr>
+	<tr>
+		<td><table border="0" cellpadding="2" cellspacing="0"
+		width="100%">
+			<tr>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td align="right" bgcolor="#1A643F"><B><u>Key</u></B></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td bgcolor="#1A643F"><B><u>Action</u></B></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td align="right"><font size="2" face="Arial">Left,
+				J</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td><font size="2" face="Arial">Rotate counter
+				clockwise</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td align="right"><font size="2" face="Arial">Right,
+				L</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td><font size="2" face="Arial">Rotate clockwise</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td align="right"><font size="2" face="Arial">Up,
+				I</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td><font size="2" face="Arial">Forward thrust</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td align="right"><font size="2" face="Arial">Down,
+				K</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td><font size="2" face="Arial">Reverse thrust</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td align="right"><font size="2" face="Arial">Space</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td><font size="2" face="Arial">Fire lasers</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td align="right"><font size="2" face="Arial">1,
+				2, 3, 4, 5, 6</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td><font size="2" face="Arial">Select this
+				specific weapon</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td align="right"><font size="2" face="Arial">Comma
+				or Period</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td><font size="2" face="Arial">Select
+				previous/next weapon in list</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td align="right"><font size="2" face="Arial">F</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td><font size="2" face="Arial">Toggle frame rate</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td align="right"><font size="2" face="Arial">H</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td><font size="2" face="Arial">Displays the high
+				scores when not playing</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td align="right"><font size="2" face="Arial">Mouse
+				click outside applet</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td><font size="2" face="Arial">Pauses the game
+				in progress</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td align="right"><font size="2" face="Arial">Click
+				back in applet</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+				<td><font size="2" face="Arial">Resumes the game</font></td>
+				<td width="10" bgcolor="#1A643F">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="10" bgcolor="#1A643F"><font size="2"></font>&nbsp;</td>
+				<td align="right" bgcolor="#1A643F"><font
+				size="2" face="Arial"></font>&nbsp;</td>
+				<td width="10" bgcolor="#1A643F"><font size="2"></font>&nbsp;</td>
+				<td bgcolor="#1A643F"><font size="2" face="Arial"></font>&nbsp;</td>
+				<td width="10" bgcolor="#1A643F"><font size="2"></font>&nbsp;</td>
+			</tr>
+		</table>
+		<ul>
+			<li><font size="2">Stoneroids<I>98</I> always
+				attempts to stabilize your frame rates to about
+				20 fps regardless of how fast your system is.
+				Still expect about 20 fps. Slower systems should
+				see numbers less than 20fps. Example, a P-90 will
+				average around 12 fps. A P-166 and up should get
+				20 fps.</font></li>
+			<li><font size="2">High scores are not always
+				available. If they are disabled then you won't be
+				able to see them.</font></li>
+		</ul>
+		</td>
+	</tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table border="2" cellpadding="7" cellspacing="0" width="97%"
+bgcolor="black">
+	<tr>
+		<td><B>Other Tips</B></td>
+	</tr>
+	<tr>
+		<td><ul>
+			<li><font size="2">You get an &quot;extra life&quot;
+				at 5000, 10000, 15000, 20000 and every 10000
+				thereafter. It's not really an extra life, but
+				more like a refresh. Your </font><font
+				color="#0080C0" size="2">shield</font><font
+				size="2"> and </font><font color="#008000"
+				size="2">energy coolant </font><font size="2">are
+				completely restored, plus you recieve one random
+				powerup.</font></li>
+			<li><font size="2">You cannot damage your # 1 Laser.
+				This includes if you upgrade the # 1 Laser to </font><font
+				color="#80FFFF" size="2">Heat Seeking</font><font
+				size="2"> status. This means you can have a
+				permanent Heat Seeking weapon even after you get
+				hit. Quite powerful.</font></li>
+			<li><font size="2">You get double points for
+				asteroids you destroy just after they are born.
+				For example, if you hit a large asteroid with a
+				Tri Shot, one laser will hit the large asteroid,
+				splitting it. The other two may hit the new
+				smaller rocks and will get double score for them!</font></li>
+			<li><font size="2">Every time you or an alien gets </font><font
+				color="#FF8080" size="2">damaged</font><font
+				size="2">, the ship gets a brief moment of </font><font
+				color="#FF80FF" size="2">invinciblity</font><font
+				size="2"> to recover -- at the expense of heating
+				up the lasers. The ship is invulnerable to any
+				impacts during this brief moment, except for </font><font
+				color="#80FFFF" size="2">Heat Seeking</font><font
+				size="2"> weapons. Heat Seekers can cut through
+				enemy forces like butter, invulnerable or not.</font></li>
+			<li><font size="2">Damage from colliding with an
+				asteroid is proportional to its size. Don't run
+				into the big ones or you'll be dead in no time.</font></li>
+			<li><font size="2">Have trouble flying the ship?
+				Don't fly so fast. Use short controlled bursts
+				when moving around.</font></li>
+			<li><font size="2">Have trouble overheating your
+				lasers too fast? Don't shoot so much. Collisions
+				quickly contribute to </font><font
+				color="#FF8080" size="2">overheated lasers </font><font
+				size="2">so also watch what you bump into.</font></li>
+			<li><font size="2">Try to cool down your lasers just
+				before you destroy the last target in a level.
+				That way you'll enter the next level without
+				worrying about </font><font color="#FF8080"
+				size="2">overheating</font><font size="2"> right
+				away.</font></li>
+			<li><font size="2">Have trouble scoring enough
+				points? Can't really help you there except
+				practice, practice, practice.</font></li>
+		</ul>
+		<p><font size="3"><B>Expert Player's Tips</B></font></p>
+		<ul>
+			<li><font size="2">When swarmed by lots of aliens,
+				concentrate on the laser-shooting Rogue aliens,
+				not the rock-throwing Miners. The Rogues are more
+				dangerous to you in the short run, plus they are
+				easier to destroy especially with </font><font
+				color="#80FFFF" size="2">heat seeker</font><font
+				size="2"> weapons.</font></li>
+			<li><font size="2">As you grab a </font><font
+				color="#FFFF80" size="2">weapon powerup</font><font
+				size="2">, your selected weapon has first
+				priority in getting repaired or upgraded to </font><font
+				color="#80FFFF" size="2">seekers</font><font
+				size="2">. Tip? First select a weapon that's </font><font
+				color="#FF8080" size="2">damaged</font><font
+				size="2"> or want to upgrade to </font><font
+				color="#80FFFF" size="2">seekers</font><font
+				size="2">, then get the powerup.</font></li>
+			<li><font size="2">Start your levels using your most
+				powerful weapon. At first, blast as many of the
+				large asteroids as you can without getting hit.
+				If you think you'll get hit or start to overheat,
+				switch to a smaller weapon. Advantage? You get to
+				use that powerful weapon again in the next
+				level!!</font></li>
+		</ul>
+		</td>
+	</tr>
+</table>
+<BR><BR>
+<A HREF="../index.html"><IMG SRC="home.gif" WIDTH=87 HEIGHT=39 ALT="Back to Stoneroids" BORDER="0"></A></DIV>
+</body></html>

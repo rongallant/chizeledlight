@@ -1,0 +1,67 @@
+/*
+Title Dark Blue: #2D335F
+Background Dark Blue: #485096
+Background Light Blue: #575FA1
+Table Title Blue: #3A406C
+Table Background Blue: #ADB2E4
+*/
+
+
+/* START Green Specific */
+
+.TblTitle {
+	font-famiily: arial;
+	font-weight: bold;
+	font-size: 14px;
+	color: white;
+	}
+
+/* END Green Specific */
+
+P.startpage {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	}
+
+A.startpage {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #2D335F;
+	}
+
+A:HOVER.startpage {
+	text-decoration: underline;
+	}
+
+A:ACTIVE.startpage {
+	}
+
+A:VISITED.startpage {
+	color: #3A406C;
+	}
+
+.TableBg {
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2D335F;
+	border-color: #2D335F;
+	background-color: #575FA1;
+	}
+
+.WebCamBorder {
+	border-color: #485096;
+	}
+	
+DIV.MainH4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 0px;
+	border-color: #2D335F;
+	border-bottom-width: 1px; 
+	}

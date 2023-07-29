@@ -1,0 +1,62 @@
+------------------------------------------------------------------
+RSGallery version 0.99 - a multigallery component for Mambo 4.0.14
+------------------------------------------------------------------
+
+#################################
+#								#
+# Date  : 23-08-2003			#
+# Author: Ronald Smit			#
+# Email : ronald.smit@hccnet.nl	#
+#								#
+#################################
+
+-----------
+1. FEATURES
+-----------
+* Multigallery component
+* Complete admin
+* Automatic thumbnail generation (GD2, IMAGEMAGICK and NETPBM)
+* Language pack support
+* Pagination
+
+---------------
+2. REQUIREMENTS
+---------------
+* Mambo v4.0.14
+* IMAGEMAGICK or NETPBM installed or PHP compiled with GD2
+
+----------------------------
+3. INSTALLATION INSTRUCTIONS
+----------------------------
+- Unzip all files into mambo root, leaving directory structure intact.
+- CHMOD images/gallery to 777 (LINUX)
+- Create tables using rsgallery.sql in sql-directory
+- Open up com_rsgallery.php and change neccesary variables. (be sure to check $conversiontype!)
+- Install the Add-On, by selecting Main Menu --> Install Custom.  Then select RSGallery
+- Publish RSGallery by selecting Main Menu --> Top Section --> Add
+
+----------------------
+4. OPERATING RSGALLERY
+----------------------
+- login on the frontpage, using your adminpassword
+- The adminoptions appear. You can
+	* Create new galleries
+	* Delete galleries
+	* Edit gallerynames
+	* Upload files
+	
+------------
+5. TODO LIST
+------------
+- Create option to integrate full picture instead of popup
+- Test on LINUX
+- Consistent layout
+- Description editing
+- Popup viewer dynamically resized
+- Slideshow
+
+-----------
+6. BUGFIXES
+-----------
+- When no category was chosen upon upload, it was still able to upload a file.
+- Filenames with spaces creates problems during thumbnail creation. Spaces are now converted to underscores.

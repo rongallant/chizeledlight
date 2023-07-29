@@ -1,0 +1,97 @@
+<script language="JavaScript">
+<!--
+function checkBrowser()
+{
+this.ver=navigator.appVersion;
+this.dom=document.getElementById?1:0;
+this.ie6=(this.ver.indexOf("MSIE 6")>-1 && this.dom)?1:0;
+this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
+this.ns6=(this.dom && parseInt(this.ver) >= 5)?1:0;
+this.ns4=(document.layers && !this.dom)?1:0;
+this.opr=(navigator.userAgent.toLowerCase().indexOf("opera") != -1)?1:0;
+return this
+}
+
+function paste_strinL(strinL,isQuote){ 
+if (isQuote == 1) {
+strinL = '[i]' + strinL + '[/i]' + '\n';
+}
+var isForm=document.forms["postMsg"];
+if (isForm) {
+var input=document.forms["postMsg"].elements["postText"];
+input.value=input.value+strinL; 
+}
+else alert('{$l_topic_closed}');
+}
+
+function pasteSel() {
+if (document.getSelection){
+selection = document.getSelection();
+} else
+selection = document.selection.createRange().text;
+}
+
+function getQuotation () {
+var bw=new checkBrowser();
+if (bw.ns6 || bw.ie5 || bw.ie6 || bw.ns4) {
+document.writeln('<a href="javascript:paste_strinL(selection,1)" onMouseDown="pasteSel()">{$l_quoting}</a>');
+}
+}
+//-->
+</script>
+
+<center>
+<table bgcolor="{$tableParam[1]}" width="{$tableParam[0]}" border={$tableParam[5]} cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<tr>
+<td class=sectiontableentry2 width="100%">
+<table width="100%" border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=16 valign=top><img src="{$live_site}/components/minibb/img/forum_icons/{$forumIcon}" width=16 height=16></td>
+<td class=header width="100%">&nbsp;<a href="{$indexphp}"><b>{$sitename}</b></a> <b class=bulletHead>&#8212;&#8250;</b> <a href="{$indexphp}action=vtopic&forum={$forum}"><b>{$forumName}</b></a> <b class=bulletHead>&#8212;&#8250;</b> {$topicName}</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table width="{$tableParam[0]}" border=0 cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<tr><td><p><small><b>{$pageNav}</b></small></td></tr>
+</table>
+
+<table bgcolor="{$tableParam[1]}" width="{$tableParam[0]}" border={$tableParam[5]} cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<tr class=sectiontableentry2>
+<td width="15%"><small><b>{$l_author}</b></small></td>
+<td width="85%"><small><b>{$l_message}</b></small></td>
+</tr>
+
+{$listPosts}
+
+</table>
+
+<table width="{$tableParam[0]}" border=0 cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<tr><td><p><small><b>{$pageNav}</b></small></td></tr>
+</table>
+</center>
+
+
+<a name=newreply></a>
+{$mainPostArea}
+
+<br>
+<center>
+<table bgcolor="{$tableParam[1]}" width="{$tableParam[0]}" border={$tableParam[5]} cellspacing={$tableParam[7]} cellpadding={$tableParam[6]}>
+<tr>
+<td class=sectiontableentry2><small>{$closeTopic} {$moveTopic} {$deleteTopic} {$stickyTopic} {$subsTopic}</small></td>
+</tr>
+<tr>
+<td class=sectiontableentry2>
+
+{$forumsList}
+
+</td>
+</tr>
+<tr>
+<td class=sectiontableentry2></td>
+</tr>
+</table>
+</center>

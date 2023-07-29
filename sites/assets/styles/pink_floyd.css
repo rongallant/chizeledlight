@@ -1,0 +1,35 @@
+BODY {
+	background-color: black;
+	background-image: URL(/assets/images/floydbg.gif);
+	}
+
+LI {
+	}
+
+A  {
+	font-size: 14px;
+	font-weight: bold;
+	color: Pink;
+	text-decoration: none;
+}
+
+A:Visited  {
+	color: pink;
+}
+
+A:Active  {
+	color: white;
+	text-decoration: underline;
+}
+
+A:Hover  {
+	text-decoration: underline;
+	color: white;
+}
+
+#tableheader {
+	font-size: 18px;
+	color: black;
+	font-weight: bold;
+	background-color: red;
+	}

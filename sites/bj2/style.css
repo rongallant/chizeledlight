@@ -1,0 +1,38 @@
+P  {}
+
+H1  {}
+
+H2  {}
+
+H3  {}
+
+A  {
+	color : #92007B;
+	font-size : x-small;
+}
+
+A:Visited  {
+	font-size : x-small;
+}
+
+A:Active  {
+	font-size : x-small;
+}
+
+A:Hover  {
+	font-size : x-small;
+}
+
+BODY  {
+	color : Black;
+	font-family : sans-serif;
+	font : Arial,Helvetica;
+	font-size : x-small;
+	text-transform : uppercase;
+}
+
+H4  {
+	font-size : small;
+	color : White;
+}
+
