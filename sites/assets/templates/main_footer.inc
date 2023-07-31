@@ -2,19 +2,19 @@
 
 switch($theme):
 
-	case Blue:
+	case 'Blue':
 		include ('/www/chizeledlight/assets/Themes/Blue/dsp_footer.php');
 	break;
 
-	case Green:
+	case 'Green':
 		include ('/www/chizeledlight/assets/Themes/Green/dsp_footer.php');
 	break;
 
-	case Ribbon:
+	case 'Ribbon':
 		include ('/www/chizeledlight/assets/Themes/Ribbon/dsp_footer.php');
 	break;
 
-	case BreakfastJava:
+	case 'BreakfastJava':
 		include ('/www/chizeledlight/assets/Themes/BreakfastJava/dsp_footer.php');
 	break;
 

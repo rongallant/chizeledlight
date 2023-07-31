@@ -4,19 +4,19 @@ include ('/www/chizeledlight/other/ChizeledLight2000/myGlobals.php');
 
 switch($theme):
 
-	case Blue:
+	case 'Blue':
 		include ('/www/chizeledlight/assets/Themes/Blue/dsp_header.php');
 	break;
 
-	case Green:
+	case 'Green':
 		include ('/www/chizeledlight/assets/Themes/Green/dsp_header.php');
 	break;
 
-	case Ribbon:
+	case 'Ribbon':
 		include ('/www/chizeledlight/assets/Themes/Ribbon/dsp_header.php');
 	break;
 
-	case BreakfastJava:
+	case 'BreakfastJava':
 		include ('/www/chizeledlight/assets/Themes/BreakfastJava/dsp_header.php');
 	break;
 
