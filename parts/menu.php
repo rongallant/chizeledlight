@@ -13,7 +13,7 @@
 				}
 			</SCRIPT>
 			<FORM NAME="selecter1">
-				<SELECT NAME="select1" STYLE="font-family:Comic Sans MS; font-size=15px; background:beige">
+				<SELECT NAME="select1" STYLE="font-family:Comic Sans MS; font-size:15px; background:beige">
 					<OPTION VALUE="none" SELECTED>SHORT CUTS</OPTION>
 					<OPTION VALUE="/artwork.php">---------MY ART</OPTION>
 					<OPTION VALUE="/artwork.php">-&nbsp;Free Page Graphics</OPTION>

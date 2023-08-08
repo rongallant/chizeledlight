@@ -17,5 +17,6 @@
 		}
 	</SCRIPT>
 </head>
-<BODY BACKGROUND="assets/images/bg.jpg" TEXT="White" BGCOLOR="#442D0D" LINK="Yellow" VLINK="Yellow" ALINK="Red" onLoad="window.defaultStatus='Welcome to Ron&acute;s Place!';" onUnload="window.defaultStatus=''">
+<!-- <BODY BACKGROUND="assets/images/bg.jpg" TEXT="White" BGCOLOR="#442D0D" LINK="Yellow" VLINK="Yellow" ALINK="Red" onLoad="window.defaultStatus='Welcome to Ron&acute;s Place!';" onUnload="window.defaultStatus=''"> -->
+<BODY>
 	<DIV ALIGN="center"><TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="500"><TR><TD>

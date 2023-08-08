@@ -1,0 +1,45 @@
+body {
+  /* background-color: #442D0D;
+	background-image: url("graphics/bg.jpg"); */
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 14pt;
+  color: white;
+}
+
+h3 {
+  font-size: 13pt;
+  color: white;
+}
+
+h4 {
+  font-size: small;
+  font-variant: small-caps;
+  font-weight: bold;
+  color: white;
+}
+
+a {
+  color: yellow;
+  font-weight: bold;
+}
+
+a:active {
+  color: red;
+}
+
+a:link,
+a:visited {
+  color: yellow;
+}
+
+hr {
+  color: yellow;
+  width: 585px;
+  height: 1pt;
+}
