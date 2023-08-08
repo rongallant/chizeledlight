@@ -11,7 +11,7 @@
 
 <A HREF="http://vwr1.hitbox.com/HitboxUI?acct=WQ590820C8CE&p=1">Stats |
 <A HREF="signgb.php3">Sign Guestbook</A> |
-<A HREF="http://jupiter.guestworld.com/wgb/wgbview.deluxe.dbm?owner=redchevelle">View Guestbook</A> |
+<A HREF="geobook.php">View Guestbook</A> |
 <A HREF="geobook.php3">More of Ron's guests!</A><BR>
 
 <A HREF="webpanel.php3">Comments</A> |

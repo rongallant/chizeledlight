@@ -2,7 +2,7 @@
 <HEAD>
 <TITLE>menu</TITLE>
 
-<?PHP include("parts/header.inc"); ?>
+<?PHP include("parts/header.php"); ?>
 
 <DIV align="center">
   <CENTER>

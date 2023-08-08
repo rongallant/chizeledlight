@@ -1,6 +1,6 @@
 <HTML><HEAD>
 <TITLE>Ron's Place! - Artwork</TITLE>
-<?PHP include("parts/header.inc"); ?>
+<?PHP include("parts/header.php"); ?>
 
 <DIV ALIGN="center"><TABLE WIDTH="585" CELLPADDING="0" CELLSPACING="0" BORDER="0"><TR><TD>
 <CENTER><IMG SRC="graphics/artwork.gif" WIDTH=226 HEIGHT=54 ALT="" BORDER="0"><BR>
@@ -22,4 +22,4 @@
 <A HREF="artwork/art/art.html"><IMG SRC="graphics/next.gif" WIDTH=53 HEIGHT=53 ALT="Next" BORDER="0"></A>
 
 
-<?PHP include("parts/footer.inc"); ?>
+<?PHP include("parts/footer.php"); ?>

@@ -4,9 +4,8 @@
 <BASE TARGET="main">
 
 <SCRIPT language="JavaScript">
-<!--
-browserName = navigator.appName;browserVer = parseInt ( navigator.appVersion );
-version = "n2";
+var browserName = navigator.appName;browserVer = parseInt ( navigator.appVersion );
+var version = "n2";
 if ( browserName == "Netscape" && browserVer >= 3 ) version = "n3";
 if ( browserName == "Microsoft Internet Explorer" && browserVer >=4 ) version = "e4";
 
@@ -52,7 +51,6 @@ butOff = eval ( imgName + "_off.src" );
 document [imgName].src = butOff;
 }
 }
-// -->
 </SCRIPT>
 
 </HEAD>

@@ -1,5 +1,5 @@
 <?php
-	include ($phpRoot.'assets/templates/main_header.inc');
+	include ($phpRoot.'assets/templates/main_header.php');
 	include ($phpRoot.'assets/templates/artwork.inc');
 ?>
 
@@ -48,4 +48,4 @@
 </TR>
 </TABLE></CENTER>
 
-<?php include ($phpRoot.'assets/templates/main_footer.inc');?>
+<?php include ($phpRoot.'assets/templates/main_footer.php');?>

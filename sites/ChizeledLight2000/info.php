@@ -1,6 +1,6 @@
 <?PHP $title = 'Chizeled Light - About Me';?> 
 
-<?php include ('/www/chizeledlight/assets/templates/main_header.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/main_header.php');?>
 
 <H1>About Me</H1>
 
@@ -77,6 +77,6 @@
 	<LI><A HREF="http://www.chevelle.com/" TARGET="_blank">Ausley's Chevelle Parts</A>
 	<LI><A HREF="http://www.chevelles.net/" TARGET="_blank">Chevelles.net</A>
 </UL></TD><TD VALIGN="top">
-<P>Way back when, I owned a 1972 Chevy Chevelle.  Since I sold it I regret doing so and own many pieces of Chevelle memorabilia.  This includes a model and a hat both with red Chevelles on them.  Since then I have used Redchevelle as my Internet alias.</P></TD></TR></TABLE></DIV>
+<P>Way back when, I owned a 1972 Chevy Chevelle.ï¿½ Since I sold it I regret doing so and own many pieces of Chevelle memorabilia.ï¿½ This includes a model and a hat both with red Chevelles on them.ï¿½ Since then I have used Redchevelle as my Internet alias.</P></TD></TR></TABLE></DIV>
 
-<?php include ('/www/chizeledlight/assets/templates/main_footer.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/main_footer.php');?>

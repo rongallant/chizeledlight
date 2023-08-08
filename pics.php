@@ -2,7 +2,7 @@
 <HTML><HEAD>
 <TITLE>Ron's Place! - Photographs</TITLE>
 
-<?PHP include("parts/header.inc"); ?>
+<?PHP include("parts/header.php"); ?>
 
 <CENTER><TABLE WIDTH="600">
 <TR>
@@ -37,4 +37,4 @@ Me, Darryl and Denise New Years 98'
 <A HREF="index.php" TARGET="_top"><IMG  SRC="graphics/home.gif" WIDTH=53 HEIGHT=53 ALT="Home" BORDER="0"></A>
 <A HREF="links.php"><IMG  SRC="graphics/next.gif" WIDTH=53 HEIGHT=53 ALT="Next" BORDER="0"></A>
 
-<?PHP include("parts/footer.inc"); ?>
+<?PHP include("parts/footer.php"); ?>

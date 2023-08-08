@@ -1,6 +1,6 @@
 <?php include ('/www/chizeledlight/photographs/app_model.php'); ?>
 
-<?php include ('/www/chizeledlight/assets/templates/main_header.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/main_header.php');?>
 
 <?php include ('/www/chizeledlight/photographs/dsp_Menu.php');?>
 
@@ -29,4 +29,4 @@ echo "".$ag->show_jscript("Chizeledlight.com")."";
 echo $ag->thumbnail_table(6, 6, $multiple )."";
 ?>
 
-<?php include ('/www/chizeledlight/assets/templates/main_footer.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/main_footer.php');?>

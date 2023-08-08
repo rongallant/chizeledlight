@@ -1,18 +1,15 @@
 <HTML><HEAD>
 <TITLE>More of Ron's guests!</TITLE>
 
-<?PHP include("parts/header.inc"); ?>
+<?PHP include("parts/header.php"); ?>
 
 <DIV ALIGN="center"><TABLE WIDTH="600"><TR><TD>
-
-
 
 <CENTER><IMG SRC="graphics/guests.gif" WIDTH=211 HEIGHT=79 ALT="Ron's Guests" BORDER="0"><BR>
 <A HREF="index.php"><IMG SRC="assets/images/url.gif" BORDER="0"></A></CENTER>
 <BR><BR>
 
-<H3>Guest entries from June 10, 1997 to December 30, 1998</H3><HR>
-
+<H3 class="light">Guest entries from June 10, 1997 to December 30, 1998</H3><HR>
 
 <B>Jen</B> - 12/30/98 19:25:23<BR>
 <B>My Email:</B><A HREF="mailto:jen_u2@hotmail.com">jen_u2@hotmail.com</A><BR><P><B>Comments:</B><BR>
@@ -470,6 +467,6 @@ There is a lot of cool links
 </TABLE><P>
 
 
-<A HREF="webpanel.html"><IMG SRC="graphics/back.gif" WIDTH=53 HEIGHT=53 ALT="Back" BORDER="0"></A><A HREF="index.php" TARGET="_top"><IMG
+<A HREF="webpanel.php"><IMG SRC="graphics/back.gif" WIDTH=53 HEIGHT=53 ALT="Back" BORDER="0"></A><A HREF="index.php" TARGET="_top"><IMG
  SRC="graphics/home.gif" WIDTH=53 HEIGHT=53 ALT="Home" BORDER="0"></A>
-<?PHP include("parts/footer.inc"); ?>
+<?PHP include("parts/footer.php"); ?>

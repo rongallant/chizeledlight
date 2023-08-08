@@ -16,26 +16,26 @@ switch($FuseAction):
 
 	case home:
 		$title = "Chizeled Light - Logo Design";
-		include ('/www/chizeledlight/assets/templates/main_header.inc');
+		include ('/www/chizeledlight/assets/templates/main_header.php');
 		include ("dsp_menu.php");
 		echo "<H1>Logo Design</H1>";
 		include ("dsp_Thumbs.php");
-		include ('/www/chizeledlight/assets/templates/main_footer.inc');
+		include ('/www/chizeledlight/assets/templates/main_footer.php');
 		break;
 
 	case View:
 		$title = "Chizeled Light - Logo Design";
-		include ('/www/chizeledlight/assets/templates/main_header.inc');
+		include ('/www/chizeledlight/assets/templates/main_header.php');
 		echo "<H1>Logo Design</H1>";
 		include ("dsp_Table.php");
-		include ('/www/chizeledlight/assets/templates/main_footer.inc');
+		include ('/www/chizeledlight/assets/templates/main_footer.php');
 		break;
 
 	default:
 		$title = "Fuse Action Error";
 		include ("/www/chizeledlight/other/baby/assets/templates/baby_header.html");
 		echo "I do not have a handeler for the FuseAction &quot; <B>$FuseAction</B> &quot";
-		include ('/www/chizeledlight/assets/templates/main_footer.inc');
+		include ('/www/chizeledlight/assets/templates/main_footer.php');
 		break;
 
 endswitch;

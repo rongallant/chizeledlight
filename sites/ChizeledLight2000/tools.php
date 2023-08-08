@@ -1,6 +1,6 @@
 <?PHP $title = 'Chizeled Light - Tools';?> 
 
-<?php include ($phpRoot . 'assets/templates/main_header.inc');?>
+<?php include ($phpRoot . 'assets/templates/main_header.php');?>
 
 <H1>Tools</H1>
 
@@ -16,4 +16,4 @@
 
 <P><A HREF="<?PHP echo $HTTP_REFERER; ?>">&lt;&lt; Back</A></P>
 
-<?php include ($phpRoot . 'assets/templates/main_footer.inc');?>
+<?php include ($phpRoot . 'assets/templates/main_footer.php');?>

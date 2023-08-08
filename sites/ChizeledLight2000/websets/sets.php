@@ -1,4 +1,4 @@
-<?php include ('/www/chizeledlight/assets/templates/main_header.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/main_header.php');?>
 
 <?php include ('/www/chizeledlight/assets/templates/artwork.inc');?>
 
@@ -18,4 +18,4 @@
 	<LI><A HREF="redball/redball.html" TARGET="_blank"><B>Red Ball</B></A>
 </UL>
 
-<?php include ('/www/chizeledlight/assets/templates/main_footer.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/main_footer.php');?>

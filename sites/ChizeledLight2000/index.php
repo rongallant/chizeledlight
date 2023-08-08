@@ -1,7 +1,7 @@
 <?php include ($phpRoot.'myGlobals.php');?>
 
 <?$title='Chizeled Light';?>
-<?php include ($phpRoot.'assets/templates/main_header.inc');?>
+<?php include ($phpRoot.'assets/templates/main_header.php');?>
 
 <TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="100%">
 	<TR VALIGN="top">
@@ -154,4 +154,4 @@ St. John's, Newfoundland
 	</TR>
 </TABLE>
 
-<?php include ($phpRoot.'assets/templates/main_footer.inc');?>
+<?php include ($phpRoot.'assets/templates/main_footer.php');?>

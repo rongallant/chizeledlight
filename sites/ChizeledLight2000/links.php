@@ -1,6 +1,6 @@
 <?PHP $title = 'Chizeled Light - Links';?> 
 
-<?php include ('/www/chizeledlight/assets/templates/main_header.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/main_header.php');?>
 
 <?php include ('/www/chizeledlight/assets/templates/links.php');?>
 
@@ -43,4 +43,4 @@
 </UL>
 
 
-<?php include ('/www/chizeledlight/assets/templates/main_footer.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/main_footer.php');?>

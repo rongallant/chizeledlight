@@ -1,7 +1,7 @@
 <HTML><HEAD>
 <TITLE>Ron's Place! - Links</TITLE>
 
-<?PHP include("parts/header.inc"); ?>
+<?PHP include("parts/header.php"); ?>
 
 <DIV ALIGN="center"><TABLE WIDTH="600"><TR><TD>
 
@@ -197,4 +197,4 @@ would enjoy alot of them, so take a look.&nbsp; If I have left you out
 <A HREF="index.php" TARGET="_top"><IMG SRC="graphics/home.gif" WIDTH=53 HEIGHT=53 ALT="Home" BORDER="0"></A>
 <A HREF="webpanel.php" TARGET="_self"><IMG SRC="graphics/next.gif" WIDTH=53 HEIGHT=53 ALT="Next" BORDER="0"></A>
  
-<?PHP include("parts/footer.inc"); ?>
+<?PHP include("parts/footer.php"); ?>

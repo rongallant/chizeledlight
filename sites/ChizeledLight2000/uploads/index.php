@@ -1,6 +1,6 @@
 <?PHP $title = 'Chizeled Light - Upload Files';?> 
 
-<?php include ('/www/chizeledlight/assets/templates/main_header.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/main_header.php');?>
 
 <H1>Upload Files</H1>
 
@@ -16,5 +16,5 @@
 </form>
 </DIV>
 
-<?php include ('/www/chizeledlight/assets/templates/main_footer.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/main_footer.php');?>
 

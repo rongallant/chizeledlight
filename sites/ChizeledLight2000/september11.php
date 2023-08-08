@@ -1,6 +1,6 @@
 <?PHP $title = 'Chizeled Light - Friends';?> 
 
-<?php include ($phpRoot . 'assets/templates/main_header.inc');?>
+<?php include ($phpRoot . 'assets/templates/main_header.php');?>
 
 <H1>September 11, 2001 Links</H1>
 
@@ -22,4 +22,4 @@
 </UL>
 
 
-<?php include ($phpRoot . 'assets/templates/main_footer.inc');?>
+<?php include ($phpRoot . 'assets/templates/main_footer.php');?>

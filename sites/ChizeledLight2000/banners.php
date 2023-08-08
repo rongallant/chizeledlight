@@ -1,6 +1,6 @@
 <?PHP $title = 'Chizeled Light - Banners';?> 
 
-<?php include ('/www/chizeledlight/assets/templates/main_header.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/main_header.php');?>
 
 <H1>Banners</H1>
 
@@ -33,4 +33,4 @@
 </TR> -->
 </TABLE>
 
-<?php include ('/www/chizeledlight/assets/templates/main_footer.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/main_footer.php');?>

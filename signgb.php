@@ -3,7 +3,7 @@
 <html><head>
 <title>Ron's Place! - Sign Guestbook</title>
 
-<?PHP include("parts/header.inc"); ?>
+<?PHP include("parts/header.php"); ?>
 
 <DIV ALIGN="center"><TABLE WIDTH="585" CELLPADDING="0" CELLSPACING="0" BORDER="0"><TR><TD>
 <DIV ALIGN="center"><IMG SRC="graphics/signhere.gif" WIDTH=289 HEIGHT=61 ALT="Sign Here" BORDER="0"><BR>
@@ -70,24 +70,27 @@
 
 
 
-<BR><BR>
+<!-- <BR><BR>
 <A HREF="webpanel.php"><IMG SRC="graphics/back.gif"
  WIDTH=53 HEIGHT=53 ALT="Back" BORDER="0"></A><A HREF="index.php" TARGET="_top"><IMG
  SRC="graphics/home.gif" WIDTH=53 HEIGHT=53 ALT="Home" BORDER="0"></A><A
  HREF="http://jupiter.guestworld.tripod.lycos.com/wgb/wgbview.deluxe.dbm?owner=redchevelle"><IMG
- SRC="graphics/next.gif" WIDTH=53 HEIGHT=53 ALT="Next" BORDER="0"></A>
+ SRC="graphics/next.gif" WIDTH=53 HEIGHT=53 ALT="Next" BORDER="0"></A> -->
 <HR>
 <FONT FACE="Arial, Helvetica" SIZE="1">
-<?PHP include("parts/menu.inc"); ?><P>
+<?PHP include("parts/menu.php"); ?><P>
 </FONT><P>
 
 <DIV ALIGN="center"><!-- BEGIN WEBSIDESTORY CODE v5 -->
 <!-- COPYRIGHT 1998-1999 WEBSIDESTORY, INC. ALL RIGHTS RESERVED.  U.S. PATENT PENDING. -->
-<p align="center"><A HREF="http://rd1.hitbox.com/rd?acct=WQ590820C8CE62EN0&p=s">
-<IMG SRC="graphics/banners/hitbox.gif?hc=w131&l=y&hb=WQ590820C8CE62EN0&cd=1&n=Sign+Guestbook" height=62 width=88 ALT="Click Here!" border=0></A></p>
+<!-- ?hc=w131&l=y&hb=WQ590820C8CE62EN0&cd=1&n=Sign+Guestbook -->
+<!-- <p align="center"><A HREF="http://rd1.hitbox.com/rd?acct=WQ590820C8CE62EN0&p=s">
+<IMG SRC="graphics/banners/hitbox.gif" height=62 width=88 ALT="Click Here!" border=0></A></p> -->
+<p align="center"><IMG SRC="graphics/banners/hitbox.gif" height=62 width=88 ALT="Click Here!" border=0></p>
 <!-- END WEBSIDESTORY CODE  --></DIV>
 
-<CENTER><A HREF="http://www.rons.place.cc/" TARGET="_top">
+<!-- <A HREF="http://www.rons.place.cc/" TARGET="_top"> -->
+<CENTER><A HREF="index.php" TARGET="_top">
 <FONT COLOR="silver" SIZE="-1">Graphics and design <B>&copy; Gallant Web
-Design</B></A><BR><a href=http://www.GuestWorld.com/>http://www.GuestWorld.com/</a></FONT></CENTER>
+Design</B></A><BR><a href="http://www.GuestWorld.com/">http://www.GuestWorld.com/</a></FONT></CENTER>
 </TD></TR></TABLE></DIV></body></html>

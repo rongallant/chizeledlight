@@ -3,7 +3,7 @@
 
 <TITLE>Browser Detection</TITLE>
 
-<?PHP include("parts/header.inc"); ?>
+<?PHP include("parts/header.php"); ?>
 
 <SCRIPT LANGUAGE="JavaScript">
 <!--

@@ -2,7 +2,7 @@
 <HTML>
 	<head>
 		<title>Ron's Place! - St. John's, Newfoundland, Canada</title>
-		<?PHP include("parts/header.inc"); ?>
+		<?PHP include("parts/header.php"); ?>
 
 <DIV ALIGN="center"><TABLE><TR><TD>
 <A HREF="pics.php"><IMG SRC="graphics/photos/me-ani.gif" WIDTH=126 HEIGHT=158 ALT="Pics" BORDER="0"></A>
@@ -40,18 +40,16 @@
 <BR><BR>
 <HR>
 	
-<TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0"><TR>
+<TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0"  WIDTH="100%"><TR>
 <TD ALIGN="LEFT" WIDTH="30%"><A HREF="index.php" TARGET="_top">
 	<IMG  SRC="graphics/home.gif" WIDTH=53 HEIGHT=53 ALT="Home" BORDER="0"></A><A HREF="info.php"><IMG  SRC="graphics/next.gif" WIDTH=53 HEIGHT=53 ALT="Next" BORDER="0"></A></TD>
 
 <TD ALIGN="center" VALIGN="baseline" WIDTH="40%"><DIV ALIGN="center">
 <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
-<!--
 function map1(){
 if (document.selecter1.select1.options[document.selecter1.select1.selectedIndex].value != "none") {
 location = document.selecter1.select1.options[document.selecter1.select1.selectedIndex].value
 }}
-//-->
 </SCRIPT>
 <FORM NAME="selecter1">
 <SELECT NAME="select1" STYLE="font-family:Comic Sans MS; font-size=15; background:beige">
@@ -75,7 +73,8 @@ location = document.selecter1.select1.options[document.selecter1.select1.selecte
 	<OPTION VALUE="geobook.php">-&nbsp;Guestbook Archives
 </SELECT> <INPUT TYPE="Button" VALUE="GO" ONCLICK="map1()" ALIGN="absbottom">
 </FORM></DIV></TD>
-<TD ALIGN="RIGHT"><A HREF="signgb.php"><IMG SRC="graphics/sign.gif" BORDER="0" ALT="Sign" width="86" height="55"></A><A HREF="http://jupiter.guestworld.com/wgb/wgbview.deluxe.dbm?owner=redchevelle"><IMG SRC="graphics/view.gif" BORDER="0" ALT="View" width="86" height="55"></A><BR>
+<!-- OLD GUESTBOOK URL: http://jupiter.guestworld.com/wgb/wgbview.deluxe.dbm?owner=redchevelle" -->
+<TD ALIGN="RIGHT"><A HREF="signgb.php"><IMG SRC="graphics/sign.gif" BORDER="0" ALT="Sign" width="86" height="55"></A><A HREF="geobook.php"><IMG SRC="graphics/view.gif" BORDER="0" ALT="View" width="86" height="55"></A><BR>
 <DIV ALIGN="center"><FONT FACE="Arial,Helvetica" SIZE="2">Sign My Guestbook</FONT></DIV></TD>
 </TR></TABLE>
 <DIV ALIGN="center">
@@ -98,4 +97,4 @@ location = document.selecter1.select1.options[document.selecter1.select1.selecte
 </DIV>
 <!-- END Footer -->
 
-<?PHP include("parts/footer.inc"); ?>
+<?PHP include("parts/footer.php"); ?>

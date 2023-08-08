@@ -2,7 +2,7 @@
 <HTML><HEAD>
 <TITLE>Ron's Place! - Comments</TITLE>
 
-<?PHP include("parts/header.inc"); ?>
+<?PHP include("parts/header.php"); ?>
 
 <DIV ALIGN="center"><TABLE WIDTH="585"><TR><TD>
 <CENTER>
@@ -75,17 +75,17 @@ SRC="graphics/sign.gif" BORDER="0" ALT="Sign"></A><A
 HREF="http://jupiter.guestworld.tripod.lycos.com/wgb/wgbview.deluxe.dbm?owner=redchevelle"><IMG
 SRC="graphics/view.gif" BORDER="0" ALT="View"></A></CENTER> -->
 
-<CENTER><A HREF="signgb.html"><IMG
+<CENTER><A HREF="signgb.php"><IMG
 SRC="graphics/sign.gif" BORDER="0" ALT="Sign" width="86" height="55"></A><A
-HREF="http://jupiter.guestworld.com/wgb/wgbview.deluxe.dbm?owner=redchevelle"><IMG
+HREF="geobook.php"><IMG
 SRC="graphics/view.gif" BORDER="0" ALT="View" width="86" height="55"></A></CENTER>
 <BR><BR><CENTER><FONT SIZE="5" COLOR="Yellow">or</FONT></CENTER><BR><BR>
 
 
 
 <H2>ICQ Pager</H2>
-
-If you want to reach me fast and the flower <img src="http://online.mirabilis.com/scripts/online.dll?icq=608167&img=5"> is green, Use this form to contact me threw ICQ. (ICQ#: 608167)
+<!-- <img src="http://online.mirabilis.com/scripts/online.dll?icq=608167&img=5"> -->
+If you want to reach me fast and the flower <img src="graphics/icq-status.avif"> is green, Use this form to contact me threw ICQ. (ICQ#: 608167)
 
 <FORM ACTION="http://wwp.mirabilis.com/scripts/WWPMsg.dll" METHOD="post">
 
@@ -114,4 +114,4 @@ If you want to reach me fast and the flower <img src="http://online.mirabilis.co
  SRC="graphics/home.gif" WIDTH=53 HEIGHT=53 ALT="Home"
  BORDER="0"></A><A HREF="signgb.php"><IMG SRC="graphics/next.gif" WIDTH=53 HEIGHT=53 ALT="Next" BORDER="0"></A>
 
-<?PHP include("parts/footer.inc"); ?>
+<?PHP include("parts/footer.php"); ?>

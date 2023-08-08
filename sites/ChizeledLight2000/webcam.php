@@ -1,6 +1,6 @@
 <?PHP $title = 'Chizeled Light - Webcam';?> 
 
-<?php include ('/www/chizeledlight/assets/templates/main_header.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/main_header.php');?>
 
 <H1>Webcam</H1>
 
@@ -39,5 +39,5 @@ setTimeout('reloadImage2()',2500);
 <div align="center"><img border="0" src="/webcam/webcamalert.jpg" name="webcamalert"></div>
 
 
-<?php include ('/www/chizeledlight/assets/templates/main_footer.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/main_footer.php');?>
 

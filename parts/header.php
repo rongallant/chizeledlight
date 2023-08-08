@@ -9,13 +9,12 @@
 	<link href="assets/styles/main_style.css" rel="stylesheet" type="text/css" />
 	
 	<SCRIPT LANGUAGE="JavaScript">
-	<!-- Copyright 1999 Lori Barrett and Ron Gallant
+		// Copyright 1999 Lori Barrett and Ron Gallant
 		function popupPage(page, l, t, w, h) {
 			var windowprops = "location=no,scrollbars=yes,menubars=no,toolbars=no,resizable=yes" + ",left=" + l + ",top=" + t + ",width=" + w + ",height=" + h;
 			var URL = page;
-			popup = window.open(URL,"MenuPopup",windowprops);
+			popup = window.open(URL,"MenuPopup", windowprops);
 		}
-	// -->
 	</SCRIPT>
 </head>
 <BODY BACKGROUND="assets/images/bg.jpg" TEXT="White" BGCOLOR="#442D0D" LINK="Yellow" VLINK="Yellow" ALINK="Red" onLoad="window.defaultStatus='Welcome to Ron&acute;s Place!';" onUnload="window.defaultStatus=''">

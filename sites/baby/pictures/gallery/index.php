@@ -1,6 +1,6 @@
 <?php
   include ('/www/chizeledlight/photographs/app_model.php');
-  include ('/www/chizeledlight/assets/templates/main_header.inc');
+  include ('/www/chizeledlight/assets/templates/main_header.php');
 
   // Ron Gallant
   if($imgpath == "") {$imgpath = "assets/images/pics";}
@@ -35,5 +35,5 @@
   echo "".$ag->show_jscript("circle.ch / autogallery")."";
   echo $ag->thumbnail_table(6, 6, $multiple )."";
 
-  include ('/www/chizeledlight/assets/templates/main_footer.inc');
+  include ('/www/chizeledlight/assets/templates/main_footer.php');
 ?>

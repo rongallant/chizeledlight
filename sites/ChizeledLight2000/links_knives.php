@@ -1,6 +1,6 @@
 <?PHP $title = 'Chizeled Light - Links';?> 
 
-<?php include ('/www/chizeledlight/assets/templates/main_header.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/main_header.php');?>
 
 <?php include ('/www/chizeledlight/assets/templates/links.php');?>
 
@@ -10,8 +10,8 @@
 
 <DIV ALIGN="center"><IMG SRC="/assets/images/knife_bar2.gif" HEIGHT="53" WIDTH="358"></DIV>
 
-<P>I have appreciated art knives since I was 5 or 6 years old.   In many ways
-they have made me appreciate life.  They have a way of bringing you closer
+<P>I have appreciated art knives since I was 5 or 6 years old.ï¿½  In many ways
+they have made me appreciate life.ï¿½ They have a way of bringing you closer
 to the outdoors and to how fragile our own lives can be.</P>
 
 <P>I have given you a few links here in hopes that I might spawn the love for this
@@ -30,4 +30,4 @@ with knives out and brings an appreciation for them to you.</P>
 	<LI><A HREF="news:rec.knives">Knife news group</A>
 </UL>
 
-<?php include ('/www/chizeledlight/assets/templates/main_footer.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/main_footer.php');?>

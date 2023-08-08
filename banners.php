@@ -1,7 +1,7 @@
 <HTML><HEAD>
 <TITLE>Ron's Place! - Banners</TITLE>
 
-<?PHP include("parts/header.inc"); ?>
+<?PHP include("parts/header.php"); ?>
 
 <DIV ALIGN="center"><TABLE WIDTH="600"><TR><TD>
 <DIV ALIGN="center">
@@ -72,4 +72,4 @@ Link to my affiliates<P>
 <A HREF="index.php" TARGET="_top"><IMG
  SRC="graphics/home.gif" WIDTH=53 HEIGHT=53 ALT="Home" BORDER="0"></A>
 
-<?PHP include("parts/footer.inc"); ?>
+<?PHP include("parts/footer.php"); ?>
