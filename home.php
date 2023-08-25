@@ -52,7 +52,7 @@ location = document.selecter1.select1.options[document.selecter1.select1.selecte
 }}
 </SCRIPT>
 <FORM NAME="selecter1">
-<SELECT NAME="select1" STYLE="font-family:Comic Sans MS; font-size=15; background:beige">
+<SELECT NAME="select1" STYLE="font-family:Comic Sans MS; font-size:15px; background:beige">
 	<OPTION VALUE="none" SELECTED>SITE MAP
 	<OPTION VALUE="none">
 	<OPTION VALUE="http://vwr1.hitbox.com/HitboxUI?acct=WQ590820C8CE&p=1">-&nbsp;Stats
