@@ -1,51 +1,77 @@
-<HTML><HEAD>
-<TITLE>Ron's PLace - Stoneroids 98</TITLE>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<html>
+  <head>
+    <title>Ron's Place - Stoneroids 98</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <map name="stone_05.gif">
+      <area shape="RECT" coords="25,11,82,35" href="help/index.html" />
+    </map>
+    <script language="JavaScript1.1">
+      function open_link(url) {
+        var root;
+        if (opener.closed) {
+          root = window.open(
+            "",
+            "",
+            "toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,copyhistory=no"
+          );
+          root.location.href = url;
+        } else {
+          opener.location.href = url;
+        }
+      }
+    </script>
+  </head>
+  <body background="graphics/stonebg.gif" link="#993333" vlink="#993333" alink="#993333">
+    <div align="center">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td>
+            <form action="://www.fli7e.de/cgi-bin/s98/hs.pl" method="POST" name="DataForm">
+              <img src="graphics/stone_01.gif" width="557" height="24" border="0" /><br />
+              <img src="graphics/stone_02.gif" width="25" height="425" border="0" /><applet
+                code="stoneroidsJava/Stoneroids.class"
+                archive="stoneroidsJava/SRoids98.zip"
+                width="500"
+                height="425"
+                name="Stoneroids"
+              >
+                <param name="cabbase" value="stoneroidsJava/SRoids98.cab" />
+                <param name="HiScores" value="stoneroidsJava/scores.txt" />
+                <param name="NumScores" value="0" />
+                <param name="TopScores" value="0" />
+                <param name="ExpiredScores" value="30" /> </applet
+              ><img src="graphics/stone_04.gif" width="32" height="425" border="0" /><br /><img
+                src="graphics/stone_05.gif"
+                width="557"
+                height="62"
+                border="0"
+                usemap="#stone_05.gif"
+              /><br />
+              <div align="center">
+                <table cellpadding="0" cellspacing="0" border="0" width="520">
+                  <tr>
+                    <td>
+                      <a href="#" onClick="self.close();"><font face="arial,helvetica" size="1">CLOSE WINDOW</font></a>
+                    </td>
+                    <td align="right">
+                      <font face="Arial,Helvetica" size="1"
+                        >Stoneroids 98 v1.07 Copyright 1998
+                        <a href="javascript:open_link('http://members.aol.com/zstoner/')">ZStoner</a></font
+                      >
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <input type="hidden" name="required" value="ScoreEntry" />
+              <input type="hidden" name="ScoreEntry" value=" " />
+            </form>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
 
-<MAP NAME="stone_05.gif">
-<AREA SHAPE=RECT COORDS="25,11,82,35" HREF="help/index.html">
-</MAP>
-<SCRIPT LANGUAGE="JavaScript1.1"><!-- 
-function open_link(url) {
-var root;
-if (opener.closed) {
-root=window.open('','','toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,copyhistory=no');
-root.location.href = url;
-} else {
-opener.location.href = url;
-}
-}
-// --></SCRIPT>
-</HEAD>
-<!-- onload="doLoad()"  -->
-<body background="stonebg.gif" LINK="#993333" VLINK="#993333" ALINK="#993333">
-
-<DIV ALIGN="center">
-<TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0"><TR><TD>
-
-<form action="http://www.fli7e.de/cgi-bin/s98/hs.pl" method="POST" name="DataForm">
-<IMG SRC="graphics/stone_01.gif" WIDTH=557 HEIGHT=24 BORDER="0"><BR>
-<IMG SRC="graphics/stone_02.gif" WIDTH=25 HEIGHT=425 BORDER="0"><APPLET CODE="Stoneroids.class" ARCHIVE="SRoids98.zip" WIDTH=500 HEIGHT=425 name="Stoneroids">
-		<PARAM NAME="cabbase" VALUE="SRoids98.cab">
-		<PARAM NAME="HiScores" VALUE="scores.txt">
-		<PARAM NAME="NumScores" VALUE="0">
-		<PARAM NAME="TopScores" VALUE="0">
-		<PARAM NAME="ExpiredScores" VALUE="30">
-</APPLET><IMG SRC="graphics/stone_04.gif" WIDTH=32 HEIGHT=425 BORDER="0"><BR><IMG SRC="graphics/stone_05.gif" WIDTH=557 HEIGHT=62 BORDER="0" USEMAP="#stone_05.gif"><BR>
-
-<DIV ALIGN="center"><TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="520"><TR><TD><A HREF="#" onClick="self.close();"><FONT FACE="arial,helvetica" SIZE="1">CLOSE WINDOW</FONT></A>
-</TD><TD ALIGN="right">
-<FONT FACE="Arial,Helvetica" SIZE="1">Stoneroids 98 v1.07 Copyright 1998 <A HREF="javascript:open_link('http://members.aol.com/zstoner/')">ZStoner</A></FONT></TD>
-</TR></TABLE></DIV>
-</DIV>
-
-
-<input type="hidden" name="required" value="ScoreEntry">
-<input type="hidden" name="ScoreEntry" value=" ">
-</form>
-</TD></TR></TABLE>
-</DIV></BODY>
-<!-- 
+  <!-- 
 <script language="JavaScript">
 
 var SubmitWin;
@@ -110,5 +136,4 @@ return true;
 
 </script>
 // -->
-
-</HTML>
+</html>
