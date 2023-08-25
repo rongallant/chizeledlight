@@ -6,7 +6,8 @@
 <DIV ALIGN="center"><TABLE WIDTH="600"><TR><TD>
 <DIV ALIGN="center">
 <IMG SRC="graphics/banners.gif" WIDTH=257 HEIGHT=51 ALT="Banners" BORDER="0"><BR>
-<A HREF="index.php"><IMG SRC="assets/images/url.gif" BORDER="0"></A>/DIV>
+<A HREF="index.php" TARGET="_top"><IMG SRC="assets/images/url.gif" BORDER="0"></A>
+</DIV>
 
 <BR><BR>
 Here is a great way to show your appreciation of my site and graphics.  Take one of the following buttons or code for your own website.<P>
