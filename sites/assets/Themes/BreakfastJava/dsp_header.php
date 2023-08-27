@@ -1,7 +1,9 @@
-
-<?PHP if ($title == "") {$title = 'Chizeled Light';} ?>
-<?include ('/www/chizeledlight/assets/Themes/BreakfastJava/fbx_Settings.php');?>
-
+<?PHP include(__DIR__ . '/fbx_Settings.php'); ?>
+<?PHP
+	if ($title == "") {
+		$title = 'Chizeled Light (Breakfast Java)';
+	}
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <HTML>
 <HEAD>

@@ -1,6 +1,6 @@
 <?PHP $title = 'Chizeled Light - Artwork';?> 
 
-<?php include ($phpRoot.'assets/templates/main_header.php');?>
+<?php include($domainRoot . 'assets/templates/main_header.php');?>
 
 <H1>Artwork</H1>
 
@@ -22,4 +22,4 @@
 	</TR>
 </TABLE></DIV>
 
-<?php include ($phpRoot.'assets/templates/main_footer.php');?>
+<?php include($domainRoot . 'assets/templates/main_footer.php');?>

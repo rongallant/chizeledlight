@@ -1,6 +1,6 @@
 <?PHP $title = 'Chizeled Light - Links';?> 
 
-<?php include ('/www/chizeledlight/assets/templates/main_header.php');?>
+<?php include($domainRoot . 'assets/templates/main_header.php');?>
 
 <?php include ('/www/chizeledlight/assets/templates/links.php');?>
 
@@ -30,4 +30,4 @@ with knives out and brings an appreciation for them to you.</P>
 	<LI><A HREF="news:rec.knives">Knife news group</A>
 </UL>
 
-<?php include ('/www/chizeledlight/assets/templates/main_footer.php');?>
+<?php include($domainRoot . 'assets/templates/main_footer.php');?>

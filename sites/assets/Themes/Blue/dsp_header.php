@@ -1,7 +1,9 @@
-<?PHP include('/www/chizeledlight/assets/Themes/Blue/fbx_Settings.php'); ?>
-
-<?PHP if ($title == "") {$title = 'Chizeled Light';} ?>
-
+<?PHP include(__DIR__ . '/fbx_Settings.php'); ?>
+<?PHP
+	if ($title == "") {
+		$title = 'Chizeled Light (Blue)';
+	}
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 
 <HTML>

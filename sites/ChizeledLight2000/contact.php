@@ -1,6 +1,6 @@
 <?PHP $title = 'Chizeled Light - Contact';?> 
 
-<?php include ('/www/chizeledlight/assets/templates/main_header.php');?>
+<?php include($domainRoot . 'assets/templates/main_header.php');?>
 
 <H1>Contact</H1>
 
@@ -59,4 +59,4 @@
 </FORM>
 */ ?>
 
-<?php include ('/www/chizeledlight/assets/templates/main_footer.php');?>
+<?php include($domainRoot . 'assets/templates/main_footer.php');?>

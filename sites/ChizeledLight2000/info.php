@@ -1,6 +1,6 @@
 <?PHP $title = 'Chizeled Light - About Me';?> 
 
-<?php include ('/www/chizeledlight/assets/templates/main_header.php');?>
+<?php include($domainRoot . 'assets/templates/main_header.php');?>
 
 <H1>About Me</H1>
 
@@ -79,4 +79,4 @@
 </UL></TD><TD VALIGN="top">
 <P>Way back when, I owned a 1972 Chevy Chevelle.� Since I sold it I regret doing so and own many pieces of Chevelle memorabilia.� This includes a model and a hat both with red Chevelles on them.� Since then I have used Redchevelle as my Internet alias.</P></TD></TR></TABLE></DIV>
 
-<?php include ('/www/chizeledlight/assets/templates/main_footer.php');?>
+<?php include($domainRoot . 'assets/templates/main_footer.php');?>

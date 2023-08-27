@@ -1,6 +1,6 @@
 <?PHP $title = 'Chizeled Light - J.R.R Tolkien';?> 
 
-<?php include ('/www/chizeledlight/assets/templates/main_header.php');?>
+<?php include($domainRoot . 'assets/templates/main_header.php');?>
 
 <?php include ('/www/chizeledlight/assets/templates/links.php');?>
 
@@ -63,4 +63,4 @@
 </UL>
 
 
-<?php include ('/www/chizeledlight/assets/templates/main_footer.php');?>
+<?php include($domainRoot . 'assets/templates/main_footer.php');?>

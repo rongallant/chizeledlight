@@ -17,11 +17,11 @@
 
 <?PHP $title = 'Chizeled Light - Thank You';?> 
 
-<?php include ('/www/chizeledlight/assets/templates/main_header.php');?>
+<?php include($domainRoot . 'assets/templates/main_header.php');?>
 
 <H1>Thank You</H1>
 
 <P>Your files have been uploaded to the upload directory.</P>
 <P><A HREF="index.php">Return to Uploads</A></P>
 
-<?php include ('/www/chizeledlight/assets/templates/main_footer.php');?>
+<?php include($domainRoot . 'assets/templates/main_footer.php');?>

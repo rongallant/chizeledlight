@@ -1,6 +1,6 @@
-<?php include ('/www/chizeledlight/assets/templates/main_header.php');?>
+<?php include($domainRoot . 'assets/templates/main_header.php');?>
 
-<?php include ('/www/chizeledlight/assets/templates/artwork.inc');?>
+<?php include ('/www/chizeledlight/assets/templates/artwork.php');?>
 
 <H1>Graphic Design</H1>
 
@@ -31,4 +31,4 @@
 </TR>
 </TABLE></CENTER>
 
-<?php include ('/www/chizeledlight/assets/templates/main_footer.php');?>
+<?php include($domainRoot . 'assets/templates/main_footer.php');?>

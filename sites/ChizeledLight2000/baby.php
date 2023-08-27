@@ -1,20 +1,19 @@
 <?
-
 switch($theme):
 
-	case 'Blue':
+	case 'blue':
 		$size = "width=450";
 	break;
 
-	case 'Green':
+	case 'green':
 		$size = "width=450";
 	break;
 
-	case 'Ribbon':
+	case 'ribbon':
 		$size = "width=400";
 	break;
 
-	case 'BreakfastJava':
+	case 'breakfastjava':
 		$size = "width=400";
 	break;
 
@@ -26,7 +25,5 @@ endswitch;
 
 $self = "baby.php";
 $layout = "chizeledlight";
-
-include('../baby/pictures/index.php');
-
+include(__DIR__ . '/../baby/pictures/index.php');
 ?>

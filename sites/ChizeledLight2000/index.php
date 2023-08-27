@@ -1,7 +1,6 @@
-<?php include ($phpRoot.'myGlobals.php');?>
-
+<?php include ($phpRoot . 'myGlobals.php');?>
 <?$title='Chizeled Light';?>
-<?php include ($phpRoot.'assets/templates/main_header.php');?>
+<?php include(__DIR__ . '/../assets/templates/main_header.php');?>
 
 <TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0" WIDTH="100%">
 	<TR VALIGN="top">
@@ -12,17 +11,16 @@
 	Search Engines
 	</TH></TR>
 	</TABLE>
-	
 
-<?php include ($phpRoot.'assets/templates/SelectOMatic.php');?>
-
+	<?php include(__DIR__ . '/../assets/templates/SelectOMatic.php');?>
 	
-	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript"><!--
-	function go1(){
-	if (document.selecter1.select1.options[document.selecter1.select1.selectedIndex].value != "none") {
-	location = document.selecter1.select1.options[document.selecter1.select1.selectedIndex].value
-	}}
-	//--></SCRIPT>
+	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+		function go1() {
+			if (document.selecter1.select1.options[document.selecter1.select1.selectedIndex].value != "none") {
+				location = document.selecter1.select1.options[document.selecter1.select1.selectedIndex].value
+			}
+		}
+</SCRIPT>
 	<FORM NAME="selecter1">
 		<DIV CLASS="MainH4">More Search Engines</DIV>
 		<P CLASS="startpage">
@@ -87,16 +85,13 @@ S		</SELECT><INPUT ID="mainInput" TYPE="Button" VALUE="Go" ONCLICK="go1()">
 	<A HREF="Utils/index.php?fuseaction=utils.Redirect&url=http://www.rick.com/" CLASS="startpage"><B>Rick Dees Online</B></A> - Music's top 40.
 	</P>
 
-
-
 </TD><TD><IMG SRC="<?echo$myGraphics?>pixel.gif" WIDTH=10 HEIGHT=1 BORDER="0"></TD><TD WIDTH="50%">
-
-
 
 <P ALIGN="center" CLASS="startpage">
 <TABLE CELLPADDING="0" CELLSPACING="0" BORDER="1" CLASS="WebCamBorder">
 	<TR>
-		<TD><A HREF="javascript:popupPage('https://www.ntv.ca/cams/skycam1.jpg', 'no', 10, 10, 340, 280)" onMouseover="window.status='NTV Sky Cam'; return true"><IMG SRC="https://www.ntv.ca/cams/skycam1.jpg" WIDTH="150" BORDER="0"></A></TD>
+		<!-- Original: https://www.ntv.ca/cams/skycam1.jpg -->
+		<TD><A HREF="javascript:popupPage('../../assets/images/batcam.jpg', 'no', 10, 10, 340, 280)" onMouseover="window.status='NTV Sky Cam'; return true"><IMG SRC="../../assets/images/batcam.jpg" WIDTH="150" BORDER="0"></A></TD>
 	</TR>
 </TABLE>
 St. John's, Newfoundland
@@ -154,4 +149,4 @@ St. John's, Newfoundland
 	</TR>
 </TABLE>
 
-<?php include ($phpRoot.'assets/templates/main_footer.php');?>
+<?php include(__DIR__ . '/../assets/templates/main_footer.php');?>
