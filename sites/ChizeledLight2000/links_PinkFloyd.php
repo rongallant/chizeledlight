@@ -1,8 +1,7 @@
-<?PHP $title = 'Chizeled Light - J.R.R Tolkien';?> 
-
-<?php include($domainRoot . 'assets/templates/main_header.php');?>
-
-<?php include ('/www/chizeledlight/assets/templates/links.php');?>
+<?php include(__DIR__ . '/myGlobals.php');?>
+<?php $title = 'Chizeled Light - Links: Pink Floyd';?> 
+<?php include(__DIR__ . '/../assets/templates/main_header.php');?>
+<?php include(__DIR__ . '/../assets/templates/links.php');?>
 
 <H1>Links</H1>
 
@@ -63,4 +62,4 @@
 </UL>
 
 
-<?php include($domainRoot . 'assets/templates/main_footer.php');?>
+<?php include(__DIR__ . '/../assets/templates/main_footer.php');?>

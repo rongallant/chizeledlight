@@ -1,4 +1,4 @@
-<?php include ($phpRoot . 'myGlobals.php');?>
+<?php include(__DIR__ . '/myGlobals.php');?>
 <?$title='Chizeled Light';?>
 <?php include(__DIR__ . '/../assets/templates/main_header.php');?>
 

@@ -1,8 +1,7 @@
-<?PHP $title = 'Chizeled Light - Links';?> 
-
-<?php include($domainRoot . 'assets/templates/main_header.php');?>
-
-<?php include ('/www/chizeledlight/assets/templates/links.php');?>
+<?php include(__DIR__ . '/myGlobals.php');?>
+<?php $title = 'Chizeled Light - Links: Friends';?> 
+<?php include(__DIR__ . '/../assets/templates/main_header.php');?>
+<?php include(__DIR__ . '/../assets/templates/links.php');?>
 
 <H1>Links</H1>
 
@@ -58,4 +57,4 @@
 		<LI><A HREF="/Utils/index.php?fuseaction=utils.Redirect&url=http://www.geocities.com/pipeline/dropzone/6694/">Mersh</A> - He has a tendancy to wear dresses.
 	</UL><P>
 
-<?php include($domainRoot . 'assets/templates/main_footer.php');?>
+<?php include(__DIR__ . '/../assets/templates/main_footer.php');?>

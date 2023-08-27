@@ -1,6 +1,6 @@
-<?PHP $title = 'Chizeled Light - About Me';?> 
-
-<?php include($domainRoot . 'assets/templates/main_header.php');?>
+<?php include(__DIR__ . '/myGlobals.php');?>
+<?php $title = 'Chizeled Light - About Me';?> 
+<?php include(__DIR__ . '/../assets/templates/main_header.php');?>
 
 <H1>About Me</H1>
 
@@ -8,14 +8,11 @@
 <TR><TD>
 <DL>
 
-
-
-
 <!-- <DT><B>July 13, 1998</B><BR> 
 
 	<DD>-->
 	
-	<IMG SRC="/assets/images/ron_thanksgiving2000.jpg" WIDTH="150" HEIGHT="150" BORDER="0" ALIGN="left" HSPACE="5">
+	<IMG SRC="./assets/images/ron_thanksgiving2000.jpg" WIDTH="150" HEIGHT="150" BORDER="0" ALIGN="left" HSPACE="5">
 	
 	<P>Well here is a page that will let you know who the heck I am. I figured it was about time to let everyone in on the big secret. How should I lay this all out?  Should it be like a story?</P>
 	
@@ -60,7 +57,7 @@
 
 <TABLE BORDER="2" CELLSPACING="4" CELLPADDING="0" ALIGN="center">
 	<TR>
-		<TD><A HREF="http://www.brainbench.com/transcript.jsp?pid=196462"><IMG SRC="/assets/banners/adobephotoshop55user.gif" WIDTH="170" HEIGHT="50" BORDER="0"></A></TD>
+		<TD><A HREF="http://www.brainbench.com/transcript.jsp?pid=196462"><IMG SRC="./assets/banners/adobephotoshop55user.gif" WIDTH="170" HEIGHT="50" BORDER="0"></A></TD>
 	</TR>
 </TABLE>
 
@@ -70,7 +67,7 @@
 <DIV ALIGN="center"><H2>Just in case your wondering</H2></DIV>
 <TABLE WIDTH="100%" BORDER="0" CELLSPACING="4" CELLPADDING="10" ALIGN="center"><TR><TD>
 
-<IMG SRC="assets/images/redchevelle.jpg" WIDTH="225" HEIGHT="67" BORDER="0">
+<IMG SRC="./assets/images/redchevelle.jpg" WIDTH="225" HEIGHT="67" BORDER="0">
 
 <UL><U><B>Chevelle Links</B></U>
 	<LI><A HREF="http://www.chevelles.com/" TARGET="_blank">Team Chevelle</A>
@@ -79,4 +76,4 @@
 </UL></TD><TD VALIGN="top">
 <P>Way back when, I owned a 1972 Chevy Chevelle.� Since I sold it I regret doing so and own many pieces of Chevelle memorabilia.� This includes a model and a hat both with red Chevelles on them.� Since then I have used Redchevelle as my Internet alias.</P></TD></TR></TABLE></DIV>
 
-<?php include($domainRoot . 'assets/templates/main_footer.php');?>
+<?php include(__DIR__ . '/../assets/templates/main_footer.php');?>

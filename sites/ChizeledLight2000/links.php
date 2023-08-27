@@ -1,6 +1,7 @@
-<?PHP $title = 'Chizeled Light - Links';?> 
-<?php include($domainRoot . 'assets/templates/main_header.php');?>
-<?php include($domainRoot . 'assets/templates/links.php');?>
+<?php include(__DIR__ . '/myGlobals.php');?>
+<?php $title = 'Chizeled Light - Links';?> 
+<?php include(__DIR__ . '/../assets/templates/main_header.php');?>
+<?php include(__DIR__ . '/../assets/templates/links.php');?>
 
 <H1>Links</H1>
 
@@ -27,4 +28,4 @@
 	<LI><A HREF="/sites/PicturePerfect/index.html">Picture Perfect</A> - A small printing company.</LI>
 </UL>
 
-<?php include($domainRoot . 'assets/templates/main_footer.php');?>
+<?php include(__DIR__ . '/../assets/templates/main_footer.php');?>

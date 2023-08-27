@@ -1,8 +1,7 @@
-<?PHP $title = 'Chizeled Light - Links';?> 
-
-<?php include($domainRoot . 'assets/templates/main_header.php');?>
-
-<?php include ('/www/chizeledlight/assets/templates/links.php');?>
+<?php include (__DIR__ . '/myGlobals.php');?>
+<?php $title = 'Chizeled Light - Links: Knives';?> 
+<?php include(__DIR__ . '/../assets/templates/main_header.php');?>
+<?php include(__DIR__ . '/../assets/templates/links.php');?>
 
 <H1>Links</H1>
 
@@ -30,4 +29,4 @@ with knives out and brings an appreciation for them to you.</P>
 	<LI><A HREF="news:rec.knives">Knife news group</A>
 </UL>
 
-<?php include($domainRoot . 'assets/templates/main_footer.php');?>
+<?php include(__DIR__ . '/../assets/templates/main_footer.php');?>

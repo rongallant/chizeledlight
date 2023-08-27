@@ -1,9 +1,8 @@
-<?PHP $title = 'Chizeled Light - Friends';?> 
-
-<?php include ($phpRoot . 'assets/templates/main_header.php');?>
+<?php include(__DIR__ . '/myGlobals.php');?>
+<?php $title = 'Chizeled Light - Friends';?> 
+<?php include(__DIR__ . '/../assets/templates/main_header.php');?>
 
 <H1>September 11, 2001 Links</H1>
-
 <UL>
 	<LI><A HREF="Utils/index.php?fuseaction=utils.Redirect&url=http://www.redcross.org/">American Red Cross</A></LI>
 	<LI><A HREF="Utils/index.php?fuseaction=utils.Redirect&url=http://www.amazon.com/paypage/PKAXFNQH7EKCX">Red Cross donations via Amazon</A></LI>
@@ -21,5 +20,4 @@
 	<LI><A HREF="Utils/index.php?fuseaction=utils.Redirect&url=http://youthnoise.com/site/CDA/CDA_Page/0,1004,311,00.html">Remember the Children Yellow Bow Campaign</A></LI>
 </UL>
 
-
-<?php include ($phpRoot . 'assets/templates/main_footer.php');?>
+<?php include(__DIR__ . '/../assets/templates/main_footer.php');?>
