@@ -10,13 +10,13 @@
 </TH></TR>
 </TABLE>
 
-<A class="startpage" HREF="/index.php">Homepage</A><BR>
-<A class="startpage" HREF="/info.php">About Me</A><BR>
-<A class="startpage" HREF="/artwork.php">Artwork</A><BR>
-<A class="startpage" HREF="/photographs/gallery/index.php">Photographs</A><BR>
-<A class="startpage" HREF="/links.php">Links</A><BR>
-<A class="startpage" HREF="/contact.php">Contact</A><BR>
-<A class="startpage" HREF="/guestbook/index.php">Guestbook</A><BR>
+<A class="startpage" HREF="./index.php">Homepage</A><BR>
+<A class="startpage" HREF="./info.php">About Me</A><BR>
+<A class="startpage" HREF="./artwork.php">Artwork</A><BR>
+<A class="startpage" HREF="./photographs/gallery/index.php">Photographs</A><BR>
+<A class="startpage" HREF="./links.php">Links</A><BR>
+<A class="startpage" HREF="./contact.php">Contact</A><BR>
+<A class="startpage" HREF="./guestbook/index.php">Guestbook</A><BR>
 
 <BR>
 
@@ -26,14 +26,14 @@
 </TH></TR>
 </TABLE>
 
-<A class="startpage" HREF="/tools.php">Site Settings</A><BR>
-<A class="startpage" HREF="/banners.php">Banners</A><BR>
-<A class="startpage" HREF="/updates.php">Updates</A><BR>
+<A class="startpage" HREF="./tools.php">Site Settings</A><BR>
+<A class="startpage" HREF="./banners.php">Banners</A><BR>
+<A class="startpage" HREF="./updates.php">Updates</A><BR>
 <A class="startpage" HREF="javascript:popupPage('/games/stoneroids/index.html', 'yes', 0, 0, 600, 550)">Stoneroids</A><BR>
-<A class="startpage" HREF="/games/tetris/tetris.html">Tetris</A><BR>
-<A class="startpage" HREF="/other/baby/index.php">Baby Site</A><BR>
-<A class="startpage" HREF="/baby.php">Baby Pics</A><BR>
-<A class="startpage" HREF="/Secure/index.php">Admin</A><BR>
+<A class="startpage" HREF="./games/tetris/tetris.html">Tetris</A><BR>
+<A class="startpage" HREF="./other/baby/index.php">Baby Site</A><BR>
+<A class="startpage" HREF="./baby.php">Baby Pics</A><BR>
+<A class="startpage" HREF="./Secure/index.php">Admin</A><BR>
 
 <BR>
 

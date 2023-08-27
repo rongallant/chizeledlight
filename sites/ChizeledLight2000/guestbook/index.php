@@ -4,7 +4,7 @@ if you are placing your Fusebox application above the web root,
 	use chdir() to allow relative includes and requires.
 	(ex: chdir("../fuseboxRoot/");)
 */
-chdir("/home/www/chizeledlight/guestbook/");
+// chdir("/home/www/chizeledlight/guestbook/");
 
 /*
 In order to use Search Engine Safe URLs

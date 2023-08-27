@@ -11,32 +11,27 @@
 		</out>
 	</io>
 </fusedoc>
-
 */
 
-if($Fusebox["isHomeCircuit"]) {
+if ($Fusebox["isHomeCircuit"]) {
 
-switch($layout) {
+	switch($layout) {
 
-	case chizeledlight:
-		include ('/www/chizeledlight/myGlobals.php');
-		$Fusebox["layoutDir"] = "./../assets/templates/";
-		$Fusebox["layoutFile"] = "dsp_Layout.php";
-	break;
+		case "chizeledlight":
+			$Fusebox["layoutDir"] = __DIR__ . "/../../assets/templates/";
+			$Fusebox["layoutFile"] = "dsp_Layout.php";
+		break;
 
-	case no:
-		include ('/www/chizeledlight/myGlobals.php');
-		$Fusebox["layoutDir"] = "";
-		$Fusebox["layoutFile"] = "fbx_DefaultLayout.php";
-	break;
+		case "no":
+			$Fusebox["layoutDir"] = "";
+			$Fusebox["layoutFile"] = "fbx_DefaultLayout.php";
+		break;
 
-	default:
-		include ('/www/chizeledlight/myGlobals.php');
-		$Fusebox["layoutDir"] = "";
-		$Fusebox["layoutFile"] = "fbx_DefaultLayout.php";
-	break;
+		default:
+			$Fusebox["layoutDir"] = "";
+			$Fusebox["layoutFile"] = "fbx_DefaultLayout.php";
+		break;
 
 	}
-
 }
 ?>
