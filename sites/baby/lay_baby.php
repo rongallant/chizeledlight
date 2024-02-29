@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title><? echo $title; ?></title>
-	<link rel="STYLESHEET" type="text/css" href="<? echo $webRoot; ?>assets/styles/main.css">
+	<link rel="STYLESHEET" type="text/css" href="assets/styles/main.css">
 </head>
 
 <body background="<? echo $myGraphics; ?>bg_spots.gif">
