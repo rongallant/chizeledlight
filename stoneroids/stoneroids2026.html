@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Vectrex Storm</title>
+    <style>
+        :root {
+            --vectrex-cyan: #b0ffff;
+            --vectrex-glow: rgba(176, 255, 255, 0.6);
+            --crt-scanline: rgba(18, 16, 16, 0.1);
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #050505;
+            color: var(--vectrex-cyan);
+            font-family: 'Courier New', Courier, monospace;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            touch-action: none;
+        }
+
+        #game-container {
+            position: relative;
+            width: 100vmin;
+            height: 100vmin;
+            border: 2px solid #222;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            background: #000;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* CRT Scanline Overlay */
+        #crt-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, var(--crt-scanline) 50%),
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 255, 0, 0.03));
+            background-size: 100% 4px, 3px 100%;
+            z-index: 10;
+        }
+
+        #ui {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+            font-size: 20px;
+            text-shadow: 0 0 8px var(--vectrex-cyan);
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        #message-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 20;
+            background: rgba(0,0,0,0.95);
+            padding: 30px;
+            border: 2px solid var(--vectrex-cyan);
+            box-shadow: 0 0 20px var(--vectrex-glow);
+            display: block;
+        }
+
+        .btn {
+            background: none;
+            border: 1px solid var(--vectrex-cyan);
+            color: var(--vectrex-cyan);
+            padding: 12px 24px;
+            font-family: inherit;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 15px;
+            box-shadow: 0 0 5px var(--vectrex-glow);
+            transition: all 0.2s;
+            outline: none;
+        }
+
+        .btn:hover {
+            background: var(--vectrex-cyan);
+            color: black;
+        }
+
+        /* Mobile Controls */
+        #mobile-controls {
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            width: 100%;
+            display: none;
+            justify-content: space-around;
+            z-index: 25;
+            padding: 0 10px;
+        }
+
+        .touch-btn {
+            width: 65px;
+            height: 65px;
+            border: 2px solid var(--vectrex-cyan);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(176, 255, 255, 0.1);
+            user-select: none;
+            font-weight: bold;
+            font-size: 24px;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        @media (max-width: 498px) {
+            #mobile-controls { display: flex; }
+        }
+    </style>
+</head>
+<body>
+
+<div id="game-container">
+    <div id="crt-overlay"></div>
+    <div id="ui">
+        <div id="score">000000</div>
+        <div id="lives">LIVES: 3</div>
+    </div>
+
+    <div id="message-box">
+        <h1 id="msg-title">MINE STORM</h1>
+        <p id="msg-text">VECTREX SIMULATION</p>
+        <button class="btn" id="start-btn">START GAME</button>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="mobile-controls">
+        <div class="touch-btn" id="left-btn">←</div>
+        <div class="touch-btn" id="thrust-btn">↑</div>
+        <div class="touch-btn" id="right-btn">→</div>
+        <div class="touch-btn" id="fire-btn">F</div>
+    </div>
+</div>
+
+<script>
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+    const scoreEl = document.getElementById('score');
+    const livesEl = document.getElementById('lives');
+    const msgBox = document.getElementById('message-box');
+    const msgTitle = document.getElementById('msg-title');
+    const msgText = document.getElementById('msg-text');
+    const startBtn = document.getElementById('start-btn');
+
+    // Game Constants
+    const FPS = 60;
+    const SHIP_SIZE = 15;
+    const TURN_SPEED = 300; 
+    const SHIP_THRUST = 5.5;
+    const FRICTION = 0.7;
+    const ROID_NUM = 4;
+    const ROID_SIZE = 50;
+    const ROID_SPEED = 60;
+    const ROID_VERT = 10;
+    const LASER_MAX = 8;
+    const LASER_SPD = 550;
+    const LASER_DIST = 0.5;
+
+    // --- SOUND ENGINE ---
+    let audioCtx = null;
+    let thrustOsc = null;
+    let thrustGain = null;
+
+    function initAudio() {
+        if (audioCtx) return;
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        
+        // Setup continuous thrust sound
+        thrustOsc = audioCtx.createOscillator();
+        thrustGain = audioCtx.createGain();
+        thrustOsc.type = 'sawtooth';
+        thrustOsc.frequency.setValueAtTime(40, audioCtx.currentTime);
+        thrustGain.gain.setValueAtTime(0, audioCtx.currentTime);
+        
+        const lowPass = audioCtx.createBiquadFilter();
+        lowPass.type = 'lowpass';
+        lowPass.frequency.setValueAtTime(200, audioCtx.currentTime);
+        
+        thrustOsc.connect(lowPass);
+        lowPass.connect(thrustGain);
+        thrustGain.connect(audioCtx.destination);
+        thrustOsc.start();
+    }
+
+    function playLaserSound() {
+        if (!audioCtx) return;
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'square';
+        osc.frequency.setValueAtTime(800, audioCtx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(100, audioCtx.currentTime + 0.1);
+        gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + 0.1);
+    }
+
+    function playExplosionSound(size) {
+        if (!audioCtx) return;
+        const duration = size === 'small' ? 0.2 : 0.5;
+        const bufferSize = audioCtx.sampleRate * duration;
+        const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+        const data = buffer.getChannelData(0);
+        for (let i = 0; i < bufferSize; i++) {
+            data[i] = Math.random() * 2 - 1;
+        }
+        const noise = audioCtx.createBufferSource();
+        noise.buffer = buffer;
+        const filter = audioCtx.createBiquadFilter();
+        filter.type = 'lowpass';
+        filter.frequency.setValueAtTime(size === 'small' ? 1000 : 400, audioCtx.currentTime);
+        const gain = audioCtx.createGain();
+        gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
+        noise.connect(filter);
+        filter.connect(gain);
+        gain.connect(audioCtx.destination);
+        noise.start();
+    }
+
+    function playLevelUpSound() {
+        if (!audioCtx) return;
+        const now = audioCtx.currentTime;
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'square';
+        [220, 440, 880].forEach((freq, i) => {
+            osc.frequency.setValueAtTime(freq, now + i * 0.1);
+        });
+        gain.gain.setValueAtTime(0.05, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.4);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now);
+        osc.stop(now + 0.4);
+    }
+
+    // --- GAME LOGIC ---
+
+    let ship = null;
+    let asteroids = [];
+    let lasers = [];
+    let particles = [];
+    let score = 0;
+    let lives = 3;
+    let level = 1;
+    let gameState = 'START'; 
+
+    function resize() {
+        const container = document.getElementById('game-container');
+        canvas.width = container.clientWidth;
+        canvas.height = container.clientHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    let keys = {};
+    const touchState = { left: false, right: false, thrust: false, fire: false };
+
+    window.addEventListener('keydown', e => {
+        if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "Space", "KeyW", "KeyA", "KeyS", "KeyD", "KeyF"].includes(e.code)) {
+            e.preventDefault();
+        }
+        keys[e.code] = true;
+    });
+    window.addEventListener('keyup', e => keys[e.code] = false);
+
+    window.addEventListener('blur', () => {
+        keys = {};
+        for (let k in touchState) touchState[k] = false;
+        if (thrustGain) thrustGain.gain.setTargetAtTime(0, audioCtx.currentTime, 0.05);
+    });
+
+    function setupTouch(id, key) {
+        const el = document.getElementById(id);
+        const set = (val) => (e) => {
+            e.preventDefault();
+            touchState[key] = val;
+        };
+        el.addEventListener('touchstart', set(true));
+        el.addEventListener('touchend', set(false));
+        el.addEventListener('touchcancel', set(false));
+    }
+    setupTouch('left-btn', 'left');
+    setupTouch('right-btn', 'right');
+    setupTouch('thrust-btn', 'thrust');
+    setupTouch('fire-btn', 'fire');
+    
+    document.getElementById('fire-btn').addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        if(gameState === 'PLAYING') shootLaser();
+    });
+
+    function initGame() {
+        initAudio(); // Initialize Web Audio on user gesture
+        score = 0;
+        lives = 3;
+        level = 1;
+        scoreEl.innerText = "000000";
+        livesEl.innerText = "LIVES: " + lives;
+        lasers = [];
+        particles = [];
+        resetShip();
+        createAsteroidBelt();
+        gameState = 'PLAYING';
+        msgBox.style.display = 'none';
+        startBtn.blur();
+        playLevelUpSound();
+    }
+
+    function resetShip() {
+        ship = {
+            x: canvas.width / 2,
+            y: canvas.height / 2,
+            r: SHIP_SIZE / 2,
+            a: 90 / 180 * Math.PI,
+            rot: 0,
+            thrusting: false,
+            thrust: { x: 0, y: 0 },
+            blinkTime: 60,
+            dead: false
+        };
+    }
+
+    function createAsteroidBelt() {
+        asteroids = [];
+        let x, y;
+        for (let i = 0; i < ROID_NUM + level; i++) {
+            do {
+                x = Math.floor(Math.random() * canvas.width);
+                y = Math.floor(Math.random() * canvas.height);
+            } while (distBetweenPoints(canvas.width/2, canvas.height/2, x, y) < ROID_SIZE * 2.5);
+            asteroids.push(newAsteroid(x, y, ROID_SIZE / 2));
+        }
+    }
+
+    function newAsteroid(x, y, r) {
+        let lvlMult = 1 + (level * 0.1);
+        const roid = {
+            x: x,
+            y: y,
+            xv: Math.random() * ROID_SPEED * lvlMult / FPS * (Math.random() < 0.5 ? 1 : -1),
+            yv: Math.random() * ROID_SPEED * lvlMult / FPS * (Math.random() < 0.5 ? 1 : -1),
+            r: r,
+            a: Math.random() * Math.PI * 2,
+            vert: Math.floor(Math.random() * (ROID_VERT + 1) + ROID_VERT / 2),
+            offs: []
+        };
+        for (let i = 0; i < roid.vert; i++) {
+            roid.offs.push(Math.random() * 0.4 * 2 + 1 - 0.4);
+        }
+        return roid;
+    }
+
+    function distBetweenPoints(x1, y1, x2, y2) {
+        return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+    }
+
+    function shootLaser() {
+        if (!ship || ship.dead) return;
+        if (lasers.length < LASER_MAX) {
+            const noseLen = 2.0;
+            lasers.push({
+                x: ship.x + ship.r * noseLen * Math.cos(ship.a),
+                y: ship.y - ship.r * noseLen * Math.sin(ship.a),
+                xv: LASER_SPD * Math.cos(ship.a) / FPS,
+                yv: -LASER_SPD * Math.sin(ship.a) / FPS,
+                dist: 0
+            });
+            playLaserSound();
+        }
+    }
+
+    function createExplosion(x, y, color, count = 10) {
+        for (let i = 0; i < count; i++) {
+            particles.push({
+                x: x,
+                y: y,
+                xv: (Math.random() - 0.5) * 8,
+                yv: (Math.random() - 0.5) * 8,
+                life: 40 + Math.random() * 20,
+                color: color
+            });
+        }
+    }
+
+    function update() {
+        if (gameState !== 'PLAYING' || !ship) return;
+
+        ship.rot = 0;
+        if (keys['ArrowLeft'] || keys['KeyA'] || touchState.left) {
+            ship.rot = TURN_SPEED / 180 * Math.PI / FPS;
+        } else if (keys['ArrowRight'] || keys['KeyD'] || touchState.right) {
+            ship.rot = -TURN_SPEED / 180 * Math.PI / FPS;
+        }
+
+        ship.a += ship.rot;
+
+        ship.thrusting = keys['ArrowUp'] || keys['KeyW'] || touchState.thrust;
+        if (ship.thrusting && !ship.dead) {
+            ship.thrust.x += SHIP_THRUST * Math.cos(ship.a) / FPS;
+            ship.thrust.y -= SHIP_THRUST * Math.sin(ship.a) / FPS;
+            if (thrustGain) thrustGain.gain.setTargetAtTime(0.1, audioCtx.currentTime, 0.05);
+        } else {
+            ship.thrust.x -= FRICTION * ship.thrust.x / FPS;
+            ship.thrust.y -= FRICTION * ship.thrust.y / FPS;
+            if (thrustGain) thrustGain.gain.setTargetAtTime(0, audioCtx.currentTime, 0.1);
+        }
+
+        if (!ship.dead) {
+            ship.x += ship.thrust.x;
+            ship.y += ship.thrust.y;
+
+            if (ship.x < 0 - ship.r * 2) ship.x = canvas.width + ship.r * 2;
+            else if (ship.x > canvas.width + ship.r * 2) ship.x = 0 - ship.r * 2;
+            if (ship.y < 0 - ship.r * 2) ship.y = canvas.height + ship.r * 2;
+            else if (ship.y > canvas.height + ship.r * 2) ship.y = 0 - ship.r * 2;
+        }
+
+        if (keys['Space'] || keys['KeyF']) {
+            shootLaser();
+            keys['Space'] = false;
+        }
+
+        for (let i = lasers.length - 1; i >= 0; i--) {
+            lasers[i].x += lasers[i].xv;
+            lasers[i].y += lasers[i].yv;
+            lasers[i].dist += Math.sqrt(Math.pow(lasers[i].xv, 2) + Math.pow(lasers[i].yv, 2));
+
+            if (lasers[i].dist > LASER_DIST * canvas.width) {
+                lasers.splice(i, 1);
+                continue;
+            }
+
+            if (lasers[i].x < 0) lasers[i].x = canvas.width;
+            else if (lasers[i].x > canvas.width) lasers[i].x = 0;
+            if (lasers[i].y < 0) lasers[i].y = canvas.height;
+            else if (lasers[i].y > canvas.height) lasers[i].y = 0;
+        }
+
+        for (let i = 0; i < asteroids.length; i++) {
+            asteroids[i].x += asteroids[i].xv;
+            asteroids[i].y += asteroids[i].yv;
+            
+            if (asteroids[i].x < 0 - asteroids[i].r) asteroids[i].x = canvas.width + asteroids[i].r;
+            else if (asteroids[i].x > canvas.width + asteroids[i].r) asteroids[i].x = 0 - asteroids[i].r;
+            if (asteroids[i].y < 0 - asteroids[i].r) asteroids[i].y = canvas.height + asteroids[i].r;
+            else if (asteroids[i].y > canvas.height + asteroids[i].r) asteroids[i].y = 0 - asteroids[i].r;
+        }
+
+        if (ship.blinkTime === 0 && !ship.dead) {
+            for (let i = 0; i < asteroids.length; i++) {
+                if (distBetweenPoints(ship.x, ship.y, asteroids[i].x, asteroids[i].y) < ship.r + asteroids[i].r) {
+                    explodeShip();
+                    break;
+                }
+            }
+        } else if (ship.blinkTime > 0) {
+            ship.blinkTime--;
+        }
+
+        for (let i = asteroids.length - 1; i >= 0; i--) {
+            for (let j = lasers.length - 1; j >= 0; j--) {
+                if (distBetweenPoints(asteroids[i].x, asteroids[i].y, lasers[j].x, lasers[j].y) < asteroids[i].r) {
+                    destroyAsteroid(i);
+                    lasers.splice(j, 1);
+                    break;
+                }
+            }
+        }
+
+        for (let i = particles.length - 1; i >= 0; i--) {
+            particles[i].x += particles[i].xv;
+            particles[i].y += particles[i].yv;
+            particles[i].life--;
+            if (particles[i].life <= 0) particles.splice(i, 1);
+        }
+
+        if (asteroids.length === 0 && gameState === 'PLAYING') {
+            level++;
+            createAsteroidBelt();
+            playLevelUpSound();
+        }
+    }
+
+    function destroyAsteroid(index) {
+        const x = asteroids[index].x;
+        const y = asteroids[index].y;
+        const r = asteroids[index].r;
+        createExplosion(x, y, '#b0ffff', 15);
+        playExplosionSound(r > 15 ? 'large' : 'small');
+        if (r > 10) {
+            asteroids.push(newAsteroid(x, y, r / 2));
+            asteroids.push(newAsteroid(x, y, r / 2));
+            score += (r > 20 ? 20 : 50);
+        } else {
+            score += 100;
+        }
+        asteroids.splice(index, 1);
+        scoreEl.innerText = score.toString().padStart(6, '0');
+    }
+
+    function explodeShip() {
+        ship.dead = true;
+        createExplosion(ship.x, ship.y, '#ffffff', 40);
+        playExplosionSound('large');
+        lives--;
+        livesEl.innerText = "LIVES: " + (lives < 0 ? 0 : lives);
+        if (thrustGain) thrustGain.gain.setTargetAtTime(0, audioCtx.currentTime, 0.05);
+        
+        setTimeout(() => {
+            if (lives > 0) resetShip();
+            else gameOver();
+        }, 1500);
+    }
+
+    function gameOver() {
+        gameState = 'OVER';
+        msgTitle.innerText = "GAME OVER";
+        msgText.innerText = "Final Score: " + score;
+        startBtn.innerText = "RESTART";
+        msgBox.style.display = 'block';
+    }
+
+    function draw() {
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.strokeStyle = "#b0ffff";
+        ctx.lineWidth = 2;
+        ctx.shadowBlur = 12;
+        ctx.shadowColor = "#b0ffff";
+        ctx.lineCap = "round";
+
+        if (ship && !ship.dead) {
+            if (ship.blinkTime % 8 < 4) {
+                const noseLen = 2.0;
+                const rearLen = 1.3;
+                const indentLen = 0.6;
+                const spreadAngle = 2.45;
+
+                ctx.beginPath();
+                ctx.moveTo(
+                    ship.x + ship.r * noseLen * Math.cos(ship.a),
+                    ship.y - ship.r * noseLen * Math.sin(ship.a)
+                );
+                ctx.lineTo(
+                    ship.x + ship.r * rearLen * Math.cos(ship.a + spreadAngle),
+                    ship.y - ship.r * rearLen * Math.sin(ship.a + spreadAngle)
+                );
+                ctx.lineTo(
+                    ship.x + ship.r * indentLen * Math.cos(ship.a + Math.PI),
+                    ship.y - ship.r * indentLen * Math.sin(ship.a + Math.PI)
+                );
+                ctx.lineTo(
+                    ship.x + ship.r * rearLen * Math.cos(ship.a - spreadAngle),
+                    ship.y - ship.r * rearLen * Math.sin(ship.a - spreadAngle)
+                );
+                ctx.closePath();
+                ctx.stroke();
+
+                if (ship.thrusting) {
+                    const flameLen = indentLen + (Math.random() * 0.8 + 0.4);
+                    ctx.beginPath();
+                    ctx.moveTo(
+                        ship.x + ship.r * indentLen * Math.cos(ship.a + Math.PI),
+                        ship.y - ship.r * indentLen * Math.sin(ship.a + Math.PI)
+                    );
+                    ctx.lineTo(
+                        ship.x + ship.r * flameLen * Math.cos(ship.a + Math.PI),
+                        ship.y - ship.r * flameLen * Math.sin(ship.a + Math.PI)
+                    );
+                    ctx.stroke();
+                }
+            }
+        }
+
+        asteroids.forEach(roid => {
+            ctx.beginPath();
+            ctx.moveTo(roid.x + roid.r * roid.offs[0] * Math.cos(roid.a), roid.y + roid.r * roid.offs[0] * Math.sin(roid.a));
+            for (let j = 1; j < roid.vert; j++) {
+                ctx.lineTo(roid.x + roid.r * roid.offs[j] * Math.cos(roid.a + j * Math.PI * 2 / roid.vert), roid.y + roid.r * roid.offs[j] * Math.sin(roid.a + j * Math.PI * 2 / roid.vert));
+            }
+            ctx.closePath();
+            ctx.stroke();
+        });
+
+        lasers.forEach(laser => {
+            ctx.strokeStyle = "white";
+            ctx.beginPath();
+            ctx.arc(laser.x, laser.y, 1.5, 0, Math.PI * 2);
+            ctx.stroke();
+        });
+
+        particles.forEach(p => {
+            ctx.strokeStyle = p.color;
+            ctx.globalAlpha = p.life / 60;
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(p.x - p.xv * 1.5, p.y - p.yv * 1.5);
+            ctx.stroke();
+        });
+
+        ctx.globalAlpha = 1.0;
+        ctx.shadowBlur = 0;
+    }
+
+    function gameLoop() {
+        update();
+        draw();
+        requestAnimationFrame(gameLoop);
+    }
+
+    startBtn.onclick = (e) => {
+        e.stopPropagation();
+        initGame();
+    };
+
+    gameLoop();
+</script>
+
+</body>
+</html>

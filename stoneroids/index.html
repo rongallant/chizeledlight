@@ -1,139 +1,93 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>Ron's Place - Stoneroids 98</title>
+    <meta charset="UTF-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <style>
+      body {
+        background-image: url("graphics/stonebg.gif");
+        margin: 0;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 557px;
+        margin: 0 auto;
+      }
+      .game-frame {
+        display: flex;
+        align-items: flex-start;
+        margin: 0;
+        width: 557px;
+      }
+      .left-border {
+        width: 25px;
+        height: 425px;
+        flex-shrink: 0;
+      }
+      .right-border {
+        width: 32px;
+        height: 425px;
+        flex-shrink: 0;
+      }
+      .game-content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 520px;
+        margin: 0 auto;
+        font-size: 12px;
+      }
+      .footer a {
+        color: #993333;
+        text-decoration: none;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
+      img {
+        display: block;
+      }
+      .iframe {
+        border: none;
+        height: 425px;
+        width: 500px;
+      }
+    </style>
     <map name="stone_05.gif">
       <area shape="RECT" coords="25,11,82,35" href="help/index.html" />
     </map>
-    <script language="JavaScript1.1">
-      function open_link(url) {
-        var root;
-        if (opener.closed) {
-          root = window.open(
-            "",
-            "",
-            "toolbar=yes,location=yes,status=yes,menubar=yes,scrollbars=yes,resizable=yes,copyhistory=no"
-          );
-          root.location.href = url;
-        } else {
-          opener.location.href = url;
-        }
-      }
-    </script>
   </head>
-  <body background="graphics/stonebg.gif" link="#993333" vlink="#993333" alink="#993333">
-    <div align="center">
-      <table cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td>
-            <form action="://www.fli7e.de/cgi-bin/s98/hs.pl" method="POST" name="DataForm">
-              <img src="graphics/stone_01.gif" width="557" height="24" border="0" /><br />
-              <img src="graphics/stone_02.gif" width="25" height="425" border="0" /><applet
-                code="stoneroidsJava/Stoneroids.class"
-                archive="stoneroidsJava/SRoids98.zip"
-                width="500"
-                height="425"
-                name="Stoneroids"
-              >
-                <param name="cabbase" value="stoneroidsJava/SRoids98.cab" />
-                <param name="HiScores" value="stoneroidsJava/scores.txt" />
-                <param name="NumScores" value="0" />
-                <param name="TopScores" value="0" />
-                <param name="ExpiredScores" value="30" /> </applet
-              ><img src="graphics/stone_04.gif" width="32" height="425" border="0" /><br /><img
-                src="graphics/stone_05.gif"
-                width="557"
-                height="62"
-                border="0"
-                usemap="#stone_05.gif"
-              /><br />
-              <div align="center">
-                <table cellpadding="0" cellspacing="0" border="0" width="520">
-                  <tr>
-                    <td>
-                      <a href="#" onClick="self.close();"><font face="arial,helvetica" size="1">CLOSE WINDOW</font></a>
-                    </td>
-                    <td align="right">
-                      <font face="Arial,Helvetica" size="1"
-                        >Stoneroids 98 v1.07 Copyright 1998
-                        <a href="javascript:open_link('http://members.aol.com/zstoner/')">ZStoner</a></font
-                      >
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <input type="hidden" name="required" value="ScoreEntry" />
-              <input type="hidden" name="ScoreEntry" value=" " />
-            </form>
-          </td>
-        </tr>
-      </table>
+  <body link="#993333" vlink="#993333" alink="#993333">
+    <div class="container">
+      <img src="graphics/stone_01.gif" width="557" height="24" border="0" />
+      
+      <div class="game-frame">
+        <img src="graphics/stone_02.gif" class="left-border" border="0" />
+        <div class="game-content">
+          <iframe src="stoneroids2026.html" class="iframe"></iframe>
+        </div>
+        <img src="graphics/stone_04.gif" class="right-border" border="0" />
+      </div>
+      
+      <img src="graphics/stone_05.gif" width="557" height="62" border="0" usemap="#stone_05.gif" />
+      
+      <div class="footer">
+        <a href="#" onClick="self.close();">CLOSE WINDOW</a>
+        <div>
+          Stoneroids 98 v1.07 Copyright 1998
+          <a href="http://members.aol.com/zstoner/" target="_blank">ZStoner</a>
+        </div>
+      </div>
     </div>
   </body>
-
-  <!-- 
-<script language="JavaScript">
-
-var SubmitWin;
-var timerID=null, submitID=null;
-
-//------------------------------------------------------------
-
-// Set the initial timeout for polling.
-function doLoad(){
-timerID = window.setTimeout("checkClicked()", 1000);
-}
-
-//------------------------------------------------------------
-
-// This is the method that the timeout calls
-
-function checkClicked(){
-
-var st = document.Stoneroids;
-var evtID = st.GetEvent();
-
-	// The applets clicked method returned true!
-
-	if (evtID == 2){
-	var szScore = st.GetLastScore();
-	document.DataForm.ScoreEntry.value = szScore;
-	doWindow();
-	}
-
-	else if (evtID != 0) alert("Other Applet Event!   ID:"+ evtID);
-
-	// No applet event was set (returns 0).
-	else{}
-	timerID = window.setTimeout("checkClicked()", 1000);
-}
-
-//------------------------------------------------------------
-
-function doWindow(){
-SubmitWin = open("SaveScore.html#1", "SubmitWindow", "width=300,height=80");
-doSubmit();
-}
-
-//------------------------------------------------------------
-
-function doSubmit(){
-
-	if(SubmitWin.document.forms.length > 0){
-	SubmitWin.document.DataForm.ScoreEntry.value = document.DataForm.ScoreEntry.value;
-	if(submitID != null) window.clearTimeout(submitID);
-	}
-
-	else submitID = window.setTimeout("doSubmit()", 500);
-}
-
-//------------------------------------------------------------
-
-function MOver(text){
-window.status = text;
-return true;
-}
-
-</script>
-// -->
 </html>
