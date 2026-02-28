@@ -1,1 +1,1 @@
-<?PHP include ('/www/chizeledlight/assets/templates/artwork.inc'); ?>
+<?PHP include ('/www/chizeledlight/assets/templates/artwork.php'); ?>

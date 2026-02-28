@@ -33,5 +33,4 @@ if($Fusebox["isHomeCircuit"]) {
 } else {
 	print trim($Fusebox["layout"]);
 }
-
 ?>

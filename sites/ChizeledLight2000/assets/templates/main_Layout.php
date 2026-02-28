@@ -1,28 +1,25 @@
 <?PHP
-echo$rootPath
-include ($rootDir . 'myGlobals.php');
-
-
+include($phpRoot . "myGlobals.php");
 switch($theme):
 
-	case 'Blue':
+	case 'blue':
 		include ('/www/chizeledlight/assets/Themes/Blue/dsp_header.php');
 	break;
 
-	case 'Green':
+	case 'green':
 		include ('/www/chizeledlight/assets/Themes/Green/dsp_header.php');
 	break;
 
-	case 'Ribbon':
+	case 'ribbon':
 		include ('/www/chizeledlight/assets/Themes/Ribbon/dsp_header.php');
 	break;
 
-	case 'BreakfastJava':
+	case 'breakfastjava':
 		include ('/www/chizeledlight/assets/Themes/BreakfastJava/dsp_header.php');
 	break;
 
 	default:
-		echo "<P>I have no handler for the theme $theme</P>";
+		echo "<P>I have no handler for the theme ' . $theme . ' !</P>";
 	break;
 
 endswitch;

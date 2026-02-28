@@ -1,6 +1,6 @@
-<?PHP $title = 'Chizeled Light - Updates';?> 
-
-<?php include ($phpRoot . 'assets/templates/main_header.php');?>
+<?php include(__DIR__ . '/myGlobals.php');?>
+<?php $title = 'Chizeled Light - Updates';?> 
+<?php include(__DIR__ . '/../assets/templates/main_header.php');?>
 
 <H1>Updates</H1>
 
@@ -48,4 +48,4 @@
 	<LI><P>If you would like to have a link to 'Ron's Place!'  on your page, please use these <A HREF="banners.php" onMouseover="window.status='Banners and images to link to Ron&acute;s Pages.'; return true">banners</A> or buttons with the HTML provided.</P>
 </UL>
 
-<?php include ($phpRoot . 'assets/templates/main_footer.php');?>
+<?php include(__DIR__ . '/../assets/templates/main_footer.php');?>

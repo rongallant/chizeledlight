@@ -1,6 +1,6 @@
 <?php
 	include ($phpRoot.'assets/templates/main_header.php');
-	include ($phpRoot.'assets/templates/artwork.inc');
+	include ($phpRoot.'assets/templates/artwork.php');
 ?>
 
 <H1>Graphic Design</H1>
@@ -48,4 +48,4 @@
 </TR>
 </TABLE></CENTER>
 
-<?php include ($phpRoot.'assets/templates/main_footer.php');?>
+<?php include($domainRoot . 'assets/templates/main_footer.php');?>

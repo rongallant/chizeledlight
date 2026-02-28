@@ -1,31 +1,28 @@
 <?PHP
-
-include ('/www/chizeledlight/myGlobals.php');
-		
 switch($theme):
 
-	case 'Blue':
-		include ('/www/chizeledlight/assets/Themes/Blue/dsp_header.php');
+	case 'blue':
+		include(__DIR__ . '/../Themes/Blue/dsp_header.php');
 		print trim($Fusebox["layout"]);
-		include ('/www/chizeledlight/assets/Themes/Blue/dsp_footer.php');
+		include(__DIR__ . '/../Themes/Blue/dsp_footer.php');
 	break;
 
-	case 'Green':
-		include ('/www/chizeledlight/assets/Themes/Green/dsp_header.php');
+	case 'green':
+		include(__DIR__ . '/../Themes/Green/dsp_header.php');
 		print trim($Fusebox["layout"]);
-		include ('/www/chizeledlight/assets/Themes/Green/dsp_footer.php');
+		include(__DIR__ . '/../Themes/Green/dsp_footer.php');
 	break;
 
-	case 'Ribbon':
-		include ('/www/chizeledlight/assets/Themes/Ribbon/dsp_header.php');
+	case 'ribbon':
+		include(__DIR__ . '/../Themes/Ribbon/dsp_header.php');
 		print trim($Fusebox["layout"]);
-		include ('/www/chizeledlight/assets/Themes/Ribbon/dsp_footer.php');
+		include(__DIR__ . '/../Themes/Ribbon/dsp_footer.php');
 	break;
 
-	case 'BreakfastJava':
-		include ('/www/chizeledlight/assets/Themes/BreakfastJava/dsp_header.php');
+	case 'breakfastjava':
+		include(__DIR__ . '/../Themes/BreakfastJava/dsp_header.php');
 		print trim($Fusebox["layout"]);
-		include ('/www/chizeledlight/assets/Themes/BreakfastJava/dsp_footer.php');
+		include(__DIR__ . '/../Themes/BreakfastJava/dsp_footer.php');
 	break;
 
 	default:
@@ -33,5 +30,4 @@ switch($theme):
 	break;
 
 endswitch;
-
 ?>

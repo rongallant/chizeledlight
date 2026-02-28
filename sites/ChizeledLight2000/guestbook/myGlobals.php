@@ -20,25 +20,9 @@
 	</fusedoc>
 	*/
 
-	if (!isset($theme)) {
-		$theme = 'blue';
-	}
-
-	if($_GET["theme"]) {
-		$theme = 
-		strtolower($_GET["theme"]);
-	}
-
 	$domainRoot = __DIR__ . '/../../';
 	$phpRoot = __DIR__ . '/';
-	$htmlRoot = '/sites/ChizeledLight2000/';
-	$myDomain = 'https://chizeledlight.com/';
-	$myEmail = 'ron@rongallant.com';
-	$myGraphics = 'assets/images';
-	$images = 'assets/images';
-	$myTheme = $phpRoot . 'assets/Themes/';
-	$myTemplates = $phpRoot . 'assets/templates/';
-	$mySSL = 'https://chizeledlight.com/sites/ChizeledLight2000/';
-	$mySSLCGI = 'https://hora.safe-order.net/cgi-chizeledlight/';
+	$myGraphics = '/assets/images';
+	$images = '/assets/images';
 	$self = $PATH_INFO;
 ?>

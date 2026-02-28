@@ -7,24 +7,29 @@
 </fusedoc>
 */
 
-//In case no fuseaction was given, I'll set up one to use by default.
-if(!isset($attributes["fuseaction"])){ $attributes["fuseaction"] = "gb.View"; }
+// In case no fuseaction was given, I'll set up one to use by default.
+if (!isset($attributes["fuseaction"])){
+	$attributes["fuseaction"] = "gb.View";
+}
 
-//useful constants
-	if(!isset($GLOBALS["self"])){ $GLOBALS["self"] = "index.php"; }
+// useful constants
+	if (!isset($GLOBALS["self"])){ 
+		$GLOBALS["self"] = "index.php";
+	 }
 
 //should fusebox silently suppress its own error messages? default is FALSE
 	$Fusebox["suppressErrors"] = false;
 
-if($Fusebox["isHomeCircuit"]) {
-//put settings here that you want to execute only when this is the application's home circuit (for example session_start(); )
-	include ('/www/chizeledlight/myGlobals.php');
-
+if ($Fusebox["isHomeCircuit"]) {
+	// put settings here that you want to execute only when this is the application's home circuit (for example session_start(); )
+	include(__DIR__ . '/../myGlobals.php');
+	include(__DIR__ . '/myGlobals.php');
 } else {
-//put settings here that you want to execute only when this is not an application's home circuit
-
+	//put settings here that you want to execute only when this is not an application's home circuit
 }
 
-//Put settings out here that should run regardless of whether this is the home app or not
-if(!isset($layout)){ $GLOBALS["layout"] = "chizeledlight";}
+// Put settings out here that should run regardless of whether this is the home app or not
+if (!isset($layout)){
+	$GLOBALS["layout"] = "chizeledlight";
+}
 ?>

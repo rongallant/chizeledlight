@@ -12,7 +12,6 @@
 </fusedoc>
 */
 
-//
 $Fusebox["circuits"]["gb"] = "guestbook";
 
 ?>

@@ -13,7 +13,7 @@
 </fusedoc>
 */
 
-switch($GB) {
+switch($attributes["GB"]) {
 
 	default:
 		$title = 'Chizeled Light - View Guestbook';
@@ -47,5 +47,4 @@ switch($GB) {
 	break;
 
 }
-
 ?>

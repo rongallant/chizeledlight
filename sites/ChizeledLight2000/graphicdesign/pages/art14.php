@@ -1,4 +1,4 @@
-<?php include ('/www/chizeledlight/assets/templates/main_header.php');?>
+<?php include($domainRoot . 'assets/templates/main_header.php');?>
 
 <H1>Graphic Design</H1>
 
@@ -15,4 +15,4 @@
 <P><CENTER><IMG src="../images/art14.jpg"  border="0" alt=art14></CENTER></P>
 <P><CENTER><FONT size="3"  face="Times New Roman" ></FONT></CENTER></P>
 
-<?php include ('/www/chizeledlight/assets/templates/main_footer.php');?>
+<?php include($domainRoot . 'assets/templates/main_footer.php');?>

@@ -11,18 +11,23 @@
 	</io>
 </fusedoc>
 */
+
+
+if($Fusebox["isHomeCircuit"]) {
+	?>
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+	<html>
+	<head>
+		<title></title>
+	<?=$Fusebox["baseHref"];?>
+	</head>
+	<body bgcolor="#ffffff">
+	<?=trim($Fusebox["layout"]);?>
+	</body>
+	</html>
+	<?php
+	} else {
+		print trim($Fusebox["layout"]);
+	}	
 ?>
-<? print trim($Fusebox["layout"]); ?>
-<HTML>
-<HEAD></HEAD>
-<BODY>
-
-</BODY>
-</HTML>
-
-
-
-
-
-
 

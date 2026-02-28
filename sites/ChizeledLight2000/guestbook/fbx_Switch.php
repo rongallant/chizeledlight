@@ -16,13 +16,13 @@
 switch($Fusebox["fuseaction"]) {
 
 	case "View":
-		include ('dsp_Menu.php');
+		include('dsp_Menu.php');
 		include("dsp_View.php");
 	break;
 
 	case "Sign":
 		$title = 'Chizeled Light - Sign Guestbook';
-		include ('dsp_Menu.php');
+		include('dsp_Menu.php');
 		include("dsp_Sign.php");
 	break;
 
@@ -36,5 +36,4 @@ switch($Fusebox["fuseaction"]) {
 	break;
 
 }
-
 ?>
