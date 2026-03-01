@@ -296,23 +296,16 @@
                     // Inject URL tracker script into iframe
                     try {
                         const iframeDoc = browserFrame.contentDocument || browserFrame.contentWindow.document;
-                        console.log('Attempting to inject script into iframe...');
-                        console.log('Current iframe src:', browserFrame.src);
                         
                         const script = iframeDoc.createElement('script');
                         script.textContent = `
                             (function() {
-                                console.log('URL tracker injected successfully');
-                                console.log('Current location:', window.location.href);
-                                console.log('Document title:', document.title);
-                                
                                 function sendUrlToParent() {
                                     const currentPath = window.location.pathname;
                                     const search = window.location.search;
                                     const hash = window.location.hash;
                                     const fullPath = currentPath + search + hash;
                                     
-                                    console.log('Sending URL to parent:', fullPath);
                                     window.parent.postMessage({
                                         type: 'urlChange',
                                         url: fullPath,
@@ -333,7 +326,6 @@
                             })();
                         `;
                         iframeDoc.head.appendChild(script);
-                        console.log('Script injected successfully');
                     } catch (e) {
                         console.log('Cannot inject script due to cross-origin restrictions:', e);
                     }
