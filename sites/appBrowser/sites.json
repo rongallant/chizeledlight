@@ -4,14 +4,14 @@
         "name": "Welcome",
         "url": "welcome.html",
         "fakeDomain": "welcome",
-        "description": "Welcome"
+        "description": "Welcome to AppBrowser"
     },
     {
         "id": "aatest",
-        "name": "aaTest",
+        "name": "RonGallant.com redesign",
         "url": "../aaTest",
         "fakeDomain": "aatest.com",
-        "description": "Test site"
+        "description": "Sample site for a RonGallant.com redesign"
     },
     {
         "id": "angie",
@@ -22,80 +22,80 @@
     },
     {
         "id": "arieloveblog",
-        "name": "Arie Love Blog",
+        "name": "ArieLove's Blog",
         "url": "../ArieLoveBlog",
         "fakeDomain": "arieloveblog.com",
-        "description": "Arie Love Blog"
+        "description": "ArieLove's Blog"
     },
     {
         "id": "babineaus",
         "name": "Babineaus",
         "url": "../babineaus",
-        "fakeDomain": "babineaus.org",
-        "description": "Babineaus site"
+        "fakeDomain": "babineaus.com",
+        "description": "A website I built for Babineaus"
     },
     {
         "id": "baby",
         "name": "Baby",
         "url": "../baby",
         "fakeDomain": "baby-site.net",
-        "description": "Baby site"
+        "description": "Luis' baby blog"
     },
     {
         "id": "bj2",
         "name": "Breakfast Java 2",
         "url": "../bj2",
         "fakeDomain": "breakfast-java.com",
-        "description": "Breakfast Java 2"
+        "description": "Early landing page redesign"
     },
     {
         "id": "blacklion",
         "name": "Black Lion",
         "url": "../blacklion",
         "fakeDomain": "blacklion.net",
-        "description": "Black Lion site"
+        "description": "Designed this site to house my reviews of Black Lion watch and won the watch."
     },
     {
         "id": "blues",
-        "name": "Blues",
+        "name": "Jim's Blues Guitar School",
         "url": "../blues",
-        "fakeDomain": "bluesclub.com",
-        "description": "Blues site"
+        "fakeDomain": "jimsbluesguitarschool.com",
+        "description": "Website I built for a blues guitar teacher."
     },
     {
         "id": "chizeled",
         "name": "Chizeled",
         "url": "../chizeled",
-        "fakeDomain": "chizeled.com",
-        "description": "Chizeled site"
+        "fakeDomain": "chizeledlight.com/Chizeled",
+        "description": "Prototype site design"
     },
     {
         "id": "chizeledlight2000",
         "name": "Chizeled Light 2000",
         "url": "../ChizeledLight2000",
-        "fakeDomain": "chizeledlight2000.com",
-        "description": "Chizeled Light 2000"
+        "fakeDomain": "chizeledlight.com/ChizeledLight2000",
+        "description": "Prototype site design"
     },
     {
         "id": "console",
         "name": "Console",
         "url": "../console",
-        "fakeDomain": "console-games.net",
-        "description": "Console site"
+        "fakeDomain": "chizeledlight.com/Console",
+        "description": "Prototype site design"
     },
     {
         "id": "dracula",
         "name": "Dracula",
         "url": "../dracula",
         "fakeDomain": "dracula-movie.com",
-        "description": "Dracula site"
+        "description": "Was going to start a site for Dracula expert, but never got around to it"
     },
     {
         "id": "fbi",
         "name": "FBI",
         "url": "../fbi",
         "fakeDomain": "fbi.gov",
-        "description": "FBI site"
+        "description": "FBI site late 1990's"
     },
     {
         "id": "gwd1",
