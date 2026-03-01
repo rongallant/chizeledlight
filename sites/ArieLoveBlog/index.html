@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arie Love's Anime Spot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Bradley Hand', cursive;
+            background-image: url('images/background.png');
+            min-height: 100vh;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px 0;
+        }
+
+        .blog-container {
+            box-shadow: 10px 0 10px -6px rgba(0, 0, 0, 0.5), -10px 0 10px -6px rgba(0, 0, 0, 0.5), 0 10px 10px -6px rgba(0, 0, 0, 0.5);
+            margin: 0 auto;
+            max-width: 100%;
+            width: 748px;
+        }
+
+        header {
+            width: 100%;
+            margin-bottom: -5px;
+        }
+
+        .banner {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: none;
+        }
+
+        .content-wrapper {
+            background-image: url('images/content_background.png');
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: top;
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        .content {
+            padding: 30px 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #FF69B4;
+            text-shadow: 3px 3px 0px #FFB6C1, 6px 6px 0px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #FF1493;
+            margin: 25px 0 15px 0;
+            text-shadow: 2px 2px 0px #FFB6C1;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .anime-fact {
+            background-color: #FFE4E1;
+            border: 3px solid #FF69B4;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 1em;
+            color: #8B008B;
+            text-align: center;
+            transform: rotate(-2deg);
+        }
+
+        .kawaii-quote {
+            font-style: italic;
+            text-align: center;
+            font-size: 1.2em;
+            color: #FF1493;
+            margin: 25px 0;
+            padding: 20px;
+            border: 3px dashed #FFB6C1;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .post-meta {
+            text-align: center;
+            color: #8B008B;
+            font-size: 0.9em;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+
+        .emoji-rain {
+            font-size: 1.5em;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .footer {
+            background-color: #fff;
+            color: #8B008B;
+            font-size: 0.9em;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .footer p {
+            text-align: center;
+        }
+
+        .sparkle {
+            display: inline-block;
+            animation: sparkle 1.5s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: scale(1.2);
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px 0;
+            }
+
+            .blog-container {
+                width: 95%;
+            }
+
+            .content {
+                padding: 20px 30px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                padding: 15px 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blog-container">
+        <header>
+            <img src="images/banner.png" alt="Arie Love's Anime Spot Banner" class="banner">
+        </header>
+
+        <main>
+            <div class="content-wrapper">
+                <div class="content">
+                    <h1><span class="sparkle">✨</span> Welcome to My Ninja World! <span class="sparkle">✨</span></h1>
+
+                    <div class="post-meta">Posted by Arie Love</div>
+
+                    <div class="emoji-rain">
+                        � 🎌 🌙 ⭐ � 🎀 🌈 � 🎌 �
+                    </div>
+
+                    <p>
+                        Hey everyone! Welcome to my awesome anime blog! I'm Arie Love and I'm OBSESSED with
+                        Naruto! It's like the BEST anime EVER! Ninja training, jutsus, and Sasuke is so cool!
+                        Believe it! (＾▽＾)
+                    </p>
+
+                    <div class="anime-fact">
+                        <strong>Did you know?</strong> Naruto has the best characters! Kakashi-sensei, Sakura-chan,
+                        and don't even get me started on Gaara! So epic! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+                    </div>
+
+                    <div class="kawaii-quote">
+                        "Ninja way is to never give up! That's my nindo!"
+                        <br>~ Arie Love
+                    </div>
+
+                    <h2>My Favorite Naruto Characters! 🦊🔥</h2>
+                    <p>
+                        OMG Naruto characters are EVERYTHING! Naruto is so funny with his ramen obsession,
+                        and Sasuke is like super cool even when he's all emo! And Rock Lee! He's so determined
+                        even without ninjutsu! So inspiring! (♡˙︶˙♡)
+                    </p>
+
+                    <h2>Best Jutsus Ever! ⚔️🗡️</h2>
+                    <p>
+                        Shadow Clone Jutsu is like the most useful technique ever! And Rasengan! So cool!
+                        Chidori is amazing too! I practice the hand signs in my room but they never work...
+                        maybe I need more chakra? (｡♥‿♥｡)
+                    </p>
+
+                    <div class="anime-fact">
+                        <strong>Fun Fact!</strong> I can do the Naruto run! You know, with arms back behind you!
+                        My mom thinks I'm weird but it makes me go faster! Probably! (￣ω￣;)
+                    </div>
+
+                    <h2>Why Naruto is the BEST! 🌟</h2>
+                    <p>
+                        Naruto has everything! Action, friendship, sad parts that make me cry, and funny parts!
+                        The story about never giving up is so amazing! And the opening songs are so catchy!
+                        I sing them all the time even though I don't know Japanese! ＼(＾▽＾)／
+                    </p>
+
+                    <div class="kawaii-quote">
+                        "I'm gonna be Hokage someday! Believe it!"
+                    </div>
+
+                    <h2>Join My Ninja Squad! 🎉</h2>
+                    <p>
+                        Who's your favorite Naruto character? Do you like Team 7 or Team Guy?
+                        What's your favorite jutsu? Let me know! We can be ninja buddies and talk about
+                        all the best episodes! Together we can make this the most awesome anime blog ever!
+                        (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+                    </p>
+
+                    <p>
+                        Thanks for visiting my blog! Stay awesome and keep watching anime!
+                        Dattebayo! (＾▽＾)ﾉｼ
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2005 Arie Love's Anime Spot. Made with lots of love and sparkles! 💖✨</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
