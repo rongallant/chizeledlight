@@ -10,22 +10,22 @@
         "id": "aatest",
         "name": "RonGallant.com redesign",
         "url": "../aaTest",
-        "fakeDomain": "aatest.com",
-        "description": "Sample site for a RonGallant.com redesign"
+        "fakeDomain": "rongallant.com",
+        "description": "A redesign of RonGallant.com"
     },
     {
         "id": "angie",
         "name": "Angie",
         "url": "../Angie",
         "fakeDomain": "angie.net",
-        "description": "Angie's site"
+        "description": "Website I built for my sister."
     },
     {
         "id": "arieloveblog",
         "name": "ArieLove's Blog",
         "url": "../ArieLoveBlog",
         "fakeDomain": "arieloveblog.com",
-        "description": "ArieLove's Blog"
+        "description": "Blogger theme I did for my daughter"
     },
     {
         "id": "babineaus",
@@ -39,7 +39,7 @@
         "name": "Baby",
         "url": "../baby",
         "fakeDomain": "baby-site.net",
-        "description": "Luis' baby blog"
+        "description": "My son's baby blog"
     },
     {
         "id": "bj2",
@@ -84,13 +84,6 @@
         "description": "Prototype site design"
     },
     {
-        "id": "dracula",
-        "name": "Dracula",
-        "url": "../dracula",
-        "fakeDomain": "www.ucs.mun.ca/~emiller",
-        "description": "Was going to start a site for Dracula expert, but never got around to it"
-    },
-    {
         "id": "fbi",
         "name": "FBI",
         "url": "../fbi",
@@ -116,14 +109,14 @@
         "name": "Instructor",
         "url": "../instructor",
         "fakeDomain": "instructor.edu",
-        "description": "Instructor site"
+        "description": "Website I build for old friend"
     },
     {
         "id": "intercation",
         "name": "Intercation",
         "url": "../intercation",
         "fakeDomain": "intercation.net",
-        "description": "Intercation site"
+        "description": "Website prototype for my father and I's business"
     },
     {
         "id": "isg",
@@ -134,121 +127,121 @@
     },
     {
         "id": "iweb",
-        "name": "iWeb",
+        "name": "Sarah's First Birthday",
         "url": "../iweb",
-        "fakeDomain": "iweb-design.com",
-        "description": "iWeb site"
+        "fakeDomain": "web.me.com/ron-gallant/sarah",
+        "description": "iWeb site for my daughter.  Graphics and design from Apple iWeb"
     },
     {
         "id": "jaxvacs",
         "name": "Jax Vacs",
         "url": "../jaxvacs",
         "fakeDomain": "jaxvacs.com",
-        "description": "Jax Vacs"
+        "description": "Website I build for Jax Vacs. I never showed them"
     },
     {
         "id": "jennifer",
         "name": "Jennifer",
         "url": "../Jennifer",
         "fakeDomain": "jennifer.net",
-        "description": "Jennifer's site"
+        "description": "Website I build for a girl I met online"
     },
     {
         "id": "judo",
-        "name": "Judo",
+        "name": "Kokoro Budokai",
         "url": "../judo",
-        "fakeDomain": "judo-dojo.com",
-        "description": "Judo site"
+        "fakeDomain": "kokorobudokai.com",
+        "description": "My fathers judo club"
     },
     {
         "id": "kellihollet",
         "name": "Kelli Hollet",
         "url": "../KelliHollet",
         "fakeDomain": "kellihollet.com",
-        "description": "Kelli Hollet site"
+        "description": "Site for my sister's friend"
     },
     {
         "id": "koolknobs",
         "name": "KoolKnobs",
         "url": "../KoolKnobs",
         "fakeDomain": "koolknobs.com",
-        "description": "KoolKnobs site"
+        "description": "Website redesign for small business"
     },
     {
         "id": "milo",
         "name": "Milo",
         "url": "../milo",
         "fakeDomain": "milo.net",
-        "description": "Milo site"
+        "description": "Site I did for online friend"
     },
     {
         "id": "picsnpix",
         "name": "Pics-n-Pix",
         "url": "../picsnpix",
         "fakeDomain": "picsnpix.com",
-        "description": "Pics-n-Pix site"
+        "description": "Prototype site design for company idea"
     },
     {
         "id": "pictureperfect",
         "name": "Picture Perfect",
         "url": "../PicturePerfect",
         "fakeDomain": "pictureperfect.com",
-        "description": "Picture Perfect site"
+        "description": "Website for friends business"
     },
     {
         "id": "resume",
         "name": "Resume",
         "url": "../Resume",
         "fakeDomain": "resume.com",
-        "description": "Resume site"
+        "description": "My resume (2000)"
     },
     {
         "id": "ronsplace",
         "name": "Ron's Place",
         "url": "../RonsPlace",
         "fakeDomain": "ronsplace.net",
-        "description": "Ron's Place"
+        "description": "One of my early websites on GeoCities"
     },
     {
         "id": "sotf",
-        "name": "SOTF",
+        "name": "Survival of the Fittest",
         "url": "../sotf",
         "fakeDomain": "sotf.org",
-        "description": "SOTF site"
+        "description": "A friend and I's company website"
     },
     {
         "id": "startpage",
         "name": "Start Page",
         "url": "../StartPage",
         "fakeDomain": "startpage.com",
-        "description": "Start Page"
+        "description": "My first website. 1994"
     },
     {
         "id": "thylacine",
-        "name": "Thylacine",
+        "name": "The Thylacine - The Original Underdog",
         "url": "../Thylacine",
         "fakeDomain": "thylacine.com",
-        "description": "Thylacine site"
+        "description": "Site I build on a topic I like"
     },
     {
         "id": "tomsresume",
         "name": "Tom's Resume",
         "url": "../Tomsresume",
         "fakeDomain": "tomsresume.com",
-        "description": "Tom's Resume"
+        "description": "My fathers resume"
     },
     {
         "id": "uga",
-        "name": "UGA",
+        "name": "United Graphic Artists",
         "url": "../uga",
         "fakeDomain": "uga.edu",
-        "description": "UGA site"
+        "description": "A friends graphic design business"
     },
     {
         "id": "yogaroad",
         "name": "Yoga Road",
         "url": "../Yoga Road",
         "fakeDomain": "yogaroad.com",
-        "description": "Yoga Road site"
+        "description": "A friend of a friend's yoga business"
     }
 ]

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Vintage Web Archive</title>
+    <title>Chizeledlight Sites</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,8 +12,8 @@
     <!-- Sidebar with Site List -->
     <div class="sidebar">
         <div class="p-6 border-bottom border-gray-700">
-            <h1 class="text-xl font-bold text-blue-400">Web Archive</h1>
-            <p class="text-xs text-gray-400 mt-1">Vintage Site Collection</p>
+            <h1 class="text-xl font-bold text-blue-400">Chizeledlight Sites</h1>
+            <p class="text-xs text-gray-400 mt-1">Sites by Ron Gallant</p>
         </div>
         <div id="site-list" class="flex-grow overflow-y-auto">
             <!-- Sites will be injected here -->
@@ -113,7 +113,7 @@
 
             <!-- Viewport -->
             <div class="iframe-viewport inset">
-                <iframe id="browser-frame" src="about:blank" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+                <iframe id="browser-frame" src="about:blank" sandbox="allow-scripts allow-popups allow-forms allow-top-navigation"></iframe>
             </div>
 
             <!-- Status Bar -->
@@ -206,6 +206,24 @@
                     const receivedUrl = event.data.url;
                     
                     console.log('Received URL change message:', receivedUrl);
+                    
+                    // Check if this is an external domain
+                    if (receivedUrl.startsWith('http://') || receivedUrl.startsWith('https://')) {
+                        try {
+                            const url = new URL(receivedUrl);
+                            const isExternal = !url.hostname.includes('localhost') && !url.hostname.includes('127.0.0.1');
+                            
+                            if (isExternal) {
+                                // This is an external domain - show the real URL
+                                currentUrlEl.innerText = receivedUrl;
+                                windowTitleEl.innerText = event.data.title || receivedUrl;
+                                statusTextEl.innerText = `Document: Done (External Site)`;
+                                return;
+                            }
+                        } catch (e) {
+                            console.log('Error parsing URL:', e);
+                        }
+                    }
                     
                     if (fakeDomain) {
                         // Extract relative path from the full URL
