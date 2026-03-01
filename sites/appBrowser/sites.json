@@ -1,21 +1,5 @@
 [
     {
-        "id": "default",
-        "name": "Welcome",
-        "url": "welcome.html",
-        "fakeDomain": "welcome",
-        "description": "Welcome to AppBrowser",
-        "resolution": "640x480"
-    },
-    {
-        "id": "testframes",
-        "name": "Test Frames",
-        "url": "test_frames.html",
-        "fakeDomain": "testframes.local",
-        "description": "Test frame targeting functionality",
-        "resolution": "800x600"
-    },
-    {
         "id": "angie",
         "name": "Angie",
         "url": "../Angie",
@@ -47,14 +31,6 @@
         "resolution": "800x600"
     },
     {
-        "id": "bj2",
-        "name": "Breakfast Java 2",
-        "url": "../bj2",
-        "fakeDomain": "breakfast-java.com",
-        "description": "Early landing page redesign",
-        "resolution": "800x600"
-    },
-    {
         "id": "blacklion",
         "name": "Black Lion",
         "url": "../blacklion",
@@ -63,11 +39,11 @@
         "resolution": "1024x768"
     },
     {
-        "id": "blues",
-        "name": "Jim's Blues Guitar School",
-        "url": "../blues",
-        "fakeDomain": "jimsbluesguitarschool.com",
-        "description": "Website I built for a blues guitar teacher.",
+        "id": "bj2",
+        "name": "Breakfast Java 2",
+        "url": "../bj2",
+        "fakeDomain": "breakfast-java.com",
+        "description": "Early landing page redesign",
         "resolution": "800x600"
     },
     {
@@ -142,13 +118,6 @@
         "resolution": "800x600"
     },
     {
-        "id": "iweb",
-        "name": "Sarah's First Birthday",
-        "url": "../iweb",
-        "fakeDomain": "web.me.com/ron-gallant/sarah",
-        "description": "iWeb site for my daughter.  Graphics and design from Apple iWeb"
-    },
-    {
         "id": "jaxvacs",
         "name": "Jax Vacs",
         "url": "../jaxvacs",
@@ -164,11 +133,11 @@
         "resolution": "640x480"
     },
     {
-        "id": "judo",
-        "name": "Kokoro Budokai",
-        "url": "../judo",
-        "fakeDomain": "kokorobudokai.com",
-        "description": "My fathers judo club",
+        "id": "blues",
+        "name": "Jim's Blues Guitar School",
+        "url": "../blues",
+        "fakeDomain": "jimsbluesguitarschool.com",
+        "description": "Website I built for a blues guitar teacher.",
         "resolution": "800x600"
     },
     {
@@ -178,6 +147,14 @@
         "fakeDomain": "kellihollet.com",
         "description": "Site for my sister's friend",
         "resolution": "640x480"
+    },
+    {
+        "id": "judo",
+        "name": "Kokoro Budokai",
+        "url": "../judo",
+        "fakeDomain": "kokorobudokai.com",
+        "description": "My fathers judo club",
+        "resolution": "800x600"
     },
     {
         "id": "koolknobs",
@@ -228,12 +205,11 @@
         "resolution": "640x480"
     },
     {
-        "id": "sotf",
-        "name": "Survival of the Fittest",
-        "url": "../sotf",
-        "fakeDomain": "sotf.org",
-        "description": "A friend and I's company website",
-        "resolution": "640x480"
+        "id": "iweb",
+        "name": "Sarah's First Birthday",
+        "url": "../iweb",
+        "fakeDomain": "web.me.com/ron-gallant/sarah",
+        "description": "iWeb site for my daughter.  Graphics and design from Apple iWeb"
     },
     {
         "id": "startpage",
@@ -242,6 +218,22 @@
         "fakeDomain": "startpage.com",
         "description": "My first website. 1994",
         "resolution": "640x480"
+    },
+    {
+        "id": "sotf",
+        "name": "Survival of the Fittest",
+        "url": "../sotf",
+        "fakeDomain": "sotf.org",
+        "description": "A friend and I's company website",
+        "resolution": "640x480"
+    },
+    {
+        "id": "testframes",
+        "name": "Test Frames",
+        "url": "test_frames.html",
+        "fakeDomain": "testframes.local",
+        "description": "Test frame targeting functionality",
+        "resolution": "800x600"
     },
     {
         "id": "thylacine",
@@ -266,6 +258,14 @@
         "fakeDomain": "uga.edu",
         "description": "A friends graphic design business",
         "resolution": "800x600"
+    },
+    {
+        "id": "default",
+        "name": "Welcome",
+        "url": "welcome.html",
+        "fakeDomain": "welcome",
+        "description": "Welcome to AppBrowser",
+        "resolution": "640x480"
     },
     {
         "id": "yogaroad",

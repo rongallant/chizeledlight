@@ -302,17 +302,18 @@
                 const viewport = document.querySelector('.iframe-viewport');
                 
                 if (netscapeWindow && viewport) {
-                    // Reset to default full-size
-                    netscapeWindow.style.width = '';
-                    netscapeWindow.style.height = '';
-                    netscapeWindow.style.margin = '';
+                    // Reset to full size - take up entire right side
+                    netscapeWindow.style.width = '100%';
+                    netscapeWindow.style.height = '90vh';
+                    netscapeWindow.style.margin = '0';
                     netscapeWindow.style.transform = '';
                     netscapeWindow.style.transformOrigin = '';
+                    netscapeWindow.style.maxWidth = 'none';
                     
                     // Reset viewport to default height
                     viewport.style.height = '';
                     
-                    console.log('Reset browser to default size');
+                    console.log('Reset browser to full size');
                 }
             }
 
