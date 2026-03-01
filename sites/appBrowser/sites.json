@@ -159,7 +159,7 @@
     {
         "id": "koolknobs",
         "name": "KoolKnobs",
-        "url": "../KoolKnobs",
+        "url": "../KoolKnobs/www",
         "fakeDomain": "koolknobs.com",
         "description": "Website redesign for small business",
         "resolution": "800x600"
