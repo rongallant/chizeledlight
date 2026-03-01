@@ -163,7 +163,11 @@
 
             // Initialize Site List
             let defaultSiteElement = null;
-            sites.forEach(site => {
+            
+            // Sort sites alphabetically by name (case-insensitive)
+            const sortedSites = sites.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
+            
+            sortedSites.forEach(site => {
                 const div = document.createElement('div');
                 div.className = 'site-item';
                 div.innerHTML = `
@@ -330,10 +334,17 @@
             }
 
             function goHome() {
-                if (currentSite) {
-                    const displayUrl = currentSite.fakeDomain ? `http://${currentSite.fakeDomain}` : currentSite.url;
-                    browserFrame.src = currentSite.url;
-                    currentUrlEl.innerText = displayUrl;
+                // Find and load the welcome site
+                const welcomeSite = sites.find(site => site.id === 'default');
+                if (welcomeSite) {
+                    // Find the welcome site element in the sidebar
+                    const welcomeElement = Array.from(document.querySelectorAll('.site-item')).find(el => 
+                        el.querySelector('.font-bold').textContent === welcomeSite.name
+                    );
+                    
+                    if (welcomeElement) {
+                        loadSite(welcomeSite, welcomeElement);
+                    }
                 }
             }
 
