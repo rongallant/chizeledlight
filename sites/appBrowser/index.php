@@ -266,6 +266,56 @@
                 starContainer.appendChild(star);
             }
 
+            function applyBrowserResolution(resolution) {
+                const [width, height] = resolution.split('x').map(Number);
+                const netscapeWindow = document.querySelector('.netscape-3.outset');
+                const viewport = document.querySelector('.iframe-viewport');
+                
+                if (netscapeWindow && viewport) {
+                    // Calculate scale factor to fit the resolution in the available space
+                    const maxWidth = netscapeWindow.parentElement.clientWidth - 40; // Leave some margin
+                    const maxHeight = window.innerHeight - 200; // Leave room for UI elements
+                    
+                    const scaleX = maxWidth / width;
+                    const scaleY = maxHeight / height;
+                    const scale = Math.min(scaleX, scaleY, 1); // Don't scale up, only down
+                    
+                    const actualWidth = width * scale;
+                    const actualHeight = height * scale;
+                    
+                    // Apply the size and center the browser window
+                    netscapeWindow.style.width = actualWidth + 'px';
+                    netscapeWindow.style.height = actualHeight + 'px';
+                    netscapeWindow.style.margin = '20px auto';
+                    netscapeWindow.style.transform = ''; // Remove transform since we're setting actual size
+                    netscapeWindow.style.transformOrigin = '';
+                    
+                    // Update viewport size
+                    viewport.style.height = (actualHeight - 180) + 'px'; // Subtract browser chrome height
+                    
+                    console.log(`Applied resolution ${resolution} at scale ${scale.toFixed(2)} (actual: ${actualWidth}x${actualHeight})`);
+                }
+            }
+
+            function resetBrowserSize() {
+                const netscapeWindow = document.querySelector('.netscape-3.outset');
+                const viewport = document.querySelector('.iframe-viewport');
+                
+                if (netscapeWindow && viewport) {
+                    // Reset to default full-size
+                    netscapeWindow.style.width = '';
+                    netscapeWindow.style.height = '';
+                    netscapeWindow.style.margin = '';
+                    netscapeWindow.style.transform = '';
+                    netscapeWindow.style.transformOrigin = '';
+                    
+                    // Reset viewport to default height
+                    viewport.style.height = '';
+                    
+                    console.log('Reset browser to default size');
+                }
+            }
+
             function loadSite(site, element) {
                 currentSite = site;
                 // Update active state in sidebar
@@ -284,6 +334,13 @@
                 // Store base URL for this site
                 browserFrame.setAttribute('data-base-url', site.url);
                 browserFrame.setAttribute('data-fake-domain', site.fakeDomain || '');
+
+                // Apply browser resolution if specified
+                if (site.resolution) {
+                    applyBrowserResolution(site.resolution);
+                } else {
+                    resetBrowserSize();
+                }
 
                 // Load iframe with actual URL
                 browserFrame.src = site.url;

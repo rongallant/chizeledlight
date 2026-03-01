@@ -4,21 +4,24 @@
         "name": "Welcome",
         "url": "welcome.html",
         "fakeDomain": "welcome",
-        "description": "Welcome to AppBrowser"
+        "description": "Welcome to AppBrowser",
+        "resolution": "640x480"
     },
     {
-        "id": "aatest",
-        "name": "RonGallant.com redesign",
-        "url": "../aaTest",
-        "fakeDomain": "rongallant.com",
-        "description": "A redesign of RonGallant.com"
+        "id": "testframes",
+        "name": "Test Frames",
+        "url": "test_frames.html",
+        "fakeDomain": "testframes.local",
+        "description": "Test frame targeting functionality",
+        "resolution": "800x600"
     },
     {
         "id": "angie",
         "name": "Angie",
         "url": "../Angie",
         "fakeDomain": "angie.net",
-        "description": "Website I built for my sister."
+        "description": "Website I built for my sister.",
+        "resolution": "640x480"
     },
     {
         "id": "arieloveblog",
@@ -32,42 +35,48 @@
         "name": "Babineaus",
         "url": "../babineaus",
         "fakeDomain": "babineaus.com",
-        "description": "A website I built for Babineaus"
+        "description": "A website I built for Babineaus",
+        "resolution": "800x600"
     },
     {
         "id": "baby",
         "name": "Baby",
         "url": "../baby",
         "fakeDomain": "baby-site.net",
-        "description": "My son's baby blog"
+        "description": "My son's baby blog",
+        "resolution": "800x600"
     },
     {
         "id": "bj2",
         "name": "Breakfast Java 2",
         "url": "../bj2",
         "fakeDomain": "breakfast-java.com",
-        "description": "Early landing page redesign"
+        "description": "Early landing page redesign",
+        "resolution": "800x600"
     },
     {
         "id": "blacklion",
         "name": "Black Lion",
         "url": "../blacklion",
         "fakeDomain": "blacklion.net",
-        "description": "Designed this site to house my reviews of Black Lion watch and won the watch."
+        "description": "Designed this site to house my reviews of Black Lion watch and won the watch.",
+        "resolution": "1024x768"
     },
     {
         "id": "blues",
         "name": "Jim's Blues Guitar School",
         "url": "../blues",
         "fakeDomain": "jimsbluesguitarschool.com",
-        "description": "Website I built for a blues guitar teacher."
+        "description": "Website I built for a blues guitar teacher.",
+        "resolution": "800x600"
     },
     {
         "id": "chizeled",
         "name": "Chizeled",
         "url": "../chizeled",
         "fakeDomain": "chizeledlight.com/Chizeled",
-        "description": "Prototype site design"
+        "description": "Prototype site design",
+        "resolution": "640x480"
     },
     {
         "id": "chizeledlight2000",
@@ -81,49 +90,56 @@
         "name": "Console",
         "url": "../console",
         "fakeDomain": "chizeledlight.com/Console",
-        "description": "Prototype site design"
+        "description": "Prototype site design",
+        "resolution": "640x480"
     },
     {
         "id": "fbi",
         "name": "FBI",
         "url": "../fbi",
         "fakeDomain": "fbi.gov",
-        "description": "FBI site late 1990's"
+        "description": "FBI site late 1990's",
+        "resolution": "640x480"
     },
     {
         "id": "gwd1",
         "name": "Gallant Web Design 1",
         "url": "../gwd1",
         "fakeDomain": "gallant-webdesign.com",
-        "description": "Gallant Web Design 1"
+        "description": "Gallant Web Design 1",
+        "resolution": "640x480"
     },
     {
         "id": "gwd2",
         "name": "Gallant Web Design 2",
         "url": "../gwd2",
         "fakeDomain": "gallant-webdesign2.com",
-        "description": "Gallant Web Design 2"
+        "description": "Gallant Web Design 2",
+        "resolution": "800x600"
     },
     {
         "id": "instructor",
         "name": "Instructor",
         "url": "../instructor",
         "fakeDomain": "instructor.edu",
-        "description": "Website I build for old friend"
+        "description": "Website I build for old friend",
+        "resolution": "800x600"
     },
     {
         "id": "intercation",
         "name": "Intercation",
         "url": "../intercation",
         "fakeDomain": "intercation.net",
-        "description": "Website prototype for my father and I's business"
+        "description": "Website prototype for my father and I's business",
+        "resolution": "640x480"
     },
     {
         "id": "isg",
         "name": "ISG",
         "url": "../isg",
         "fakeDomain": "isg-corp.com",
-        "description": "ISG site"
+        "description": "ISG site",
+        "resolution": "800x600"
     },
     {
         "id": "iweb",
@@ -144,98 +160,112 @@
         "name": "Jennifer",
         "url": "../Jennifer",
         "fakeDomain": "jennifer.net",
-        "description": "Website I build for a girl I met online"
+        "description": "Website I build for a girl I met online",
+        "resolution": "640x480"
     },
     {
         "id": "judo",
         "name": "Kokoro Budokai",
         "url": "../judo",
         "fakeDomain": "kokorobudokai.com",
-        "description": "My fathers judo club"
+        "description": "My fathers judo club",
+        "resolution": "800x600"
     },
     {
         "id": "kellihollet",
         "name": "Kelli Hollet",
         "url": "../KelliHollet",
         "fakeDomain": "kellihollet.com",
-        "description": "Site for my sister's friend"
+        "description": "Site for my sister's friend",
+        "resolution": "640x480"
     },
     {
         "id": "koolknobs",
         "name": "KoolKnobs",
         "url": "../KoolKnobs",
         "fakeDomain": "koolknobs.com",
-        "description": "Website redesign for small business"
+        "description": "Website redesign for small business",
+        "resolution": "800x600"
     },
     {
         "id": "milo",
         "name": "Milo",
         "url": "../milo",
         "fakeDomain": "milo.net",
-        "description": "Site I did for online friend"
+        "description": "Site I did for online friend",
+        "resolution": "640x480"
     },
     {
         "id": "picsnpix",
         "name": "Pics-n-Pix",
         "url": "../picsnpix",
         "fakeDomain": "picsnpix.com",
-        "description": "Prototype site design for company idea"
+        "description": "Prototype site design for company idea",
+        "resolution": "640x480"
     },
     {
         "id": "pictureperfect",
         "name": "Picture Perfect",
         "url": "../PicturePerfect",
         "fakeDomain": "pictureperfect.com",
-        "description": "Website for friends business"
+        "description": "Website for friends business",
+        "resolution": "640x480"
     },
     {
         "id": "resume",
         "name": "Resume",
         "url": "../Resume",
         "fakeDomain": "resume.com",
-        "description": "My resume (2000)"
+        "description": "My resume (2000)",
+        "resolution": "800x600"
     },
     {
         "id": "ronsplace",
         "name": "Ron's Place",
         "url": "../RonsPlace",
         "fakeDomain": "ronsplace.net",
-        "description": "One of my early websites on GeoCities"
+        "description": "One of my early websites on GeoCities",
+        "resolution": "640x480"
     },
     {
         "id": "sotf",
         "name": "Survival of the Fittest",
         "url": "../sotf",
         "fakeDomain": "sotf.org",
-        "description": "A friend and I's company website"
+        "description": "A friend and I's company website",
+        "resolution": "640x480"
     },
     {
         "id": "startpage",
         "name": "Start Page",
         "url": "../StartPage",
         "fakeDomain": "startpage.com",
-        "description": "My first website. 1994"
+        "description": "My first website. 1994",
+        "resolution": "640x480"
     },
     {
         "id": "thylacine",
         "name": "The Thylacine - The Original Underdog",
         "url": "../Thylacine",
         "fakeDomain": "thylacine.com",
-        "description": "Site I build on a topic I like"
+        "description": "Site I build on a topic I like",
+        "resolution": "800x600"
     },
     {
         "id": "tomsresume",
         "name": "Tom's Resume",
         "url": "../Tomsresume",
         "fakeDomain": "tomsresume.com",
-        "description": "My fathers resume"
+        "description": "My fathers resume",
+        "resolution": "800x600"
     },
     {
         "id": "uga",
         "name": "United Graphic Artists",
         "url": "../uga",
         "fakeDomain": "uga.edu",
-        "description": "A friends graphic design business"
+        "description": "A friends graphic design business",
+        "resolution": "800x600"
     },
     {
         "id": "yogaroad",
