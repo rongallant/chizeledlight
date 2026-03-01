@@ -113,7 +113,7 @@
 
             <!-- Viewport -->
             <div class="iframe-viewport inset">
-                <iframe id="browser-frame" src="about:blank" sandbox="allow-scripts allow-popups allow-forms allow-top-navigation"></iframe>
+                <iframe id="browser-frame" src="about:blank"></iframe>
             </div>
 
             <!-- Status Bar -->
@@ -297,11 +297,15 @@
                     try {
                         const iframeDoc = browserFrame.contentDocument || browserFrame.contentWindow.document;
                         console.log('Attempting to inject script into iframe...');
+                        console.log('Current iframe src:', browserFrame.src);
                         
                         const script = iframeDoc.createElement('script');
                         script.textContent = `
                             (function() {
                                 console.log('URL tracker injected successfully');
+                                console.log('Current location:', window.location.href);
+                                console.log('Document title:', document.title);
+                                
                                 function sendUrlToParent() {
                                     const currentPath = window.location.pathname;
                                     const search = window.location.search;
