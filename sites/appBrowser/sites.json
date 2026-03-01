@@ -228,14 +228,6 @@
         "resolution": "640x480"
     },
     {
-        "id": "testframes",
-        "name": "Test Frames",
-        "url": "test_frames.html",
-        "fakeDomain": "testframes.local",
-        "description": "Test frame targeting functionality",
-        "resolution": "800x600"
-    },
-    {
         "id": "thylacine",
         "name": "The Thylacine - The Original Underdog",
         "url": "../Thylacine",
